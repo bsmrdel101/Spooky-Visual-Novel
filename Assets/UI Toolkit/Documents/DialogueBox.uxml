@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+>
+    <Style src="../Stylesheets/MainStyles.uss" />
+    <Style src="../Stylesheets/DialogueBox.uss" />
+    <engine:Box class="dialogue-box">
+        <engine:Label name="dialogue-speaker" class="dialogue-box__speaker" text="Speaker" />
+        <engine:TextElement name="dialogue-body-text" class="dialogue-box__body-text" text="Dialogue text" />
+    </engine:Box>
+    <engine:Box name="dialogue-options" class="dialogue-options hidden"></engine:Box>
+</engine:UXML>

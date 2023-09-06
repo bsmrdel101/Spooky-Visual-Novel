@@ -7,6 +7,7 @@ using UnityEngine;
 public class Dialogue : ScriptableObject
 {
     public string Speaker;
+    public Color SpeakerColor = new Color(147, 61, 95, 255);
     [TextArea(10, 100)] public string BodyText;
     public Dialogue[] DialogueOptions;
 }
