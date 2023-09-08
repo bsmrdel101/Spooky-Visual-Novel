@@ -9,11 +9,14 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Scene")]
     public StoryScene ActiveStoryScene;
-    [SerializeField] private float _textReadDelay = 0.01f;
-    private int _dialogueIndex = 0;
     private Label _dialogueBoxSpeaker;
     private TextElement _dialogueBoxBodyText;
     private Box _dialogueOptionsBox;
+
+    [Header("Dialogue")]
+    [SerializeField] private float _textReadDelay = 0.01f;
+    private int _dialogueIndex = 0;
+    private bool stopReadingText = false;
 
     [Header("References")]
     [SerializeField] private UIDocument _dialogueBoxDoc;
@@ -27,6 +30,12 @@ public class DialogueManager : MonoBehaviour
         _dialogueOptionsBox = _dialogueBoxDoc.rootVisualElement.Q<Box>("dialogue-options");
 
         ChangeStoryScene(ActiveStoryScene);
+    }
+
+    private void Update()
+    {
+        // Stop text from reading if player clicks somewhere
+        if (Input.GetKeyDown(KeyCode.Space)) stopReadingText = true;
     }
 
     private void ChangeStoryScene(StoryScene storyScene)
@@ -55,17 +64,29 @@ public class DialogueManager : MonoBehaviour
     // Creates the typing effect for text
     private IEnumerator ReadText(TextElement element, string textContent, Dialogue dialogue)
 	{
+        stopReadingText = false;
         element.text = "";
 		foreach (char c in textContent) 
 		{
 			element.text += c;
+            if (stopReadingText)
+            {
+                element.text = textContent;
+                RevealDialougeOptions(dialogue);
+                yield break;
+            }
 			yield return new WaitForSeconds(_textReadDelay);
 		}
 
         // Makes the dialogue options visible if they exist
+        RevealDialougeOptions(dialogue);
+	}
+
+    private void RevealDialougeOptions(Dialogue dialogue)
+    {
         if (dialogue.DialogueOptions.Length > 0)
             _dialogueOptionsBox.RemoveFromClassList("hidden");
-	}
+    }
 
     private void SelectDialogueOption(Dialogue dialogue)
     {
