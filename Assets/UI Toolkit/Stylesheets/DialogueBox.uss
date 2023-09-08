@@ -2,11 +2,14 @@
     background-color: var(--gray-0);
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 5%;
+    width: 90%;
     height: 300px;
     padding: 20px 30px;
     border-width: 5px;
     border-color: black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .dialogue-box__speaker {
@@ -43,4 +46,10 @@
 }
 .dialogue-options__choice:hover {
     scale: 1.04;
+}
+
+.npc-sprite {
+    position: absolute;
+    left: 30px;
+    bottom: 250px;
 }

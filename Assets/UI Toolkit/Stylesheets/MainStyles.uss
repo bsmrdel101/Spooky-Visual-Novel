@@ -5,6 +5,9 @@
 
     --font-0: 20px;
     --font-1: 30px;
+
+
+    background-image: url("../../Sprites/Backgrounds/sample_bg.jpg");
 }
 
 .hidden {

@@ -6,6 +6,7 @@
 >
     <Style src="../Stylesheets/MainStyles.uss" />
     <Style src="../Stylesheets/DialogueBox.uss" />
+    <engine:Image name="npc-sprite" class="npc-sprite" style="--unity-image: url('../../Sprites/NPCs/sample_npc.png');"/>
     <engine:Box class="dialogue-box">
         <engine:Label name="dialogue-speaker" class="dialogue-box__speaker" text="Speaker" />
         <engine:TextElement name="dialogue-body-text" class="dialogue-box__body-text" text="Dialogue text" />
