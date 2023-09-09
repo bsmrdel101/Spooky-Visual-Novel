@@ -1,35 +1,30 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using TMPro;
+using UnityEngine.UI;
 
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("Scene")]
     public StoryScene ActiveStoryScene;
-    private Label _dialogueBoxSpeaker;
-    private TextElement _dialogueBoxBodyText;
-    private Box _dialogueOptionsBox;
-    private Image _npcSprite;
 
     [Header("Dialogue")]
     [SerializeField] private float _textReadDelay = 0.01f;
     private bool stopReadingText = false;
 
     [Header("References")]
-    [SerializeField] private UIDocument _dialogueBoxDoc;
+    [SerializeField] private Image _speakerSprite;
+    [SerializeField] private Image _bgImage;
+    [SerializeField] private TextMeshProUGUI _speakerName;
+    [SerializeField] private TextMeshProUGUI _dialogueBodyText;
+    [SerializeField] private Transform _dialogueOptionsBox;
+    [SerializeField] private GameObject _buttonPrefab;
 
 
     private void Start()
     {
-        // Get references to UI elements
-        _dialogueBoxBodyText = _dialogueBoxDoc.rootVisualElement.Q<TextElement>("dialogue-body-text");
-        _dialogueBoxSpeaker = _dialogueBoxDoc.rootVisualElement.Q<Label>("dialogue-speaker");
-        _dialogueOptionsBox = _dialogueBoxDoc.rootVisualElement.Q<Box>("dialogue-options");
-        _npcSprite = _dialogueBoxDoc.rootVisualElement.Q<Image>("npc-sprite");
-
         ChangeStoryScene(ActiveStoryScene);
     }
 
@@ -47,35 +42,45 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDialogueBox(Dialogue dialogue)
     {
+        ResetDialogueOptions();
+
         // Set the speaker and text body values for the dialogue box
         ChangeNpcImage(dialogue.SpeakerImage);
-        _dialogueBoxSpeaker.text = dialogue.Speaker;
-        _dialogueBoxSpeaker.style.color = dialogue.SpeakerColor;
-        StartCoroutine(ReadText(_dialogueBoxBodyText, dialogue.BodyText, dialogue));
+        _speakerName.text = dialogue.Speaker;
+        _speakerName.color = dialogue.SpeakerColor;
+        StartCoroutine(ReadText(_dialogueBodyText, dialogue.BodyText, dialogue));
 
         // Renders the dialogue options
         foreach (DialogueOption option in dialogue.DialogueOptions)
         {
-            Button button = new Button();
-            button.text = option.OptionName;
-            button.AddToClassList("dialogue-options__choice");
-            button.RegisterCallback<ClickEvent>((e) => SelectDialogueOption(option.Dialogue));
-            _dialogueOptionsBox.Add(button);
+            GameObject button = Instantiate(_buttonPrefab, _dialogueOptionsBox);
+            button.GetComponentInChildren<TextMeshProUGUI>().text = option.OptionName;
+            button.GetComponent<Button>().onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue));
+        }
+    }
+
+    // Deletes all buttons inside dialogue options box
+    private void ResetDialogueOptions()
+    {
+        if (_dialogueOptionsBox.childCount == 0) return;
+        foreach (Button button in _dialogueOptionsBox.GetComponentsInChildren<Button>())
+        {
+            Destroy(button.gameObject);
         }
     }
 
     private void ChangeNpcImage(Sprite image)
     {
-        _npcSprite.style.backgroundImage = new StyleBackground(image);
+        _speakerSprite.sprite = image;
     }
 
     private void ChangeBackgroundImage(Sprite bgImage)
     {
-        _dialogueBoxDoc.rootVisualElement.style.backgroundImage = new StyleBackground(bgImage);
+        _bgImage.sprite = bgImage;
     }
 
     // Creates the typing effect for text
-    private IEnumerator ReadText(TextElement element, string textContent, Dialogue dialogue)
+    private IEnumerator ReadText(TextMeshProUGUI element, string textContent, Dialogue dialogue)
 	{
         stopReadingText = false;
         element.text = "";
@@ -98,13 +103,12 @@ public class DialogueManager : MonoBehaviour
     private void RevealDialougeOptions(Dialogue dialogue)
     {
         if (dialogue.DialogueOptions.Count > 0)
-            _dialogueOptionsBox.RemoveFromClassList("hidden");
+            _dialogueOptionsBox.gameObject.SetActive(true);
     }
 
-    private void SelectDialogueOption(Dialogue dialogue)
+    private void OnClickSelectDialogueOption(Dialogue dialogue)
     {
-        _dialogueOptionsBox.Clear();
-        _dialogueOptionsBox.AddToClassList("hidden");
+        _dialogueOptionsBox.gameObject.SetActive(false);
         UpdateDialogueBox(dialogue);
     }
 }
