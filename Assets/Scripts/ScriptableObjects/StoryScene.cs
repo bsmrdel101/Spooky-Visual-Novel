@@ -7,5 +7,5 @@ using UnityEngine;
 public class StoryScene : ScriptableObject
 {
     public Sprite BackgroundImage;
-    public Dialogue[] DialogueList;
+    public Dialogue StartingDialogue;
 }

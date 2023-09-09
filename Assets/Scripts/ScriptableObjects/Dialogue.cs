@@ -10,5 +10,16 @@ public class Dialogue : ScriptableObject
     public Sprite SpeakerImage;
     public Color SpeakerColor = new Color(147, 61, 95, 255);
     [TextArea(10, 100)] public string BodyText;
-    public Dialogue[] DialogueOptions;
+
+    public List<DialogueOption> DialogueOptions;
+}
+
+[System.Serializable]
+public class DialogueOption
+{
+    [SerializeField]
+    public string OptionName;
+
+    [SerializeField]
+    public Dialogue Dialogue;
 }

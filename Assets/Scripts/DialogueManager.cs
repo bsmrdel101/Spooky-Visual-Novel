@@ -16,7 +16,6 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Dialogue")]
     [SerializeField] private float _textReadDelay = 0.01f;
-    private int _dialogueIndex = 0;
     private bool stopReadingText = false;
 
     [Header("References")]
@@ -43,7 +42,7 @@ public class DialogueManager : MonoBehaviour
     private void ChangeStoryScene(StoryScene storyScene)
     {
         ChangeBackgroundImage(storyScene.BackgroundImage);
-        UpdateDialogueBox(storyScene.DialogueList[_dialogueIndex]);
+        UpdateDialogueBox(storyScene.StartingDialogue);
     }
 
     private void UpdateDialogueBox(Dialogue dialogue)
@@ -55,12 +54,12 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(ReadText(_dialogueBoxBodyText, dialogue.BodyText, dialogue));
 
         // Renders the dialogue options
-        foreach (Dialogue option in dialogue.DialogueOptions)
+        foreach (DialogueOption option in dialogue.DialogueOptions)
         {
             Button button = new Button();
-            button.text = option.name;
+            button.text = option.OptionName;
             button.AddToClassList("dialogue-options__choice");
-            button.RegisterCallback<ClickEvent>((e) => SelectDialogueOption(option));
+            button.RegisterCallback<ClickEvent>((e) => SelectDialogueOption(option.Dialogue));
             _dialogueOptionsBox.Add(button);
         }
     }
@@ -98,7 +97,7 @@ public class DialogueManager : MonoBehaviour
 
     private void RevealDialougeOptions(Dialogue dialogue)
     {
-        if (dialogue.DialogueOptions.Length > 0)
+        if (dialogue.DialogueOptions.Count > 0)
             _dialogueOptionsBox.RemoveFromClassList("hidden");
     }
 
