@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   Speaker: Spooky Npc
+  SpeakerImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
   SpeakerColor: {r: 0.5764706, g: 0.23921569, b: 0.37254903, a: 1}
   BodyText: Here's some test text for the first dialogue option. Chose 1 of the two
     dialogue options to continue.
   DialogueOptions:
-  - {fileID: 11400000, guid: 9d46a54a789a7234b97d5e9934127354, type: 2}
-  - {fileID: 11400000, guid: 270347d6fee4ed54c8f752e1f0ee39a9, type: 2}
+  - OptionName: Option 1
+    Dialogue: {fileID: 11400000, guid: 9d46a54a789a7234b97d5e9934127354, type: 2}
+  - OptionName: Option 2
+    Dialogue: {fileID: 11400000, guid: 270347d6fee4ed54c8f752e1f0ee39a9, type: 2}

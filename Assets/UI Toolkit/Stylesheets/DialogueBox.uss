@@ -46,6 +46,7 @@
 }
 .dialogue-options__choice:hover {
     scale: 1.04;
+    background-color: var(--purple-1);
 }
 
 .npc-sprite {

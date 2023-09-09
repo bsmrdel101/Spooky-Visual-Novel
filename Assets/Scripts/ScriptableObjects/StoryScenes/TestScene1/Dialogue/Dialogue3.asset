@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Dialogue3
   m_EditorClassIdentifier: 
   Speaker: Spooky Npc
+  SpeakerImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
   SpeakerColor: {r: 0.5764706, g: 0.23921569, b: 0.37254903, a: 1}
   BodyText: ljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflks.
-  DialogueOptions: []
+  DialogueOptions:
+  - OptionName: Next
+    Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}

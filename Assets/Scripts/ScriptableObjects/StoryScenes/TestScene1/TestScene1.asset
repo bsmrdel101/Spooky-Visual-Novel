@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: TestScene1
   m_EditorClassIdentifier: 
-  DialogueList:
-  - {fileID: 11400000, guid: f896459d56e025540af37659bee607a7, type: 2}
-  - {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}
+  BackgroundImage: {fileID: 21300000, guid: 87869ca85e51f6c46a532df5c8fcd43f, type: 3}
+  StartingDialogue: {fileID: 11400000, guid: f896459d56e025540af37659bee607a7, type: 2}
