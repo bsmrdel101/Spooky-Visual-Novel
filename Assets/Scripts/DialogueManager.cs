@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     private Label _dialogueBoxSpeaker;
     private TextElement _dialogueBoxBodyText;
     private Box _dialogueOptionsBox;
+    private Image _npcSprite;
 
     [Header("Dialogue")]
     [SerializeField] private float _textReadDelay = 0.01f;
@@ -28,24 +29,27 @@ public class DialogueManager : MonoBehaviour
         _dialogueBoxBodyText = _dialogueBoxDoc.rootVisualElement.Q<TextElement>("dialogue-body-text");
         _dialogueBoxSpeaker = _dialogueBoxDoc.rootVisualElement.Q<Label>("dialogue-speaker");
         _dialogueOptionsBox = _dialogueBoxDoc.rootVisualElement.Q<Box>("dialogue-options");
+        _npcSprite = _dialogueBoxDoc.rootVisualElement.Q<Image>("npc-sprite");
 
         ChangeStoryScene(ActiveStoryScene);
     }
 
     private void Update()
     {
-        // Stop text from reading if player clicks somewhere
+        // Stop text from reading if player presses spacebar
         if (Input.GetKeyDown(KeyCode.Space)) stopReadingText = true;
     }
 
     private void ChangeStoryScene(StoryScene storyScene)
     {
+        ChangeBackgroundImage(storyScene.BackgroundImage);
         UpdateDialogueBox(storyScene.DialogueList[_dialogueIndex]);
     }
 
     private void UpdateDialogueBox(Dialogue dialogue)
     {
-        // Set the speaker and body text for the dialogue box
+        // Set the speaker and text body values for the dialogue box
+        ChangeNpcImage(dialogue.SpeakerImage);
         _dialogueBoxSpeaker.text = dialogue.Speaker;
         _dialogueBoxSpeaker.style.color = dialogue.SpeakerColor;
         StartCoroutine(ReadText(_dialogueBoxBodyText, dialogue.BodyText, dialogue));
@@ -59,6 +63,16 @@ public class DialogueManager : MonoBehaviour
             button.RegisterCallback<ClickEvent>((e) => SelectDialogueOption(option));
             _dialogueOptionsBox.Add(button);
         }
+    }
+
+    private void ChangeNpcImage(Sprite image)
+    {
+        _npcSprite.style.backgroundImage = new StyleBackground(image);
+    }
+
+    private void ChangeBackgroundImage(Sprite bgImage)
+    {
+        _dialogueBoxDoc.rootVisualElement.style.backgroundImage = new StyleBackground(bgImage);
     }
 
     // Creates the typing effect for text
