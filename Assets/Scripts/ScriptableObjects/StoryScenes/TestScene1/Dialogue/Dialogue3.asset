@@ -17,5 +17,7 @@ MonoBehaviour:
   SpeakerColor: {r: 0.5764706, g: 0.23921569, b: 0.37254903, a: 1}
   BodyText: ljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflks.
   DialogueOptions:
+  - OptionName: Dialogue 4
+    Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}
   - OptionName: Next
     Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}

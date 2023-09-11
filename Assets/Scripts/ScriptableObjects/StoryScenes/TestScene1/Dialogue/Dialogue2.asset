@@ -20,5 +20,7 @@ MonoBehaviour:
     when an unknown printer took a galley of type and scrambled it to make a type
     specimen book. It has survived not only five centuries.
   DialogueOptions:
+  - OptionName: Dialogue 4
+    Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}
   - OptionName: Next
     Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}

@@ -12,6 +12,9 @@ public class Dialogue : ScriptableObject
     [TextArea(10, 100)] public string BodyText;
 
     public List<DialogueOption> DialogueOptions;
+
+    [Tooltip("Blocks the dialogue options below from being chosen in the future")]
+    public List<Dialogue> DialogueBlockers;
 }
 
 [System.Serializable]

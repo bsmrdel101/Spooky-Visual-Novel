@@ -1364,6 +1364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActiveStoryScene: {fileID: 11400000, guid: 7234f2e0909cfe641825fd696f9d6e51, type: 2}
   _textReadDelay: 0.01
+  _blockedDialogue: []
   _speakerSprite: {fileID: 1489130644}
   _bgImage: {fileID: 499049545}
   _speakerName: {fileID: 1311782340}

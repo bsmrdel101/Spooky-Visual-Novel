@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue")]
     [SerializeField] private float _textReadDelay = 0.01f;
     private bool stopReadingText = false;
+    [SerializeField] private List<Dialogue> _blockedDialogue = new List<Dialogue>();
 
     [Header("References")]
     [SerializeField] private Image _speakerSprite;
@@ -43,6 +44,7 @@ public class DialogueManager : MonoBehaviour
     private void UpdateDialogueBox(Dialogue dialogue)
     {
         ResetDialogueOptions();
+        HandleDialogueBlocking(dialogue.DialogueBlockers);
 
         // Set the speaker and text body values for the dialogue box
         ChangeNpcImage(dialogue.SpeakerImage);
@@ -53,9 +55,13 @@ public class DialogueManager : MonoBehaviour
         // Renders the dialogue options
         foreach (DialogueOption option in dialogue.DialogueOptions)
         {
-            GameObject button = Instantiate(_buttonPrefab, _dialogueOptionsBox);
-            button.GetComponentInChildren<TextMeshProUGUI>().text = option.OptionName;
-            button.GetComponent<Button>().onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue));
+            if (!_blockedDialogue.Contains(option.Dialogue))
+            {
+                GameObject buttonObj = Instantiate(_buttonPrefab, _dialogueOptionsBox);
+                Button button = buttonObj.GetComponent<Button>();
+                buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = option.OptionName;
+                button.onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue));
+            }
         }
     }
 
@@ -110,5 +116,13 @@ public class DialogueManager : MonoBehaviour
     {
         _dialogueOptionsBox.gameObject.SetActive(false);
         UpdateDialogueBox(dialogue);
+    }
+
+    private void HandleDialogueBlocking(List<Dialogue> dialogueList)
+    {
+        foreach (Dialogue dialogue in dialogueList)
+        {
+            _blockedDialogue.Add(dialogue);
+        }
     }
 }
