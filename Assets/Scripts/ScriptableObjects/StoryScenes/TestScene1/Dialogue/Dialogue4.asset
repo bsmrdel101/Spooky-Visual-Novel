@@ -15,7 +15,7 @@ MonoBehaviour:
   Speaker: Spooky Npc
   SpeakerImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
   SpeakerColor: {r: 0.5764706, g: 0.23921569, b: 0.37254903, a: 1}
-  BodyText: This dialogue is blocked if you select Option 1.
+  BodyText: Choosing option 1 will block this dialogue.
   DialogueOptions: []
   DialogueBlockers:
   - {fileID: 11400000, guid: 9d46a54a789a7234b97d5e9934127354, type: 2}
