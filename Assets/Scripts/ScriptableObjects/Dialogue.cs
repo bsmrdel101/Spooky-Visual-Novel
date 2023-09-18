@@ -10,6 +10,8 @@ public class Dialogue : ScriptableObject
     public Sprite SpeakerImage;
     public Color SpeakerColor = new Color(147, 61, 95, 255);
     [TextArea(10, 100)] public string BodyText;
+    public int ReputationIncrease = 0;
+    public int ReputationDecrease = 0;
 
     public List<DialogueOption> DialogueOptions;
 

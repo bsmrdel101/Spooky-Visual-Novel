@@ -115,6 +115,8 @@ public class DialogueManager : MonoBehaviour
     private void OnClickSelectDialogueOption(Dialogue dialogue)
     {
         _dialogueOptionsBox.gameObject.SetActive(false);
+        ReputationManager.IncreaseReputationAction(dialogue.ReputationIncrease);
+        ReputationManager.DecreaseReputationAction(dialogue.ReputationDecrease);
         UpdateDialogueBox(dialogue);
     }
 
