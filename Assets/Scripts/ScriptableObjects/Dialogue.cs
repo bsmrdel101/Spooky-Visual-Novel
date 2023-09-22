@@ -17,6 +17,13 @@ public class Dialogue : ScriptableObject
 
     [Tooltip("Blocks the dialogue options below from being chosen in the future")]
     public List<Dialogue> DialogueBlockers;
+
+    public AudioClip voiceActorAudioClip;
+    public AudioClip soundEffectAudioClip;
+    public AudioClip musicAudioClip;
+
+    public StoryScene redirectionOnStoryScene;
+    public bool endingTheStoryBool;
 }
 
 [System.Serializable]
