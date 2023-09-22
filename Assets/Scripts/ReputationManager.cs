@@ -10,7 +10,7 @@ public class ReputationManager : MonoBehaviour
     public static Action<int> IncreaseReputationAction;
 
     [Header("Reputation System")]
-    [SerializeField] private int _reputation = 0;
+    [SerializeField] public int _reputation = 0;
 
 
     private void OnEnable()
