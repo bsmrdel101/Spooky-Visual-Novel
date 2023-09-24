@@ -1,0 +1,28 @@
+Instructions on how to write/full the dialogue script:
+[A scriptable object version]
+At first create folder of scene you are making. Name it.
+-Right click create/scriptable object/scene -Name it. Fill it.
+--If it is starting scene, go to mangers on hierarchy, dialogue Manager and put it into > Starting story scene
+Second create a subfolder. There will be yours branch for better orienting in and managing the structure.
+Create a first dialogue by right click create/scriptable object/dialogue.
+-now think how do you name it because it will be line up in name order. You can name it like Dialogue A 1
+--Put it into your scene > starting dialogue
+
+Now we filling the first dialogue:
+On screen there will be only two actor Left and Right. The bool will chose which one will be highlighted and if they are on they sprite will be updated in what is putted in. If they are off they sprite shall go gray. If there is no sprite and and actor is on, the sprite on window will be replaced by transparent spite. (disappear)
+-second image is already turned around, so if all charcter sprites face to right, the one on right is flipped around and will be displayed to face left.
+Speaker name colour and body text is what will be displayed in dialogue text box.
+Down are sounds, that they will place effect only if they are fill.
+
+Dialogue Options:
+To move forward you need at last one option that will lead you to the next dialogue. (Yes, it was pre-ceated in a way that you must do it physically.)
+Dialogue blocker will apply on current dialogue. that are currently displayed, and if you make a redirection to a dialogue., where this option was able to select (actually from all further options.) you will not be able to select it. It will disappear. Do not trap yourself by not having any options to continue.
+Redirection on story put on new dialogue. When you click on dialogue. option to show this dialogue., it will not show the text, but instead directly jump onto selected scene. Put it onto the dialogue. option you wish.
+
+Ending the story bool:
+-again put it onto separate dialogue. It will directly jump onto credit.
+Go to Hierarchy/ credit panel manager. There is list of ending. (it always start from 0. You can change the arrange of endings by dragging the = symbol up and down. But that also means that you must track which ending you will be launching.)
+
+(If you accidentally delete something, go to upper panel Edit/Undo)
+(The lock key next to inspector will lock that inspector on currently selected object.)
+(new Inspector or project tab can be add to the window part by the 3-dots. Whit the lock, it can be used to have in all window pars folders locked on what you need to have on hand.)
