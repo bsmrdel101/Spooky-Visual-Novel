@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: Nursery Part C 1
+  m_EditorClassIdentifier: 
+  actorOnLeftBool: 0
+  actorOnRightBool: 1
+  speakerName: Nurse
+  speakerOneNewImage: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  speakerTwoNewImage: {fileID: 21300000, guid: 7cf76487f5b68f84799b9d5e21d21d54, type: 3}
+  speakerColor: {r: 0.7529412, g: 0.047058824, b: 0.60284454, a: 255}
+  BodyText: "What ever. The subject can be for now safe, because I only put wet towel
+    on its forehead. \nAnd I only expecting that you will only keep receiving only
+    minor mental damages. Few point here, few point there.\nNothing serious that
+    good food cant restore. At beginning."
+  reputationIncrease: 0
+  reputationDecrease: 0
+  DialogueOptions:
+  - OptionName: Next
+    Dialogue: {fileID: 11400000, guid: 04499c902a4a81e4b9dd60c0b0fa200f, type: 2}
+  DialogueBlockers: []
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
