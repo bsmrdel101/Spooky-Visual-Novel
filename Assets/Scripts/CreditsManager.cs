@@ -3,38 +3,61 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
+using System.Linq;
 
 public class CreditsManager : MonoBehaviour
 {
     [Header("Main stuff")]
     [TextArea] public string openMesage; public Sprite openSprite; public AudioClip openSfxAudiClip;
-    [TextArea] public string endMesage; public Sprite endSprite; public AudioClip endAudioClip;
+    public int endingNumber=0;
+    public List<Ending> listOfEndings;
+    [System.Serializable]
+    public class Ending{
+        [SerializeField] public string name;
+        [SerializeField, TextArea] public string endMesage;
+        [SerializeField, TextArea] public string[] additionalCreditsPages;
+        [SerializeField] public Sprite endSprite;
+        [SerializeField] public AudioClip endAudioClip;
+    }
+    
     [TextArea] public string[] creditsMesages;
+    public List<String> listOfCreditsPages = new List<string>();
+
 
     [Header("References")]
-    public DialogueManager dialogueManager;
-    public MenuPanelManager menuPanelManager;
-
     public Transform thisPanel, smallTextPanel, creditPanel;
     public Image displayedImage;
     public TMP_Text smallText, creditText;
 
     [Header("Values")]
-    public float tippingSpeed =0.05f;
+    public bool openingBool, endingBool;
+    public float typpingSpeed =0.05f;
     float timer=0;
     int numberOfCredits=0, actualCreditsPage=0;
-    bool typingBool=false, creditsBool=false;
+    public bool typingBool=false, creditsBool=false;
     string actualMesage="", targetMesage="";
     int mesageStep=0, mesageLenght=0;
 
+    [Header("Managers")]
+    public DialogueManager dialogueManager;
+    public MenuPanelManager menuPanelManager;
+    public AudioManager audioManager;
+    
+    
     void Update()
     {
         if(typingBool){
             timer += Time.deltaTime;
-            if(timer > tippingSpeed){
+            if(timer > typpingSpeed){
                 timer = 0;
                 actualMesage = targetMesage.Substring(0, mesageStep);
                 actualMesage += "<color=#00000000>" + targetMesage.Substring(mesageStep);
+                if(dialogueManager.stopReadingText){
+                    actualMesage = targetMesage;
+                    typingBool = false;
+                    dialogueManager.stopReadingText = false;
+                }
                 if(!creditsBool){smallText.text = actualMesage;}
                 else{creditText.text = actualMesage;}
                 mesageStep++;
@@ -45,58 +68,89 @@ public class CreditsManager : MonoBehaviour
 
 
     public void NextButton(){
-        dialogueManager.PlaySfxAudio(menuPanelManager.uiButtonPositiveAC);
-        if(menuPanelManager.gameIsOnBool){
+        Debug.Log("Next button on credits: opening " +openingBool + " ending "+ endingBool);
+        audioManager.PlayMenuButtonClick(true);
+        if(openingBool){
             thisPanel.gameObject.SetActive(false);
+            menuPanelManager.creditPanelOnBool = false;
+            openingBool = false;
             dialogueManager.StartTheGame();
-        }else{
+        }
+        
+        if(endingBool){
             if(!creditsBool){
                 smallTextPanel.gameObject.SetActive(false);
                 displayedImage.gameObject.SetActive(false);
                 creditPanel.gameObject.SetActive(true);
                 creditsBool = true;
-                numberOfCredits = creditsMesages.Length;
+                numberOfCredits = listOfCreditsPages.Count;
                 actualCreditsPage = 0;
-                SetTypping(creditsMesages[0]);
+                SetTypping(listOfCreditsPages[0]);
             }else{
                 actualCreditsPage++;
                 if(actualCreditsPage >= numberOfCredits){
                     thisPanel.gameObject.SetActive(false);
+                    endingBool = false;
+                    creditsBool = false;
                     menuPanelManager.creditPanelOnBool = false;
+                    audioManager.MainMenuMusicDominator(true, false, false);
                     menuPanelManager.OrderToOperateMainMenu();
-                    menuPanelManager.PlayMainMenuMusic();
+                    audioManager.MainMenuMusicDominator(false, false, true);
                 }else{
-                    SetTypping(creditsMesages[actualCreditsPage]);
+                    SetTypping(listOfCreditsPages[actualCreditsPage]);
                 }
             }
         }
     }
 
-    public void OpenStartEndCreditsPanel(){
+    public void OpenStartEndCreditsPanel(bool openingB, bool endingB){
+            mesageStep = 0;
+            mesageLenght = 0;
+            smallText.text = "";
+            creditText.text = "";
+
+
             thisPanel.gameObject.SetActive(true);
             smallTextPanel.gameObject.SetActive(true);
             displayedImage.gameObject.SetActive(true);
             creditPanel.gameObject.SetActive(false);
             menuPanelManager.creditPanelOnBool = true;
-        if(menuPanelManager.gameIsOnBool){
+        
+        if(openingB){
+            openingBool = true;
             displayedImage.sprite = openSprite;
-            dialogueManager.PlaySfxAudio(openSfxAudiClip);
+            audioManager.PlaySfxAudio(openSfxAudiClip);
             SetTypping(openMesage);
-        }else{
+        }
+        
+        if(endingB){
+            endingBool = true;
+            listOfCreditsPages.Clear();
+            if(listOfEndings[endingNumber] != null){
+                displayedImage.sprite = listOfEndings[endingNumber].endSprite;
+                audioManager.PlaySfxAudio(listOfEndings[endingNumber].endAudioClip);
+                SetTypping(listOfEndings[endingNumber].endMesage);
+                int operationValue = listOfEndings[endingNumber].additionalCreditsPages.Count();
+                if(operationValue > 0){
+                    listOfCreditsPages.AddRange(listOfEndings[endingNumber].additionalCreditsPages); 
+                }
+                listOfCreditsPages.AddRange(creditsMesages);  
+            }else{
+                Debug.Log("Warning, searching ending not found!");
+            }
             
-            displayedImage.sprite = endSprite;
-            dialogueManager.PlaySfxAudio(endAudioClip);
-            SetTypping(endMesage);
         }
     }
 
 
     private void SetTypping(string mesageString){
+        dialogueManager.stopReadingText = false;
         smallText.text = "";
         targetMesage = mesageString;
         mesageLenght = targetMesage.Length;
         mesageStep = 0;
         typingBool = true;
+        Debug.Log("Setting typping");
     }
 
 

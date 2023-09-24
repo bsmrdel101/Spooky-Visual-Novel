@@ -9,28 +9,31 @@ public class MenuPanelManager : MonoBehaviour
     [Header("Variables")]
     public bool menuIsOnBool; 
     public bool gameIsOnBool, creditPanelOnBool;
+    public bool muteMusicBool;
 
-    [Header("references")]
-    public DialogueManager dialogueManager;
+    [Header("references")]    
     public Transform _menuPanel, _menuButtonsPanel;
 
-    //public Transform 
-    public AudioClip mainMenuMusic;
-    public AudioClip uiButtonPositiveAC, uiButtonNegativeAC;
+    
+    
+    
+    [Header("Managers")]
+    public DialogueManager dialogueManager;
     public CreditsManager creditsManager;
+    public AudioManager audioManager;
 
 
 
     private void Start() {
         OrderToOperateMainMenu();
-        PlayMainMenuMusic();
+        audioManager.MainMenuMusicDominator(false, true, false);
     }
 
 
     public void OrderToOperateMainMenu(){
         if(!menuIsOnBool){MenuPanelONOff(true);
         }else{MenuPanelONOff(false);}
-        dialogueManager.PlayUiAudio(uiButtonPositiveAC);     
+        audioManager.PlayMenuButtonClick(true);     
     }
 
 
@@ -41,18 +44,22 @@ public class MenuPanelManager : MonoBehaviour
             ShakeTheMenuButtonsPanel();
             //dialogueManager.StartTheGame();
             dialogueManager.StopTheMusic();
-            creditsManager.OpenStartEndCreditsPanel();
-            dialogueManager.PlayUiAudio(uiButtonPositiveAC);
-        }else{dialogueManager.PlayUiAudio(uiButtonNegativeAC);}
+            dialogueManager.ChangeNpcImage(null, true);
+            dialogueManager.ChangeNpcImage(null, false);
+            creditsManager.OpenStartEndCreditsPanel(true, false);
+            audioManager.PlayMenuButtonClick(true);   
+        }else{
+            audioManager.PlayMenuButtonClick(false);   
+            }
     }
 
     public void OrderToClearTheGame(){
         if(gameIsOnBool){
             dialogueManager.ClearTheGame();
             ShakeTheMenuButtonsPanel();
-            PlayMainMenuMusic();
-            dialogueManager.PlayUiAudio(uiButtonPositiveAC);
-        }else{dialogueManager.PlayUiAudio(uiButtonNegativeAC);}
+            audioManager.MainMenuMusicDominator(false, false, true);
+            audioManager.PlayMenuButtonClick(true);   
+        }else{audioManager.PlayMenuButtonClick(false);   }
     }
 
     public void OrderToSaveTheGame(){
@@ -66,8 +73,8 @@ public class MenuPanelManager : MonoBehaviour
     public void OrderToConinueOnCurrentGame(){
         if(gameIsOnBool){
             OrderToOperateMainMenu();
-            dialogueManager.PlayUiAudio(uiButtonPositiveAC);
-        }else{dialogueManager.PlayUiAudio(uiButtonNegativeAC);}
+            audioManager.PlayMenuButtonClick(true);   
+        }else{audioManager.PlayMenuButtonClick(false);   }
     }
 
     public void OrderToExitTheGame(){
@@ -82,9 +89,11 @@ public class MenuPanelManager : MonoBehaviour
         if(option){
             menuIsOnBool = true;
             _menuPanel.gameObject.SetActive(true);
+            audioManager.MainMenuMusicDominator(false, false, true);
         }else{
             menuIsOnBool = false;
             _menuPanel.gameObject.SetActive(false);
+            audioManager.MainMenuMusicDominator(true, false, false);
         }
     }
 
@@ -93,11 +102,7 @@ public class MenuPanelManager : MonoBehaviour
         _menuButtonsPanel.gameObject.SetActive(true);
     }
 
-    public void PlayMainMenuMusic(){
-        if(mainMenuMusic!= null){
-            dialogueManager.ChangeBacgroundMusic(mainMenuMusic);
-        }
-    }
+    
 
     
 

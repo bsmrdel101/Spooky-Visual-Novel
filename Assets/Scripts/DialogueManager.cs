@@ -10,7 +10,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Vital Data")]
     public bool textVariantOneBool;
     public bool textVatiantTwoBool;
-    public bool soundEfectHoldingTippingBool, voiceActorReadyBool=true;
+    public bool soundEfectHoldingTippingBool, voiceActorReadyBool=true, typingBool;
+    public bool haveOptionsBool, optionsAreDisplayedBool, clearToTypeBool;
     public Dialogue _curentActiveDialog;
     [SerializeField] private Sprite emptyTransparentSprite;
     
@@ -26,23 +27,28 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Dialogue")]
     [SerializeField] private float _textReadDelay = 0.01f;
-    private bool stopReadingText = false;
+    public bool stopReadingText = false;
     [SerializeField] private List<Dialogue> _blockedDialogue = new List<Dialogue>();
     [SerializeField] private List<Dialogue> _listOfDialogOptions = new List<Dialogue>();
-    int textLenght = 0;
-    string textString = "";
+    int textLenght = 0, textPostition=0;
+    string textString = "", textTarget="";
+    float timerTyping=0; public float typpingSpeed =0.05f;
+    float uiMenuSelectorTimer=0, uiMenuSelectorInterval=0.5f;
+
 
     [Header("References")]
-    [SerializeField] private Image _speakerSprite;
+    [SerializeField] private Image _actorLeftSprite, _actorRightSprite;
     [SerializeField] private Image _bgImage;
     [SerializeField] private TextMeshProUGUI _speakerName;
     [SerializeField] private TextMeshProUGUI _dialogueBodyText;
     [SerializeField] private Transform _dialogueOptionsBox;
     [SerializeField] private GameObject _buttonPrefab;
-    [SerializeField] private AudioSource _musicPlayer, _sfxPlayer, _voiceActorPlayer, _uiPlayer;
+    
 
+    [Header("Managers")]
     public MenuPanelManager menuManager;
     public ReputationManager reputationManager;
+    public AudioManager audioManager;
 
     private void Start()
     {
@@ -52,31 +58,112 @@ public class DialogueManager : MonoBehaviour
     private void Update()
     {
         // Stop text from reading if player presses spacebar
-        if (Input.GetKeyDown(KeyCode.Space)) stopReadingText = true;
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            stopReadingText = true; 
+                /*
+            if(menuManager.creditPanelOnBool)
+                if(!menuManager.creditsManager.typingBool){
+                    Debug.Log("Space triger next button");
+                    menuManager.creditsManager.NextButton();
+                }
+                */
+        }        
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            if(typingBool == true){
+                stopReadingText = true;
+            }
+        
+        if(haveOptionsBool && optionsAreDisplayedBool){
+            if(_listOfDialogOptions.Count > 0)
+            for(int i=0; i< _listOfDialogOptions.Count; i++){
+                if(_listOfDialogOptions[i] != null){
+                    if(i==0) if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1) ){
+                        OnClickSelectDialogueOption(_listOfDialogOptions[0]);
+                    } 
+                    if(i==1) if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2) ){
+                        OnClickSelectDialogueOption(_listOfDialogOptions[1]);
+                    } 
+                    if(i==2) if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3) ){
+                        OnClickSelectDialogueOption(_listOfDialogOptions[2]);
+                    } 
+                    if(i==3) if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4) ){
+                        OnClickSelectDialogueOption(_listOfDialogOptions[3]);
+                    }
+                    if(i==4) if (Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5) ){
+                        OnClickSelectDialogueOption(_listOfDialogOptions[4]);
+                    }
+                    if(i==5) if (Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Keypad6) ){
+                        OnClickSelectDialogueOption(_listOfDialogOptions[5]);
+                    } 
+                }
+            }
+        }
 
+        if(!clearToTypeBool){
+            uiMenuSelectorTimer += Time.deltaTime;
+            if(uiMenuSelectorTimer >= uiMenuSelectorInterval){
+                uiMenuSelectorTimer = 0;
+                clearToTypeBool = true;
+            }
+        }
+
+        //if(audioManager._uiPlayer.isPlaying == false)
+        if(clearToTypeBool)
         if(soundEfectHoldingTippingBool){
-            if(_sfxPlayer.isPlaying == false){
+            if(audioManager._sfxPlayer.isPlaying == false){
                 soundEfectHoldingTippingBool = false;
-                StartCoroutine(ReadText(_dialogueBodyText, _curentActiveDialog.BodyText, _curentActiveDialog));
+                if(textVariantOneBool)
+                    StartCoroutine(ReadText(_dialogueBodyText, _curentActiveDialog.BodyText, _curentActiveDialog));
+                
+                
+
                 if(voiceActorReadyBool) {
-                    PlayVoiceActorAudio(null, false);
+                    audioManager.PlayVoiceActorAudio(null, false, false);
                     voiceActorReadyBool = false;
                 }
             }            
         }
+
+        if(textVatiantTwoBool && typingBool){
+            if(!soundEfectHoldingTippingBool)
+                if(clearToTypeBool){
+                    timerTyping += Time.deltaTime;
+                    if(timerTyping > typpingSpeed){
+                        timerTyping = 0;
+                        textString = textTarget.Substring(0, textPostition);
+                        textString += "<color=#00000000>" + textTarget.Substring(textPostition);
+                        if (stopReadingText){
+                            typingBool = false;
+                            textString = textTarget;      
+                        }
+                        _dialogueBodyText.text = textString;
+                        textPostition++;
+                        if(textPostition >= textLenght) typingBool = false;
+                        if(!typingBool)
+                            RevealDialougeOptions(_curentActiveDialog);
+                    }
+                }
+        }
+    
+
     }
 
 
     public void StartTheGame(){        
         ChangeStoryScene(startingStoryScene);
+        clearToTypeBool = true;
     }
 
     public void ClearTheGame(){
         _blockedDialogue.Clear();
-        _musicPlayer.Stop();
+        audioManager._musicPlayer.Stop();
         ResetDialogueOptions();
         reputationManager._reputation = 0;
         menuManager.gameIsOnBool = false;
+        clearToTypeBool = true;
+        typingBool = false;
+        voiceActorReadyBool = false;
+        soundEfectHoldingTippingBool = false;
     }
 
 
@@ -85,7 +172,7 @@ public class DialogueManager : MonoBehaviour
         ActiveStoryScene = storyScene;
         ChangeBackgroundImage(storyScene.BackgroundImage);
         if(storyScene.sceneMusicAudioClip != null)
-            ChangeBacgroundMusic(storyScene.sceneMusicAudioClip);
+            audioManager.ChangeBacgroundMusic(storyScene.sceneMusicAudioClip);
         UpdateDialogueBox(storyScene.StartingDialogue);
     }
 
@@ -98,39 +185,49 @@ public class DialogueManager : MonoBehaviour
         HandleDialogueBlocking(dialogue.DialogueBlockers);
 
         _curentActiveDialog = dialogue;
-        if(_voiceActorPlayer.isPlaying == true){_voiceActorPlayer.Stop();}
-        if(_sfxPlayer.isPlaying == true){_sfxPlayer.Stop();}
+        audioManager.StopActorsAndSfxAudio();
 
         // Set the speaker and text body values for the dialogue box
-        ChangeNpcImage(dialogue.SpeakerImage);
-        _speakerName.text = dialogue.Speaker;
-        _speakerName.color = dialogue.SpeakerColor;
+        if(dialogue.actorOnLeftBool) ChangeNpcImage(dialogue.speakerOneNewImage, true);
+        else GrayNpcImage(true);
+        if(dialogue.actorOnRightBool) ChangeNpcImage(dialogue.speakerTwoNewImage, false);
+        else GrayNpcImage(false);
+        _speakerName.text = dialogue.speakerName;
+        _speakerName.color = dialogue.speakerColor;
+        _dialogueBodyText.text = "";
 
         if(dialogue.soundEffectAudioClip != null)
         {            
             soundEfectHoldingTippingBool = true;
-            PlaySfxAudio(dialogue.soundEffectAudioClip);
+            audioManager.PlaySfxAudio(dialogue.soundEffectAudioClip);
         }
 
         if(dialogue.voiceActorAudioClip != null){
             voiceActorReadyBool = true;
-            _voiceActorPlayer.clip = dialogue.voiceActorAudioClip;
+            if(dialogue.actorOnLeftBool)
+                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, true);
+            if(dialogue.actorOnRightBool)
+                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, false);
         }
 
         if(dialogue.musicAudioClip != null){
-            ChangeBacgroundMusic(dialogue.musicAudioClip);
+            audioManager.ChangeBacgroundMusic(dialogue.musicAudioClip);
         }
 
         if(soundEfectHoldingTippingBool == false){
-            StartCoroutine(ReadText(_dialogueBodyText, dialogue.BodyText, dialogue));
+            if(textVariantOneBool)
+                StartCoroutine(ReadText(_dialogueBodyText, dialogue.BodyText, dialogue));
+            
             if(voiceActorReadyBool) {
-                PlayVoiceActorAudio(null, false);
+                audioManager.PlayVoiceActorAudio(null, false, false);
                 voiceActorReadyBool = false;
             }
         }else{
-            _dialogueBodyText.text = "";
+            
         }
-        
+        if(textVatiantTwoBool){
+            ReadTextVariantTwo();
+        }
         
         // Renders the dialogue options
         _listOfDialogOptions.Clear();
@@ -143,6 +240,7 @@ public class DialogueManager : MonoBehaviour
                 buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = option.OptionName;
                 button.onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue));
                 _listOfDialogOptions.Add(option.Dialogue);
+                haveOptionsBool = true;
             }
         }
 
@@ -153,8 +251,9 @@ public class DialogueManager : MonoBehaviour
 
         if(dialogue.endingTheStoryBool){
             Debug.Log("ending scene");
+            menuManager.creditsManager.endingNumber = _curentActiveDialog.endigNumber;
             ClearTheGame();
-            menuManager.creditsManager.OpenStartEndCreditsPanel();
+            menuManager.creditsManager.OpenStartEndCreditsPanel(false, true);
         }
     }
 
@@ -170,14 +269,38 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(button.gameObject);
         }
+        haveOptionsBool = false;
     }
 
-    private void ChangeNpcImage(Sprite image)
+    public void ChangeNpcImage(Sprite image, bool itsLeftBool)
     {
-        if(image != null)
-        _speakerSprite.sprite = image;
-        else
-        _speakerSprite.sprite = emptyTransparentSprite;
+        if(itsLeftBool){
+            if(image != null){
+                _actorLeftSprite.sprite = image;
+                if(_actorLeftSprite.color != Color.white) 
+                    _actorLeftSprite.color = Color.white;
+            }
+            else
+            _actorLeftSprite.sprite = emptyTransparentSprite;    
+        }else{
+            if(image != null){
+                _actorRightSprite.sprite = image; 
+                if(_actorRightSprite.color != Color.white)  
+                    _actorRightSprite.color = Color.white;
+            }            
+            else
+            _actorRightSprite.sprite = emptyTransparentSprite;
+        }
+    }
+
+    private void GrayNpcImage(bool itsLeftBool){
+        if(itsLeftBool){
+            if(_actorLeftSprite.color != Color.grey) 
+                _actorLeftSprite.color = Color.grey;            
+        }else{
+            if(_actorRightSprite.color != Color.grey) 
+                _actorRightSprite.color = Color.grey; 
+        }
     }
 
     private void ChangeBackgroundImage(Sprite bgImage)
@@ -188,32 +311,16 @@ public class DialogueManager : MonoBehaviour
         _bgImage.sprite = emptyTransparentSprite;
     }
 
-    public void ChangeBacgroundMusic(AudioClip newAudio){
-        if(_musicPlayer.isPlaying) {_musicPlayer.Stop();}
-            _musicPlayer.clip = newAudio;
-            _musicPlayer.Play();
-    }
-
-    public void PlayUiAudio(AudioClip newAdudio){
-        _uiPlayer.clip = newAdudio;
-        _uiPlayer.Play();
-    }
-
-    public void PlaySfxAudio(AudioClip newAudio){
-        _sfxPlayer.clip = newAudio;
-        _sfxPlayer.Play();
-    }
-
-    public void PlayVoiceActorAudio(AudioClip newAudio, bool useThisClipBool){
-        if(useThisClipBool) _voiceActorPlayer.clip = newAudio;
-        _voiceActorPlayer.Play();
-    }
+    
 
 
     // Creates the typing effect for text
     private IEnumerator ReadText(TextMeshProUGUI element, string textContent, Dialogue dialogue)
 	{
         stopReadingText = false;
+        typingBool = true;
+        
+        audioManager.PlayTyppingSound();
 
         if(textVariantOneBool){
             element.text = "";
@@ -223,6 +330,7 @@ public class DialogueManager : MonoBehaviour
                 if (stopReadingText)
                 {
                     element.text = textContent;
+                    typingBool = false;
                     RevealDialougeOptions(dialogue);
                     yield break;
                 }
@@ -232,7 +340,7 @@ public class DialogueManager : MonoBehaviour
 
         if(textVatiantTwoBool){
             textLenght = textContent.Length;
-            for(int position=0; position <= textLenght; position++){
+            for(int position=0; position < textLenght; position++){
                 if(position == 0) {
                     element.text = "";
                 }else
@@ -243,32 +351,50 @@ public class DialogueManager : MonoBehaviour
                 }
                 if (stopReadingText)
                 {
-                    position = textLenght;
-                    element.text = textContent;
+                    position = textLenght -1;
+                    typingBool = false;
+                    element.text = textContent;                    
                     RevealDialougeOptions(dialogue);
                     yield break;
                 }
+                if(position >= textLenght ) typingBool = false;
                 yield return new WaitForSeconds(_textReadDelay);
             }
         }
         
 
+        typingBool = false;
         // Makes the dialogue options visible if they exist
         RevealDialougeOptions(dialogue);
 	}
+
+
+    private void ReadTextVariantTwo(){
+        Debug.Log("ReadTextVariantTwo");
+        stopReadingText = false;
+        typingBool = true;        
+        audioManager.PlayTyppingSound();
+        textLenght = _curentActiveDialog.BodyText.Length +1;
+        textTarget = _curentActiveDialog.BodyText +" ";
+        textPostition = 0;
+    }
 
     private void RevealDialougeOptions(Dialogue dialogue)
     {
         if (dialogue.DialogueOptions.Count > 0)
         if (_dialogueOptionsBox.gameObject.activeInHierarchy == false)
             _dialogueOptionsBox.gameObject.SetActive(true);
+        optionsAreDisplayedBool = true;
     }
 
     private void OnClickSelectDialogueOption(Dialogue dialogue)
     {
+        audioManager.PlayUiAudio(audioManager.selectDialogAC);
         _dialogueOptionsBox.gameObject.SetActive(false);
-        ReputationManager.IncreaseReputationAction(dialogue.ReputationIncrease);
-        ReputationManager.DecreaseReputationAction(dialogue.ReputationDecrease);
+        optionsAreDisplayedBool = false;
+        clearToTypeBool = false;
+        ReputationManager.IncreaseReputationAction(dialogue.reputationIncrease);
+        ReputationManager.DecreaseReputationAction(dialogue.reputationDecrease);        
         UpdateDialogueBox(dialogue);
     }
 
@@ -281,5 +407,5 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    public void StopTheMusic(){_musicPlayer.Stop();}
+    public void StopTheMusic(){audioManager._musicPlayer.Stop();}
 }

@@ -11,6 +11,7 @@ public class ReputationManager : MonoBehaviour
 
     [Header("Reputation System")]
     [SerializeField] public int _reputation = 0;
+    public MenuPanelManager menuManager;
 
 
     private void OnEnable()
@@ -28,10 +29,12 @@ public class ReputationManager : MonoBehaviour
     private void DecreaseReputation(int amount)
     {
         _reputation -= amount;
+        menuManager.audioManager.PlayReputationSound(false);
     }
 
     private void IncreaseReputation(int amount)
     {
         _reputation += amount;
+        menuManager.audioManager.PlayReputationSound(true);
     }
 }
