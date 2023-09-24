@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Dialogue3
+  m_Name: Dialogue 1
   m_EditorClassIdentifier: 
   actorOnLeftBool: 1
   actorOnRightBool: 0
-  speakerName: Ainz
-  speakerOneNewImage: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  speakerName: 
+  speakerOneNewImage: {fileID: 0}
   speakerTwoNewImage: {fileID: 0}
-  speakerColor: {r: 0.47216213, g: 0.038848326, b: 0.9150943, a: 255}
-  BodyText: ljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflks.
+  speakerColor: {r: 147, g: 61, b: 95, a: 255}
+  BodyText: Please select test subject.
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: Dialogue 4
-    Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}
-  - OptionName: Final dialog
-    Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}
+  - OptionName: Redirection to Test 1
+    Dialogue: {fileID: 11400000, guid: e45af33e90ffb3d498f0999b1fcb7c8f, type: 2}
+  - OptionName: Redirection to Test 2
+    Dialogue: {fileID: 11400000, guid: 50d914bb6cb917143953cbf8d5502d47, type: 2}
+  - OptionName: Nursery
+    Dialogue: {fileID: 11400000, guid: a378d00ff4e16d3428284c20165a4360, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}

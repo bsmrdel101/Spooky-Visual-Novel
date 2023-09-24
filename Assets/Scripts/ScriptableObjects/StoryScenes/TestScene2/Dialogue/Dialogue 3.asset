@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Dialogue3
+  m_Name: Dialogue 3
   m_EditorClassIdentifier: 
   actorOnLeftBool: 1
   actorOnRightBool: 0
-  speakerName: Ainz
-  speakerOneNewImage: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  speakerName: Lolla
+  speakerOneNewImage: {fileID: 21300000, guid: 0e9cf946bb6e3a549979e63c5959008a, type: 3}
   speakerTwoNewImage: {fileID: 0}
-  speakerColor: {r: 0.47216213, g: 0.038848326, b: 0.9150943, a: 255}
-  BodyText: ljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflks.
+  speakerColor: {r: 0.9245283, g: 0.24857599, b: 0.88397795, a: 255}
+  BodyText: 'Was that good?
+
+    Well the original creator make it so, that there
+    is only one picutre. the picture of actor (Charactrer)'
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: Dialogue 4
-    Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}
-  - OptionName: Final dialog
-    Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}
+  - OptionName: Next
+    Dialogue: {fileID: 11400000, guid: f7f71e97b82138145a4ef30faa678b57, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}

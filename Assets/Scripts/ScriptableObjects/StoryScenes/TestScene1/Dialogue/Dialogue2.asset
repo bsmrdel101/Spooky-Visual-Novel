@@ -12,15 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
-  Speaker: Player
-  SpeakerImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
-  SpeakerColor: {r: 0.28504, g: 0.6509434, b: 0.24256852, a: 1}
+  actorOnLeftBool: 1
+  actorOnRightBool: 0
+  speakerName: Bot
+  speakerOneNewImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
+  speakerTwoNewImage: {fileID: 0}
+  speakerColor: {r: 147, g: 61, b: 95, a: 255}
   BodyText: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
     when an unknown printer took a galley of type and scrambled it to make a type
     specimen book. It has survived not only five centuries.
+  reputationIncrease: 0
+  reputationDecrease: 0
   DialogueOptions:
   - OptionName: Dialogue 4
     Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}
   - OptionName: Next
     Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}
+  DialogueBlockers: []
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 8300000, guid: 753484474a164d64c8971adf2ab479e9, type: 3}
+  musicAudioClip: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0

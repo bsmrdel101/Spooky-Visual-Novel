@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Dialogue3
+  m_Name: Dialogue 10
   m_EditorClassIdentifier: 
   actorOnLeftBool: 1
-  actorOnRightBool: 0
-  speakerName: Ainz
-  speakerOneNewImage: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
-  speakerTwoNewImage: {fileID: 0}
-  speakerColor: {r: 0.47216213, g: 0.038848326, b: 0.9150943, a: 255}
-  BodyText: ljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflksljadjgkldsjglkdsjglksdjlksjflks.
+  actorOnRightBool: 1
+  speakerName: 
+  speakerOneNewImage: {fileID: 21300000, guid: 8b35b711942977b4ead22c51fdf7e1a1, type: 3}
+  speakerTwoNewImage: {fileID: 21300000, guid: 1352ae66d6b8cc846a59d3c339824f46, type: 3}
+  speakerColor: {r: 0.9245283, g: 0.24857599, b: 0.88397795, a: 255}
+  BodyText: Alse there is written a base for a Reputation but i have no ide for what
+    it supposed to be.
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: Dialogue 4
-    Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}
-  - OptionName: Final dialog
-    Dialogue: {fileID: 11400000, guid: 5541c27e0077cd74493a321bcfda5d5f, type: 2}
+  - OptionName: Next
+    Dialogue: {fileID: 11400000, guid: de377db8808e857488337b9b7afbdcaa, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}

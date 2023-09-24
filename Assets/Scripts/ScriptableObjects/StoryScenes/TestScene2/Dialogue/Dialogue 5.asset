@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Dialogue5
+  m_Name: Dialogue 5
   m_EditorClassIdentifier: 
-  actorOnLeftBool: 1
-  actorOnRightBool: 0
-  speakerName: bot
-  speakerOneNewImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
-  speakerTwoNewImage: {fileID: 0}
+  actorOnLeftBool: 0
+  actorOnRightBool: 1
+  speakerName: Bot
+  speakerOneNewImage: {fileID: 0}
+  speakerTwoNewImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: This is the last dialogue for this conversation.
+  BodyText: I changed a music.
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: Redirect
-    Dialogue: {fileID: 11400000, guid: aa0ea30c9bb4cb94e98030fabc6eada5, type: 2}
+  - OptionName: Next
+    Dialogue: {fileID: 11400000, guid: 401dff176e4dfed4cb59d8b4704559c3, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
-  musicAudioClip: {fileID: 0}
+  musicAudioClip: {fileID: 8300000, guid: 3d54533345a9e2f489fa202b5ddff074, type: 3}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0
