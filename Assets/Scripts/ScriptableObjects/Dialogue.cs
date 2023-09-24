@@ -6,12 +6,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Dialogue", menuName = "ScriptableObjects/Dialogue", order = 2)]
 public class Dialogue : ScriptableObject
 {
-    public string Speaker;
-    public Sprite SpeakerImage;
-    public Color SpeakerColor = new Color(147, 61, 95, 255);
+    public bool actorOnLeftBool= true, actorOnRightBool=false;
+    public string speakerName;
+    public Sprite speakerOneNewImage, speakerTwoNewImage;
+    public Color speakerColor = new Color(147, 61, 95, 255);
     [TextArea(10, 100)] public string BodyText;
-    public int ReputationIncrease = 0;
-    public int ReputationDecrease = 0;
+    public int reputationIncrease = 0;
+    public int reputationDecrease = 0;
 
     public List<DialogueOption> DialogueOptions;
 
@@ -23,7 +24,7 @@ public class Dialogue : ScriptableObject
     public AudioClip musicAudioClip;
 
     public StoryScene redirectionOnStoryScene;
-    public bool endingTheStoryBool;
+    public bool endingTheStoryBool; public int endigNumber=0;
 }
 
 [System.Serializable]
