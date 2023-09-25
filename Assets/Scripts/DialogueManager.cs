@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 
 public class DialogueManager : MonoBehaviour
@@ -34,21 +35,27 @@ public class DialogueManager : MonoBehaviour
     string textString = "", textTarget="";
     float timerTyping=0; public float typpingSpeed =0.05f;
     float uiMenuSelectorTimer=0, uiMenuSelectorInterval=0.5f;
+    Vector4 v4Visibility= new Vector4(1,1,1,1); 
+    float valueW=0;
+
+    
 
 
     [Header("References")]
-    [SerializeField] private Image _actorLeftSprite, _actorRightSprite;
+    [SerializeField] public Image _actorLeftSprite, _actorRightSprite;
     [SerializeField] private Image _bgImage;
     [SerializeField] private TextMeshProUGUI _speakerName;
     [SerializeField] private TextMeshProUGUI _dialogueBodyText;
     [SerializeField] private Transform _dialogueOptionsBox;
     [SerializeField] private GameObject _buttonPrefab;
+    [SerializeField] private TMP_Text _reputationNumberText;
     
 
     [Header("Managers")]
     public MenuPanelManager menuManager;
     public ReputationManager reputationManager;
     public AudioManager audioManager;
+    public AppearDissapear appearDissapear;
 
     private void Start()
     {
@@ -144,9 +151,11 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
         }
+
+        
     
 
-    }
+    }// update
 
 
     public void StartTheGame(){        
@@ -164,6 +173,8 @@ public class DialogueManager : MonoBehaviour
         typingBool = false;
         voiceActorReadyBool = false;
         soundEfectHoldingTippingBool = false;
+        _reputationNumberText.text = "";
+        appearDissapear.Clear();
     }
 
 
@@ -188,13 +199,22 @@ public class DialogueManager : MonoBehaviour
         audioManager.StopActorsAndSfxAudio();
 
         // Set the speaker and text body values for the dialogue box
-        if(dialogue.actorOnLeftBool) ChangeNpcImage(dialogue.speakerOneNewImage, true);
+        if(dialogue.actorOnLeftBool) {
+            ChangeNpcImage(dialogue.speakerOneNewImage, true);            
+        }
         else GrayNpcImage(true);
         if(dialogue.actorOnRightBool) ChangeNpcImage(dialogue.speakerTwoNewImage, false);
         else GrayNpcImage(false);
+
+        if(dialogue.actorOnLeftAppearBool) appearDissapear.OrderToAppearDisaper(true, true);
+        if(dialogue.actorOnLeftDisapearBool) appearDissapear.OrderToAppearDisaper(true, false);
+        if(dialogue.actorOnRightAppearBool) appearDissapear.OrderToAppearDisaper(false, true);
+        if(dialogue.actorOnRightDisapearBool) appearDissapear.OrderToAppearDisaper(false, false);
+        
         _speakerName.text = dialogue.speakerName;
         _speakerName.color = dialogue.speakerColor;
         _dialogueBodyText.text = "";
+        _reputationNumberText.text = reputationManager._reputation.ToString();
 
         if(dialogue.soundEffectAudioClip != null)
         {            
@@ -277,16 +297,24 @@ public class DialogueManager : MonoBehaviour
         if(itsLeftBool){
             if(image != null){
                 _actorLeftSprite.sprite = image;
-                if(_actorLeftSprite.color != Color.white) 
-                    _actorLeftSprite.color = Color.white;
+                if(_actorLeftSprite.color != Color.white) {
+                    valueW = _actorLeftSprite.color.a;
+                    v4Visibility = (Vector4)Color.white;
+                    v4Visibility.w = valueW;
+                    _actorLeftSprite.color = v4Visibility;
+                }
             }
             else
-            _actorLeftSprite.sprite = emptyTransparentSprite;    
+            _actorLeftSprite.sprite = emptyTransparentSprite;  
         }else{
             if(image != null){
                 _actorRightSprite.sprite = image; 
-                if(_actorRightSprite.color != Color.white)  
-                    _actorRightSprite.color = Color.white;
+                if(_actorRightSprite.color != Color.white) {
+                    valueW = _actorRightSprite.color.a;
+                    v4Visibility = (Vector4)Color.white;
+                    v4Visibility.w = valueW;
+                    _actorRightSprite.color = v4Visibility;
+                }
             }            
             else
             _actorRightSprite.sprite = emptyTransparentSprite;
@@ -295,13 +323,23 @@ public class DialogueManager : MonoBehaviour
 
     private void GrayNpcImage(bool itsLeftBool){
         if(itsLeftBool){
-            if(_actorLeftSprite.color != Color.grey) 
-                _actorLeftSprite.color = Color.grey;            
+            if(_actorLeftSprite.color != Color.grey) {
+                    valueW = _actorLeftSprite.color.a;
+                    v4Visibility = (Vector4)Color.grey;
+                    v4Visibility.w = valueW;
+                    _actorLeftSprite.color = v4Visibility;
+                }           
         }else{
-            if(_actorRightSprite.color != Color.grey) 
-                _actorRightSprite.color = Color.grey; 
+            if(_actorRightSprite.color != Color.grey) {
+                    valueW = _actorRightSprite.color.a;
+                    v4Visibility = (Vector4)Color.grey;
+                    v4Visibility.w = valueW;
+                    _actorRightSprite.color = v4Visibility;
+                } 
         }
     }
+
+   
 
     private void ChangeBackgroundImage(Sprite bgImage)
     {
@@ -338,6 +376,7 @@ public class DialogueManager : MonoBehaviour
             }    
         }
 
+        //obsolete
         if(textVatiantTwoBool){
             textLenght = textContent.Length;
             for(int position=0; position < textLenght; position++){
@@ -408,4 +447,16 @@ public class DialogueManager : MonoBehaviour
 
 
     public void StopTheMusic(){audioManager._musicPlayer.Stop();}
+
+    public void SetReputation(int number, string addon){
+        _reputationNumberText.text = number.ToString();
+        if(addon != "") _reputationNumberText.text += addon; 
+
+        if(number == 0) if(_reputationNumberText.color !=Color.white)
+            _reputationNumberText.color =Color.white;
+        if(number > 0) if(_reputationNumberText.color !=Color.green)
+            _reputationNumberText.color =Color.green;
+        if(number < 0) if(_reputationNumberText.color !=Color.magenta)
+            _reputationNumberText.color =Color.magenta;
+    }
 }

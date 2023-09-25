@@ -16,7 +16,7 @@ MonoBehaviour:
   actorOnRightBool: 0
   speakerName: Bot
   speakerOneNewImage: {fileID: 21300000, guid: 8e9a1152cb087314b9aa1a1813c6beac, type: 3}
-  speakerTwoNewImage: {fileID: 0}
+  speakerTwoNewImage: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
   BodyText: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -24,6 +24,8 @@ MonoBehaviour:
     specimen book. It has survived not only five centuries.
   reputationIncrease: 0
   reputationDecrease: 0
+  actorOnLeftDisapearBool: 0
+  actorOnRightDisapearBool: 1
   DialogueOptions:
   - OptionName: Dialogue 4
     Dialogue: {fileID: 11400000, guid: 00125d7b931e278419fa06a64af7a8ff, type: 2}

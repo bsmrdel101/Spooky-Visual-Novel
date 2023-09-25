@@ -32,7 +32,7 @@ public class CreditsManager : MonoBehaviour
 
     [Header("Values")]
     public bool openingBool, endingBool;
-    public float typpingSpeed =0.05f;
+    //public float typpingSpeed =0.05f;
     float timer=0;
     int numberOfCredits=0, actualCreditsPage=0;
     public bool typingBool=false, creditsBool=false;
@@ -49,7 +49,7 @@ public class CreditsManager : MonoBehaviour
     {
         if(typingBool){
             timer += Time.deltaTime;
-            if(timer > typpingSpeed){
+            if(timer > dialogueManager.typpingSpeed){
                 timer = 0;
                 actualMesage = targetMesage.Substring(0, mesageStep);
                 actualMesage += "<color=#00000000>" + targetMesage.Substring(mesageStep);
@@ -58,6 +58,11 @@ public class CreditsManager : MonoBehaviour
                     typingBool = false;
                     dialogueManager.stopReadingText = false;
                 }
+
+                if(menuPanelManager.settingPanleOnBool){
+                    menuPanelManager.settingsManager.typingSpeedSampleText.text = actualMesage;
+                }
+
                 if(!creditsBool){smallText.text = actualMesage;}
                 else{creditText.text = actualMesage;}
                 mesageStep++;
@@ -93,6 +98,7 @@ public class CreditsManager : MonoBehaviour
                     endingBool = false;
                     creditsBool = false;
                     menuPanelManager.creditPanelOnBool = false;
+                    audioManager.StopActorsAndSfxAudio();
                     audioManager.MainMenuMusicDominator(true, false, false);
                     menuPanelManager.OrderToOperateMainMenu();
                     audioManager.MainMenuMusicDominator(false, false, true);
@@ -143,7 +149,7 @@ public class CreditsManager : MonoBehaviour
     }
 
 
-    private void SetTypping(string mesageString){
+    public void SetTypping(string mesageString){
         dialogueManager.stopReadingText = false;
         smallText.text = "";
         targetMesage = mesageString;

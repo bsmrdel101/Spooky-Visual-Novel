@@ -11,6 +11,9 @@ public class ReputationManager : MonoBehaviour
 
     [Header("Reputation System")]
     [SerializeField] public int _reputation = 0;
+    private string addonString="";
+    
+    [Header("Managers")]
     public MenuPanelManager menuManager;
 
 
@@ -29,12 +32,18 @@ public class ReputationManager : MonoBehaviour
     private void DecreaseReputation(int amount)
     {
         _reputation -= amount;
+        addonString = "";
+        addonString = "(-"+amount+")";
+        menuManager.dialogueManager.SetReputation(_reputation, addonString);
         menuManager.audioManager.PlayReputationSound(false);
     }
 
     private void IncreaseReputation(int amount)
     {
         _reputation += amount;
+        addonString = "";
+        addonString = "(+"+amount+")";
+        menuManager.dialogueManager.SetReputation(_reputation, addonString);
         menuManager.audioManager.PlayReputationSound(true);
     }
 }

@@ -8,11 +8,14 @@ public class MenuPanelManager : MonoBehaviour
 {
     [Header("Variables")]
     public bool menuIsOnBool; 
+    public bool coverPageOnBool, settingPanleOnBool;
     public bool gameIsOnBool, creditPanelOnBool;
     public bool muteMusicBool;
 
     [Header("references")]    
-    public Transform _menuPanel, _menuButtonsPanel;
+    public Transform _menuPanel;
+    public Transform _menuButtonsPanel, _coverPagePanel;
+    public Transform _settingsPanel;
 
     
     
@@ -21,14 +24,33 @@ public class MenuPanelManager : MonoBehaviour
     public DialogueManager dialogueManager;
     public CreditsManager creditsManager;
     public AudioManager audioManager;
+    public SettingsManager settingsManager;
 
 
 
     private void Start() {
-        OrderToOperateMainMenu();
-        audioManager.MainMenuMusicDominator(false, true, false);
+        OrderToOpenCloseCoverPage(true);        
     }
 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)){
+            if(coverPageOnBool){ OrderToOpenCloseCoverPage(false);}
+        }
+    }
+
+
+    public void OrderToOpenCloseCoverPage(bool option){
+        if(option){
+            _coverPagePanel.gameObject.SetActive(true);
+            coverPageOnBool = true;
+            audioManager.MainMenuMusicDominator(false, true, false);
+        }else{
+            _coverPagePanel.gameObject.SetActive(false);
+            coverPageOnBool = false;
+            audioManager.MainMenuMusicDominator(true, false, true);
+            OrderToOperateMainMenu();
+        }
+    }
 
     public void OrderToOperateMainMenu(){
         if(!menuIsOnBool){MenuPanelONOff(true);
@@ -81,6 +103,17 @@ public class MenuPanelManager : MonoBehaviour
         OrderToSaveTheGame();
         OrderToClearTheGame();
         Application.Quit();
+    }
+
+    public void OrderToOpencloseSettingsPanel(){
+        if(!settingPanleOnBool ){
+            settingPanleOnBool = true;
+            _settingsPanel.gameObject.SetActive(true);
+            settingsManager.OpenMe();
+        }else{
+            settingPanleOnBool = false;
+            _settingsPanel.gameObject.SetActive(false);
+        }
     }
 
 

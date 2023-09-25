@@ -28,6 +28,10 @@ MonoBehaviour:
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 1
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0
