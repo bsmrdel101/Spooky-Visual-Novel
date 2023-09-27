@@ -9,7 +9,8 @@ public class MenuPanelManager : MonoBehaviour
     [Header("Variables")]
     public bool menuIsOnBool; 
     public bool coverPageOnBool, settingPanleOnBool;
-    public bool gameIsOnBool, creditPanelOnBool;
+    public bool gameIsOnBool, creditPanelOnBool, informativeBSPanelBool, 
+        computerDialogPanelOnBool;
     public bool muteMusicBool;
 
     [Header("references")]    
@@ -33,7 +34,7 @@ public class MenuPanelManager : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Return)){
             if(coverPageOnBool){ OrderToOpenCloseCoverPage(false);}
         }
     }
@@ -47,8 +48,9 @@ public class MenuPanelManager : MonoBehaviour
         }else{
             _coverPagePanel.gameObject.SetActive(false);
             coverPageOnBool = false;
-            audioManager.MainMenuMusicDominator(true, false, true);
-            OrderToOperateMainMenu();
+            //audioManager.MainMenuMusicDominator(true, false, true);
+            //OrderToOperateMainMenu();
+            OrderToStartTheNewGame();
         }
     }
 

@@ -47,10 +47,14 @@ public class AudioManager : MonoBehaviour
     }
 
     public void ChangeBacgroundMusic(AudioClip newAudio){
-        if(_musicPlayer.isPlaying) {_musicPlayer.Stop();}
-            _musicPlayer.clip = newAudio;
+        if(newAudio != _musicPlayer.clip){
+            if(_musicPlayer.isPlaying) {_musicPlayer.Stop();}
+                _musicPlayer.clip = newAudio;
+            if(_mainMenuMusicPlayer.isPlaying) _mainMenuMusicPlayer.Pause();
+        }
+
+        if(!_musicPlayer.isPlaying)
         if(!menuManager.muteMusicBool) _musicPlayer.Play();
-        if(_mainMenuMusicPlayer.isVirtual) _mainMenuMusicPlayer.Pause();
     }
 
     public void MainMenuMusicDominator(bool deactivateBool, bool startScreeBool, bool menuBool ){
@@ -86,7 +90,8 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySfxAudio(AudioClip newAudio){
         _sfxPlayer.clip = newAudio;
-        _sfxPlayer.Play();
+        if(newAudio != null)
+            _sfxPlayer.Play();
     }
 
     public void PlayVoiceActorAudio(AudioClip newAudio, bool useThisClipBool, bool nonDialogBool){
@@ -129,7 +134,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayTyppingSound(){
         _typpingSoundPlayer.clip = typingACArray[typingCurrentInteger];
-        _typpingSoundPlayer.PlayDelayed(0.5f);
+        _typpingSoundPlayer.Play(); //.PlayDelayed(0.5f);
         typingBool = true;
         typingCurrentInteger++;
         if(typingCurrentInteger >= typingACArray.Length)

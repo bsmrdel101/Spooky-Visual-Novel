@@ -4,15 +4,17 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
+using System.Runtime.CompilerServices;
+using System.Data.Common;
 
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("Vital Data")]
-    public bool textVariantOneBool;
-    public bool textVatiantTwoBool;
+    public bool spaceIsDownBool;
+    public bool textVariantOneBool, textVatiantTwoBool;
     public bool soundEfectHoldingTippingBool, voiceActorReadyBool=true, typingBool;
-    public bool haveOptionsBool, optionsAreDisplayedBool, clearToTypeBool;
+    public bool haveOptionsBool, optionsAreDisplayedBool, clearToTypeBool;    
     public Dialogue _curentActiveDialog;
     [SerializeField] private Sprite emptyTransparentSprite;
     
@@ -37,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     float uiMenuSelectorTimer=0, uiMenuSelectorInterval=0.5f;
     Vector4 v4Visibility= new Vector4(1,1,1,1); 
     float valueW=0;
+    float timerSpace=0;
 
     
 
@@ -49,6 +52,16 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Transform _dialogueOptionsBox;
     [SerializeField] private GameObject _buttonPrefab;
     [SerializeField] private TMP_Text _reputationNumberText;
+    public Transform _informativeBlackScreenPanel, _informativeBSButton;
+    public TMP_Text _informativeBSText;
+    public MoveToPosition movabelItemScript;
+    public Image movableItemImage;
+    public Transform _computerDialogPanel, _computerButtonsPanel;
+    public TMP_Text _computerDialogText;
+    public List<ComputerDialogButton> _listOfCDButtons;
+    [SerializeField] private GameObject _computerDialogButtonPrefab;
+
+    public Transform _diodTyping, _diodOptions, _diodSpaceBar;
     
 
     [Header("Managers")]
@@ -57,28 +70,66 @@ public class DialogueManager : MonoBehaviour
     public AudioManager audioManager;
     public AppearDissapear appearDissapear;
 
+
+
+
     private void Start()
     {
+        //operating from main menu
         //ChangeStoryScene(startingStoryScene);
     }
 
     private void Update()
     {
+        if(spaceIsDownBool){
+            timerSpace += Time.deltaTime;
+            if(timerSpace >= 0.75f){
+                timerSpace = 0;
+                spaceIsDownBool = false;
+                OperateDiodes(3, false, false);
+            }
+        }
+        
         // Stop text from reading if player presses spacebar
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (!spaceIsDownBool)
+        {
             stopReadingText = true; 
-                /*
-            if(menuManager.creditPanelOnBool)
-                if(!menuManager.creditsManager.typingBool){
-                    Debug.Log("Space triger next button");
-                    menuManager.creditsManager.NextButton();
-                }
-                */
+            OperateSpace();
+            
         }        
         if (Input.GetKeyDown(KeyCode.Mouse0))
             if(typingBool == true){
                 stopReadingText = true;
+                OperateSpace();
             }
+
+        if (Input.GetKeyDown(KeyCode.Return)){
+            if (!spaceIsDownBool){
+                OperateSpace();
+
+                if(optionsAreDisplayedBool){
+                    if(_listOfDialogOptions.Count == 1){
+                        Debug.Log("Space triger Next on dialog.");
+                        OnClickSelectDialogueOption(_listOfDialogOptions[0]);
+                    }
+                }
+
+                if(menuManager.creditPanelOnBool)
+                if(menuManager.creditsManager.typingBool == false)
+                if(typingBool == false){
+                    Debug.Log("Space triger next button.");
+                    menuManager.creditsManager.NextButton();
+                }
+
+                if(menuManager.informativeBSPanelBool)
+                if(typingBool == false)
+                if(_informativeBSButton.gameObject.activeInHierarchy)
+                    appearDissapear.OrderForBSPanel(false, true, false);
+
+            }
+        } 
+        
         
         if(haveOptionsBool && optionsAreDisplayedBool){
             if(_listOfDialogOptions.Count > 0)
@@ -104,6 +155,8 @@ public class DialogueManager : MonoBehaviour
                     } 
                 }
             }
+
+            
         }
 
         if(!clearToTypeBool){
@@ -123,6 +176,8 @@ public class DialogueManager : MonoBehaviour
                     StartCoroutine(ReadText(_dialogueBodyText, _curentActiveDialog.BodyText, _curentActiveDialog));
                 
                 
+                audioManager.PlayTyppingSound();
+                OperateDiodes(1, true, false);
 
                 if(voiceActorReadyBool) {
                     audioManager.PlayVoiceActorAudio(null, false, false);
@@ -143,11 +198,21 @@ public class DialogueManager : MonoBehaviour
                             typingBool = false;
                             textString = textTarget;      
                         }
-                        _dialogueBodyText.text = textString;
+
+                        if(menuManager.computerDialogPanelOnBool){
+                            _computerDialogText.text = textString;                            
+                        }else if(menuManager.informativeBSPanelBool){
+                            _informativeBSText.text = textString; //black screen
+                        }else{
+                            _dialogueBodyText.text = textString; //normal
+                        }
+
                         textPostition++;
                         if(textPostition >= textLenght) typingBool = false;
-                        if(!typingBool)
+                        if(!typingBool){
                             RevealDialougeOptions(_curentActiveDialog);
+                            OperateDiodes(1, false, false);
+                        }
                     }
                 }
         }
@@ -156,6 +221,10 @@ public class DialogueManager : MonoBehaviour
     
 
     }// update
+
+
+
+
 
 
     public void StartTheGame(){        
@@ -172,9 +241,11 @@ public class DialogueManager : MonoBehaviour
         clearToTypeBool = true;
         typingBool = false;
         voiceActorReadyBool = false;
-        soundEfectHoldingTippingBool = false;
+        soundEfectHoldingTippingBool = false;        
         _reputationNumberText.text = "";
         appearDissapear.Clear();
+        movabelItemScript.OrderToMove(true, false, false, 0);
+        OperateDiodes(0, false, true);
     }
 
 
@@ -242,15 +313,16 @@ public class DialogueManager : MonoBehaviour
                 audioManager.PlayVoiceActorAudio(null, false, false);
                 voiceActorReadyBool = false;
             }
-        }else{
-            
-        }
+            OperateDiodes(1, true, false);
+            audioManager.PlayTyppingSound();
+        }else{}
         if(textVatiantTwoBool){
             ReadTextVariantTwo();
         }
         
         // Renders the dialogue options
         _listOfDialogOptions.Clear();
+        _listOfCDButtons.Clear();
         foreach (DialogueOption option in dialogue.DialogueOptions)
         {
             if (!_blockedDialogue.Contains(option.Dialogue))
@@ -261,8 +333,34 @@ public class DialogueManager : MonoBehaviour
                 button.onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue));
                 _listOfDialogOptions.Add(option.Dialogue);
                 haveOptionsBool = true;
+                if(dialogue.computerDialogBool){
+                    buttonObj = Instantiate(_computerDialogButtonPrefab, _computerButtonsPanel);
+                    button = buttonObj.GetComponent<Button>();
+                    buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = option.OptionName;
+                    button.onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue));
+                    _listOfCDButtons.Add(buttonObj.GetComponent<ComputerDialogButton>());
+                }
             }
         }
+
+
+        if(dialogue.informativeBSBol){
+            appearDissapear.OrderForBSPanel(true, false, false);
+        }
+
+        if(dialogue.computerDialogBool){
+            menuManager.computerDialogPanelOnBool = true;
+            _computerDialogPanel.gameObject.SetActive(true);
+            _computerButtonsPanel.gameObject.SetActive(false);
+            _computerDialogText.text = "";
+        }
+
+
+        if(dialogue.itemPlaceLeft) movabelItemScript.OrderToMove(true, false, false, 0);
+        if(dialogue.itemPlaceRight) movabelItemScript.OrderToMove(false, true, false, 0);
+        if(dialogue.itemMoveBool)
+            movabelItemScript.OrderToMove(false, false, true, dialogue.itemNewCordinates);
+        if(dialogue.ItemNewSprite != null) movableItemImage.sprite = dialogue.ItemNewSprite;
 
 
         if(dialogue.redirectionOnStoryScene != null){
@@ -284,12 +382,16 @@ public class DialogueManager : MonoBehaviour
     // Deletes all buttons inside dialogue options box
     private void ResetDialogueOptions()
     {
-        if (_dialogueOptionsBox.childCount == 0) return;
+        if (_dialogueOptionsBox.childCount != 0)
         foreach (Button button in _dialogueOptionsBox.GetComponentsInChildren<Button>())
         {
             Destroy(button.gameObject);
         }
         haveOptionsBool = false;
+        if (_computerButtonsPanel.childCount != 0) 
+        foreach (Button button in _computerButtonsPanel.GetComponentsInChildren<Button>()){
+            Destroy(button.gameObject);
+        }
     }
 
     public void ChangeNpcImage(Sprite image, bool itsLeftBool)
@@ -409,10 +511,10 @@ public class DialogueManager : MonoBehaviour
 
 
     private void ReadTextVariantTwo(){
-        Debug.Log("ReadTextVariantTwo");
+        //Debug.Log("ReadTextVariantTwo");
         stopReadingText = false;
         typingBool = true;        
-        audioManager.PlayTyppingSound();
+        //audioManager.PlayTyppingSound();
         textLenght = _curentActiveDialog.BodyText.Length +1;
         textTarget = _curentActiveDialog.BodyText +" ";
         textPostition = 0;
@@ -420,18 +522,29 @@ public class DialogueManager : MonoBehaviour
 
     private void RevealDialougeOptions(Dialogue dialogue)
     {
-        if (dialogue.DialogueOptions.Count > 0)
+        if (dialogue.DialogueOptions.Count > 0){
         if (_dialogueOptionsBox.gameObject.activeInHierarchy == false)
             _dialogueOptionsBox.gameObject.SetActive(true);
+
+            _computerButtonsPanel.gameObject.SetActive(true);
+            OperateDiodes(2, true, false);
+        }
         optionsAreDisplayedBool = true;
+        OperateDiodes(1, false, false);
     }
 
-    private void OnClickSelectDialogueOption(Dialogue dialogue)
+    public void OnClickSelectDialogueOption(Dialogue dialogue)
     {
         audioManager.PlayUiAudio(audioManager.selectDialogAC);
         _dialogueOptionsBox.gameObject.SetActive(false);
+        if(menuManager.computerDialogPanelOnBool){
+            menuManager.computerDialogPanelOnBool = false;
+            _computerDialogText.text = "";
+            _computerDialogPanel.gameObject.SetActive(false);
+        }
         optionsAreDisplayedBool = false;
         clearToTypeBool = false;
+        OperateDiodes(2, false, false);
         ReputationManager.IncreaseReputationAction(dialogue.reputationIncrease);
         ReputationManager.DecreaseReputationAction(dialogue.reputationDecrease);        
         UpdateDialogueBox(dialogue);
@@ -459,4 +572,37 @@ public class DialogueManager : MonoBehaviour
         if(number < 0) if(_reputationNumberText.color !=Color.magenta)
             _reputationNumberText.color =Color.magenta;
     }
+
+
+    public void OrderFromInfoBlackScreen(){
+        UpdateDialogueBox(_curentActiveDialog.informativeLeadsToDialogue);
+    }
+
+    
+
+    void OperateDiodes(int diodeNumber, bool option, bool clearAllBool){
+        if(clearAllBool){
+            _diodTyping.gameObject.SetActive(false);
+            _diodOptions.gameObject.SetActive(false);
+            _diodSpaceBar.gameObject.SetActive(false);
+        }else{
+            if(diodeNumber == 1)
+            if(!option) _diodTyping.gameObject.SetActive(false);
+            else _diodTyping.gameObject.SetActive(true);
+
+            if(diodeNumber == 2)
+            if(!option) _diodOptions.gameObject.SetActive(false);
+            else _diodOptions.gameObject.SetActive(true);
+
+            if(diodeNumber == 3)
+            if(!option) _diodSpaceBar.gameObject.SetActive(false);
+            else _diodSpaceBar.gameObject.SetActive(true);
+        }
+    }
+
+    void OperateSpace(){
+        spaceIsDownBool = true;
+        OperateDiodes(3, true, false);
+    }
+
 }

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: RightCorridor D Redirectino
+  m_EditorClassIdentifier: 
+  actorOnLeftBool: 0
+  actorOnRightBool: 0
+  speakerName: 
+  speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
+  speakerTwoNewImage: {fileID: 0}
+  speakerColor: {r: 147, g: 61, b: 95, a: 255}
+  BodyText: Percy looks down at the AI still streaming from his chest a mixture of
+    horror and relief coursing through him.
+  reputationIncrease: 0
+  reputationDecrease: 0
+  DialogueOptions: []
+  DialogueBlockers: []
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  informativeBSBol: 0
+  informativeLeadsToDialogue: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 11400000, guid: 83c59ce2708753e41ada90fdd5b54212, type: 2}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  computerDialogBool: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0

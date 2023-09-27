@@ -9,7 +9,8 @@ using System.Linq;
 public class CreditsManager : MonoBehaviour
 {
     [Header("Main stuff")]
-    [TextArea] public string openMesage; public Sprite openSprite; public AudioClip openSfxAudiClip;
+    [TextArea(10, 100)] public string openMesage; public Sprite openSprite; 
+    public AudioClip openVoiceActorClip, openSfxAudiClip;
     public int endingNumber=0;
     public List<Ending> listOfEndings;
     [System.Serializable]
@@ -18,7 +19,7 @@ public class CreditsManager : MonoBehaviour
         [SerializeField, TextArea] public string endMesage;
         [SerializeField, TextArea] public string[] additionalCreditsPages;
         [SerializeField] public Sprite endSprite;
-        [SerializeField] public AudioClip endAudioClip;
+        [SerializeField] public AudioClip endVoiceActorClip, endAudioClip;
     }
     
     [TextArea] public string[] creditsMesages;
@@ -110,6 +111,15 @@ public class CreditsManager : MonoBehaviour
     }
 
     public void OpenStartEndCreditsPanel(bool openingB, bool endingB){
+        if(endingNumber >= listOfEndings.Count){
+            Debug.Log("Warning! Trying to acess non exsisting ending!");
+            endingNumber = 0;
+        }
+        if(listOfEndings[endingNumber] == null){
+            Debug.Log("Warning! Trying to acess non exsisting, not created ending!");
+            endingNumber = 0;
+        }
+
             mesageStep = 0;
             mesageLenght = 0;
             smallText.text = "";
@@ -125,7 +135,9 @@ public class CreditsManager : MonoBehaviour
         if(openingB){
             openingBool = true;
             displayedImage.sprite = openSprite;
-            audioManager.PlaySfxAudio(openSfxAudiClip);
+            if(openVoiceActorClip != null)
+                audioManager.PlayVoiceActorAudio(openVoiceActorClip, true, true);
+            audioManager.PlaySfxAudio(openSfxAudiClip);            
             SetTypping(openMesage);
         }
         
@@ -134,7 +146,10 @@ public class CreditsManager : MonoBehaviour
             listOfCreditsPages.Clear();
             if(listOfEndings[endingNumber] != null){
                 displayedImage.sprite = listOfEndings[endingNumber].endSprite;
-                audioManager.PlaySfxAudio(listOfEndings[endingNumber].endAudioClip);
+                if(listOfEndings[endingNumber].endVoiceActorClip != null)
+                    audioManager.PlayVoiceActorAudio(listOfEndings[endingNumber].endVoiceActorClip, true, true);
+                if(listOfEndings[endingNumber].endAudioClip != null)
+                    audioManager.PlaySfxAudio(listOfEndings[endingNumber].endAudioClip);
                 SetTypping(listOfEndings[endingNumber].endMesage);
                 int operationValue = listOfEndings[endingNumber].additionalCreditsPages.Count();
                 if(operationValue > 0){

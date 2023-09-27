@@ -14,6 +14,13 @@ public class AppearDissapear : MonoBehaviour
     public bool actorleftAppearingBool, actorLeftDisapearingBool, 
         actorRightAppearingBool, actorRightDisapearingBool;
 
+    [Header("Informative Black Screen")]
+    public bool infoBSlDisapearingBool;
+    Vector4 v4InfoBS= new Vector4(1,1,1,1), v4IText;
+    public Image infoBSImage;
+    float timerInfoBS=0;
+    
+
 
     void Start()
     {
@@ -74,8 +81,54 @@ public class AppearDissapear : MonoBehaviour
                     }
                 }
             }
+    
+        if(infoBSlDisapearingBool){
+            timerInfoBS += Time.deltaTime;
+            if(timerInfoBS > intervalVisibility){
+                timerInfoBS = 0;
+                v4InfoBS = (Vector4) infoBSImage.color;
+                v4InfoBS.w -= 0.01f;
+                v4IText = (Vector4) dialogueManager._informativeBSText.color;
+                v4IText.w -= 0.01f;
+                if(v4InfoBS.w <= 0){
+                    v4Visibility.w = 0;
+                    v4IText.w = 0;
+                    infoBSlDisapearingBool = false;
+                    OrderForBSPanel(false, false, true);
+                } 
+                infoBSImage.color = v4InfoBS;
+                dialogueManager._informativeBSText.color = v4IText;                
+            }
+        }
     }
 
+
+    public void OrderForBSPanel(bool open, bool proces, bool close){
+        if(open){
+            dialogueManager.menuManager.informativeBSPanelBool = true;
+            dialogueManager._informativeBSText.text = "";
+            dialogueManager._informativeBSButton.gameObject.SetActive(true);
+            dialogueManager._informativeBlackScreenPanel.gameObject.SetActive(true);
+            v4InfoBS = (Vector4) infoBSImage.color;
+            v4InfoBS.w = 1;
+            infoBSImage.color = v4InfoBS;
+            v4IText = (Vector4) dialogueManager._informativeBSText.color;
+            v4IText.w = 1;
+            dialogueManager._informativeBSText.color = v4IText;
+        }
+        if(proces){
+            infoBSlDisapearingBool = true;            
+            dialogueManager._informativeBSButton.gameObject.SetActive(false);
+            dialogueManager.audioManager.PlayMenuButtonClick(true);
+            }
+        if(close){
+            dialogueManager._informativeBlackScreenPanel.gameObject.SetActive(false);
+            dialogueManager.menuManager.informativeBSPanelBool = false;
+            dialogueManager.OrderFromInfoBlackScreen();
+        }
+    }
+
+    public void ButtonOnInfoBS(){OrderForBSPanel(false, true, false);}
 
     public void Clear () {
         v4Visibility = new Vector4(1,1,1, 0);
@@ -88,14 +141,22 @@ public class AppearDissapear : MonoBehaviour
     public void OrderToAppearDisaper(bool itsLeftBool, bool appearBool){
         if(itsLeftBool){
             if(appearBool){
-                if(actorLeftVisibleBool == false) actorleftAppearingBool = true; 
+                actorleftAppearingBool = true; 
+                actorLeftVisibleBool = false;
+                v4Visibility = (Vector4) dialogueManager._actorLeftSprite.color;
+                v4Visibility.w = 0;
+                dialogueManager._actorLeftSprite.color = v4Visibility;
             }else{
                 actorLeftVisibleBool = false;
                 actorLeftDisapearingBool = true;
             }
         }else{
             if(appearBool){
-                if(actorRightVisibleBool == false) actorRightAppearingBool = true;
+                actorRightAppearingBool = true;
+                actorRightVisibleBool = false;
+                v4Visibility = (Vector4) dialogueManager._actorRightSprite.color;
+                v4Visibility.w = 0;
+                dialogueManager._actorRightSprite.color = v4Visibility;
             }else{
                 actorRightVisibleBool = false;
                 actorRightDisapearingBool = true;
@@ -103,4 +164,5 @@ public class AppearDissapear : MonoBehaviour
         }
         
     }
+
 }

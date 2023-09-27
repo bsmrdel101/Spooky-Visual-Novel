@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: RightCorridor B Shot 2
+  m_EditorClassIdentifier: 
+  actorOnLeftBool: 0
+  actorOnRightBool: 0
+  speakerName: 
+  speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
+  speakerTwoNewImage: {fileID: 0}
+  speakerColor: {r: 147, g: 61, b: 95, a: 255}
+  BodyText: "Percy squeezes the blaster in both hands. Raising it to shoulder height,
+    eyes down the sights, watching as the form detaches from the wall. The dead body
+    on which it was feeding slumps to the floor with a squelching sound. The creature
+    turns, the strip lights half-illuminating it\u2019s face: long blonde hair, jumpsuit.
+    Maybe lipstick \u2013 now blood. It\u2019s mouth is red and black, visible to
+    Percy as it lowers it\u2019s head and releases a sound like no human has ever
+    made."
+  reputationIncrease: 20
+  reputationDecrease: 0
+  DialogueOptions:
+  - OptionName: Continue
+    Dialogue: {fileID: 11400000, guid: 2bc8416016630324e82871cc729cd9ac, type: 2}
+  DialogueBlockers: []
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 8300000, guid: 309917708acbca84ca76231278d90fe6, type: 3}
+  musicAudioClip: {fileID: 0}
+  informativeBSBol: 0
+  informativeLeadsToDialogue: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  computerDialogBool: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0

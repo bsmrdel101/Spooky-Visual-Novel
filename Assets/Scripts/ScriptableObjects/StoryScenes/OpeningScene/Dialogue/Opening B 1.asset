@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: Opening B 1
+  m_EditorClassIdentifier: 
+  actorOnLeftBool: 0
+  actorOnRightBool: 0
+  speakerName: 
+  speakerOneNewImage: {fileID: 0}
+  speakerTwoNewImage: {fileID: 0}
+  speakerColor: {r: 147, g: 61, b: 95, a: 255}
+  BodyText: "Today is Percy\u2019s birthday. He received few enough presents that
+    the thing he\u2019s looking forward to most is clocking out of his shift at 7pm
+    and heading to the bar. For anyone else, going to a bar by yourself on a Saturday
+    evening would be beyond the pale, for Percy, it\u2019s the same as every other
+    day."
+  reputationIncrease: 0
+  reputationDecrease: 0
+  DialogueOptions:
+  - OptionName: Next
+    Dialogue: {fileID: 11400000, guid: ea75918f29fae284fa4fe5e2e712b68b, type: 2}
+  - OptionName: Test Skip
+    Dialogue: {fileID: 11400000, guid: 72bcfe90fc73130448aa38bfd79fb6e0, type: 2}
+  DialogueBlockers: []
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  informativeBSBol: 0
+  informativeLeadsToDialogue: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  computerDialogBool: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0

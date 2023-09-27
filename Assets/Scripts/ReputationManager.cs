@@ -31,19 +31,23 @@ public class ReputationManager : MonoBehaviour
 
     private void DecreaseReputation(int amount)
     {
-        _reputation -= amount;
-        addonString = "";
-        addonString = "(-"+amount+")";
-        menuManager.dialogueManager.SetReputation(_reputation, addonString);
-        menuManager.audioManager.PlayReputationSound(false);
+        if(amount != 0){
+            _reputation -= amount;
+            addonString = "";
+            addonString = "(-"+amount+")";
+            menuManager.dialogueManager.SetReputation(_reputation, addonString);
+            menuManager.audioManager.PlayReputationSound(false);
+        }
     }
 
     private void IncreaseReputation(int amount)
     {
-        _reputation += amount;
-        addonString = "";
-        addonString = "(+"+amount+")";
-        menuManager.dialogueManager.SetReputation(_reputation, addonString);
-        menuManager.audioManager.PlayReputationSound(true);
+        if(amount != 0){
+            _reputation += amount;
+            addonString = "";
+            addonString = "(+"+amount+")";
+            menuManager.dialogueManager.SetReputation(_reputation, addonString);
+            menuManager.audioManager.PlayReputationSound(true);
+        }
     }
 }
