@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Opening C Redirection 1
+  m_Name: Old Computer Redirection 3
   m_EditorClassIdentifier: 
   actorOnLeftBool: 0
   actorOnRightBool: 0
@@ -22,12 +22,17 @@ MonoBehaviour:
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions: []
-  DialogueBlockers: []
+  DialogueBlockers:
+  - {fileID: 11400000}
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 11400000, guid: aea6842926e8c464e9b828863113d9f7, type: 2}
   endingTheStoryBool: 0
   endigNumber: 0

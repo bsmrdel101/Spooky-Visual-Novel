@@ -24,8 +24,8 @@ MonoBehaviour:
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: Boot the bomputer
-    Dialogue: {fileID: 11400000, guid: 3266915aee6ffa647b3b34f6efd77547, type: 2}
+  - OptionName: Boot the Computer
+    Dialogue: {fileID: 11400000, guid: 0285468a99e93d446bb6d85fd6051643, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}

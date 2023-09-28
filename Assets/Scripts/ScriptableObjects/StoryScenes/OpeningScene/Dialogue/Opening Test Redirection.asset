@@ -28,7 +28,7 @@ MonoBehaviour:
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
-  redirectionOnStoryScene: {fileID: 11400000, guid: 5b0a6e693b4ef704f961f5a480c5399a, type: 2}
+  redirectionOnStoryScene: {fileID: 11400000, guid: 8da4d47adddffdc43b3baf305a277384, type: 2}
   endingTheStoryBool: 0
   endigNumber: 0
   ItemNewSprite: {fileID: 0}

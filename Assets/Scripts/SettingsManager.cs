@@ -85,7 +85,8 @@ public class SettingsManager : MonoBehaviour
         valueTechnical = menuPanelManager.dialogueManager.typpingSpeed;
         if(option){if(valueTechnical < 0.08f) valueTechnical += 0.01f;}
         else{{if(valueTechnical > 0.01f) valueTechnical -= 0.01f;}}
-        typingSpeedText.text = valueTechnical + " W/s";
+        intValueForText = (int) (valueTechnical * 100f);
+        typingSpeedText.text = "0.0"+ intValueForText + " W/s";
         menuPanelManager.dialogueManager.typpingSpeed = valueTechnical;
         menuPanelManager.creditsManager.SetTypping(stingSample);
     }

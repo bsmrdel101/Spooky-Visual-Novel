@@ -10,27 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Bridge Suit 5
+  m_Name: Old Computer 1
   m_EditorClassIdentifier: 
   actorOnLeftBool: 0
   actorOnRightBool: 0
   speakerName: 
-  speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
+  speakerOneNewImage: {fileID: 0}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: Whit a heavy heart Percy sits onto the pilot seat.
+  BodyText: '(To be Written)
+
+    MOVE TO NEW SCREEN - THIS IS INSIDE THE COMPUTER.
+
+    THIS
+    IS A FULLY BLACK SCREEN IN THE CENTRE WITH THREE OPTIONS
+
+    The Last Crew of
+    the Serin
+
+    Charlie''s Great Adventure
+
+    Noir
+
+
+
+    Can the text for the
+    three options look like this:
+
+'
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: Wait for What will happen.
-    Dialogue: {fileID: 11400000, guid: 5da6b3a8084a52847bfbb50e75df42b7, type: 2}
-  DialogueBlockers:
-  - {fileID: 11400000, guid: bb5747aceef6c3b4eb6b78c8a334a79b, type: 2}
+  - OptionName: The Last Crew of the Serin
+    Dialogue: {fileID: 11400000, guid: bb5747aceef6c3b4eb6b78c8a334a79b, type: 2}
+  - OptionName: Charlie's Great Adventure
+    Dialogue: {fileID: 11400000, guid: 190164dd3070a604cad0f88432976329, type: 2}
+  - OptionName: Charlie's Great Adventure
+    Dialogue: {fileID: 11400000, guid: f3df3bed4fc033e4ea3b369f3b72d71f, type: 2}
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: Ending
+    Dialogue: {fileID: 11400000, guid: 495bf0244dfd04f43b2861ff07fade3d, type: 2}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0
@@ -39,7 +65,7 @@ MonoBehaviour:
   itemPlaceRight: 0
   itemMoveBool: 0
   itemNewCordinates: 0
-  computerDialogBool: 0
+  computerDialogBool: 1
   actorOnLeftAppearBool: 0
   actorOnLeftDisapearBool: 0
   actorOnRightAppearBool: 0

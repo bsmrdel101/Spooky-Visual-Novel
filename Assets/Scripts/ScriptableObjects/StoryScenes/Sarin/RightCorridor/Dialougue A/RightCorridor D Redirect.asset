@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Bridge Suit 5
+  m_Name: RightCorridor D Redirect
   m_EditorClassIdentifier: 
   actorOnLeftBool: 0
   actorOnRightBool: 0
@@ -18,20 +18,18 @@ MonoBehaviour:
   speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: Whit a heavy heart Percy sits onto the pilot seat.
+  BodyText: Percy looks down at the AI still streaming from his chest a mixture of
+    horror and relief coursing through him.
   reputationIncrease: 0
   reputationDecrease: 0
-  DialogueOptions:
-  - OptionName: Wait for What will happen.
-    Dialogue: {fileID: 11400000, guid: 5da6b3a8084a52847bfbb50e75df42b7, type: 2}
-  DialogueBlockers:
-  - {fileID: 11400000, guid: bb5747aceef6c3b4eb6b78c8a334a79b, type: 2}
+  DialogueOptions: []
+  DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
-  redirectionOnStoryScene: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 11400000, guid: 83c59ce2708753e41ada90fdd5b54212, type: 2}
   endingTheStoryBool: 0
   endigNumber: 0
   ItemNewSprite: {fileID: 0}

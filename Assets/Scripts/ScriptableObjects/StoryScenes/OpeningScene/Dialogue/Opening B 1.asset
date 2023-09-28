@@ -28,7 +28,7 @@ MonoBehaviour:
   DialogueOptions:
   - OptionName: Next
     Dialogue: {fileID: 11400000, guid: ea75918f29fae284fa4fe5e2e712b68b, type: 2}
-  - OptionName: Test Skip
+  - OptionName: Test Skip to Computer Screen
     Dialogue: {fileID: 11400000, guid: 72bcfe90fc73130448aa38bfd79fb6e0, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}

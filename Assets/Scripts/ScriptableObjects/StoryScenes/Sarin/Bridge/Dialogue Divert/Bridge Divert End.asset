@@ -18,18 +18,23 @@ MonoBehaviour:
   speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: 
+  BodyText: "As the ship was heading toward the Sun, \r\nSomehow, someone, \r\nWas
+    whistling a Space Odyssey tune."
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions: []
   DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
-  informativeBSBol: 0
-  informativeLeadsToDialogue: {fileID: 0}
+  informativeBSBol: 1
+  informativeLeadsToDialogue: {fileID: 11400000, guid: 70e4d6b3a7475be489047e86c7a4803f, type: 2}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
-  endingTheStoryBool: 1
+  endingTheStoryBool: 0
   endigNumber: 1
   ItemNewSprite: {fileID: 0}
   itemPlaceLeft: 0

@@ -25,7 +25,8 @@ MonoBehaviour:
   DialogueOptions:
   - OptionName: Wait for What will happen.
     Dialogue: {fileID: 11400000, guid: 4a4e58f5159d94c40932abe0bdf01aee, type: 2}
-  DialogueBlockers: []
+  DialogueBlockers:
+  - {fileID: 11400000, guid: bb5747aceef6c3b4eb6b78c8a334a79b, type: 2}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Opening C 1
+  m_Name: Old Computer Corupted 3
   m_EditorClassIdentifier: 
   actorOnLeftBool: 0
   actorOnRightBool: 0
@@ -18,41 +18,25 @@ MonoBehaviour:
   speakerOneNewImage: {fileID: 0}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: '(To be Written)
+  BodyText: 'Data corupeted.
 
-    MOVE TO NEW SCREEN - THIS IS INSIDE THE COMPUTER.
-
-    THIS
-    IS A FULLY BLACK SCREEN IN THE CENTRE WITH THREE OPTIONS
-
-    The Last Crew of
-    the Serin
-
-    Charlie''s Great Adventure
-
-    Noir
-
-
-
-    Can the text for the
-    three options look like this:
-
-'
+    Unable to load.'
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
-  - OptionName: The Last Crew of the Serin
-    Dialogue: {fileID: 11400000, guid: bb5747aceef6c3b4eb6b78c8a334a79b, type: 2}
-  - OptionName: Charlie's Great Adventure
-    Dialogue: {fileID: 11400000, guid: a1ff9263345ef0543b6cc20193440762, type: 2}
-  - OptionName: Charlie's Great Adventure
-    Dialogue: {fileID: 11400000, guid: 5ca51810d74eb204d8687cae463008af, type: 2}
-  DialogueBlockers: []
+  - OptionName: Return to folder
+    Dialogue: {fileID: 11400000, guid: 3266915aee6ffa647b3b34f6efd77547, type: 2}
+  DialogueBlockers:
+  - {fileID: 11400000}
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
   voiceActorAudioClip: {fileID: 0}
-  soundEffectAudioClip: {fileID: 8300000, guid: fbf802700eaafd141921fc62e5122652, type: 3}
+  soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0

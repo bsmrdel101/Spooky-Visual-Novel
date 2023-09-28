@@ -79,6 +79,7 @@ public class AudioManager : MonoBehaviour
         if(_voiceActorMiddlePlayer.isPlaying == true){_voiceActorMiddlePlayer.Stop();}
         if(_sfxPlayer.isPlaying == true){_sfxPlayer.Stop();}
         if(_sfxSecondaryPlayer.isPlaying == true){_sfxSecondaryPlayer.Stop();}
+        if(_typpingSoundPlayer.isPlaying == true) _typpingSoundPlayer.Stop();
         if(secondarySfxPreparedBool) secondarySfxPreparedBool = false;
         //Debug.Log("Stopping sfx audio.");
     }
@@ -133,6 +134,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayTyppingSound(){
+        if(_typpingSoundPlayer.isPlaying) _typpingSoundPlayer.Stop();
         _typpingSoundPlayer.clip = typingACArray[typingCurrentInteger];
         _typpingSoundPlayer.Play(); //.PlayDelayed(0.5f);
         typingBool = true;

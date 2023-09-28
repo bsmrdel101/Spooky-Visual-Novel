@@ -21,6 +21,7 @@ public class Dialogue : ScriptableObject
 
     [Tooltip("Blocks the dialogue options below from being chosen in the future")]
     public List<Dialogue> DialogueBlockers;
+    public DialogueOption DialogueWhenNoneAviable;
 
     [Tooltip("If set it will be played.")]
     public AudioClip voiceActorAudioClip;
@@ -31,6 +32,7 @@ public class Dialogue : ScriptableObject
     [Tooltip("Put a information on a black screen.")]
     public bool informativeBSBol;
     public Dialogue informativeLeadsToDialogue; 
+    public Sprite informativeSuportSprite;
     
 
     [Tooltip("Redirectino put on new dialog step.")]

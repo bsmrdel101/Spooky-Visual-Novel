@@ -25,6 +25,10 @@ MonoBehaviour:
   DialogueOptions:
   - OptionName: Next
     Dialogue: {fileID: 11400000, guid: b8ca2b1bff2989349913fc64d5eb67bc, type: 2}
+  - OptionName: Test Skip to Endig 0
+    Dialogue: {fileID: 11400000, guid: add6659d994c9664889761025cf34902, type: 2}
+  - OptionName: Test Skip to Endig 1
+    Dialogue: {fileID: 11400000, guid: 54b7b7d323f008240959575c4555ce33, type: 2}
   DialogueBlockers: []
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}

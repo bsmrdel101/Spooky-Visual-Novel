@@ -54,6 +54,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TMP_Text _reputationNumberText;
     public Transform _informativeBlackScreenPanel, _informativeBSButton;
     public TMP_Text _informativeBSText;
+    public Image _informativeBSImage;
     public MoveToPosition movabelItemScript;
     public Image movableItemImage;
     public Transform _computerDialogPanel, _computerButtonsPanel;
@@ -77,6 +78,9 @@ public class DialogueManager : MonoBehaviour
     {
         //operating from main menu
         //ChangeStoryScene(startingStoryScene);
+        if(_dialogueOptionsBox.gameObject.activeInHierarchy)
+            _dialogueOptionsBox.gameObject.SetActive(false);
+        OperateDiodes(0, false, true);
     }
 
     private void Update()
@@ -320,6 +324,7 @@ public class DialogueManager : MonoBehaviour
             ReadTextVariantTwo();
         }
         
+
         // Renders the dialogue options
         _listOfDialogOptions.Clear();
         _listOfCDButtons.Clear();
@@ -342,10 +347,33 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
+                
+        if(_listOfDialogOptions.Count == 0)
+        if(dialogue.DialogueWhenNoneAviable.Dialogue != null){
+            GameObject buttonObj = Instantiate(_buttonPrefab, _dialogueOptionsBox);
+            Button button = buttonObj.GetComponent<Button>();
+            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = dialogue.DialogueWhenNoneAviable.OptionName;
+            button.onClick.AddListener(() => OnClickSelectDialogueOption(dialogue.DialogueWhenNoneAviable.Dialogue));
+            _listOfDialogOptions.Add(dialogue.DialogueWhenNoneAviable.Dialogue);
+            haveOptionsBool = true;
+            if(dialogue.computerDialogBool){
+                buttonObj = Instantiate(_computerDialogButtonPrefab, _computerButtonsPanel);
+                button = buttonObj.GetComponent<Button>();
+                buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = dialogue.DialogueWhenNoneAviable.OptionName;
+                button.onClick.AddListener(() => OnClickSelectDialogueOption(dialogue.DialogueWhenNoneAviable.Dialogue));
+                _listOfCDButtons.Add(buttonObj.GetComponent<ComputerDialogButton>());
+            }
+        }//else{Debug.Log("There is no safety line[dialog] to put in when there are no options.");}
 
 
         if(dialogue.informativeBSBol){
             appearDissapear.OrderForBSPanel(true, false, false);
+            if(dialogue.informativeSuportSprite != null){
+                _informativeBSImage.sprite = dialogue.informativeSuportSprite;
+            }else{
+                if(_informativeBSImage.sprite != emptyTransparentSprite)
+                    _informativeBSImage.sprite = emptyTransparentSprite;
+            }
         }
 
         if(dialogue.computerDialogBool){
@@ -511,10 +539,8 @@ public class DialogueManager : MonoBehaviour
 
 
     private void ReadTextVariantTwo(){
-        //Debug.Log("ReadTextVariantTwo");
         stopReadingText = false;
         typingBool = true;        
-        //audioManager.PlayTyppingSound();
         textLenght = _curentActiveDialog.BodyText.Length +1;
         textTarget = _curentActiveDialog.BodyText +" ";
         textPostition = 0;

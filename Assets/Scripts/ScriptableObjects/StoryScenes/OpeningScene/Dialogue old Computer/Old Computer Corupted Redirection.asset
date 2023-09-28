@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
-  m_Name: Opening C Redirection 2
+  m_Name: Old Computer Corupted Redirection
   m_EditorClassIdentifier: 
   actorOnLeftBool: 0
   actorOnRightBool: 0
@@ -18,7 +18,9 @@ MonoBehaviour:
   speakerOneNewImage: {fileID: 0}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: 
+  BodyText: 'Data corupeted.
+
+    Unable to load.'
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions: []
@@ -36,7 +38,7 @@ MonoBehaviour:
   itemPlaceRight: 0
   itemMoveBool: 0
   itemNewCordinates: 0
-  computerDialogBool: 0
+  computerDialogBool: 1
   actorOnLeftAppearBool: 0
   actorOnLeftDisapearBool: 0
   actorOnRightAppearBool: 0
