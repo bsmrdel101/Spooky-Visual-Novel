@@ -15,7 +15,7 @@ MonoBehaviour:
   actorOnLeftBool: 0
   actorOnRightBool: 1
   speakerName: Serin
-  speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
+  speakerOneNewImage: {fileID: 21300000, guid: 3963126770ca2224e8a0f523a6940050, type: 3}
   speakerTwoNewImage: {fileID: 21300000, guid: 094e041d9efebef4dbb302f9811c2743, type: 3}
   speakerColor: {r: 0.22459061, g: 0.4956185, b: 0.9716981, a: 255}
   BodyText: Infected, sir. Sealed off. For your own safety.
@@ -25,11 +25,15 @@ MonoBehaviour:
   - OptionName: Next
     Dialogue: {fileID: 11400000, guid: 00dec39d6f12e74418dd90986c6e2c1a, type: 2}
   DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0

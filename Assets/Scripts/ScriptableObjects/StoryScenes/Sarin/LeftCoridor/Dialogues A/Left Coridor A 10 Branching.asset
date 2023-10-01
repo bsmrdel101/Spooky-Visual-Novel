@@ -15,8 +15,8 @@ MonoBehaviour:
   actorOnLeftBool: 0
   actorOnRightBool: 1
   speakerName: 
-  speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
-  speakerTwoNewImage: {fileID: 0}
+  speakerOneNewImage: {fileID: 21300000, guid: 3963126770ca2224e8a0f523a6940050, type: 3}
+  speakerTwoNewImage: {fileID: 21300000, guid: 713fd3725cd69f04f89ecc6cdc203f62, type: 3}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
   BodyText: Footsteps. A shadow, crouched over, moving slowly towards him. A noise
     coming from it, a low . . . what Percy thinks is a groan.
@@ -28,11 +28,15 @@ MonoBehaviour:
   - OptionName: Call Out
     Dialogue: {fileID: 11400000, guid: ad87b3a03951b2740bd2f2c9948018ca, type: 2}
   DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0
@@ -44,5 +48,5 @@ MonoBehaviour:
   computerDialogBool: 0
   actorOnLeftAppearBool: 0
   actorOnLeftDisapearBool: 0
-  actorOnRightAppearBool: 0
+  actorOnRightAppearBool: 1
   actorOnRightDisapearBool: 0

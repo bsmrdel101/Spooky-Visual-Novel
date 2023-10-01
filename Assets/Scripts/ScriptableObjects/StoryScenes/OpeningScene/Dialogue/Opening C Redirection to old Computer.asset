@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
   m_Name: Opening C Redirection to old Computer
   m_EditorClassIdentifier: 
-  actorOnLeftBool: 0
+  actorOnLeftBool: 1
   actorOnRightBool: 0
   speakerName: 
   speakerOneNewImage: {fileID: 0}
@@ -31,6 +31,7 @@ MonoBehaviour:
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 11400000, guid: 8da4d47adddffdc43b3baf305a277384, type: 2}
   endingTheStoryBool: 0
   endigNumber: 0

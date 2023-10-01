@@ -15,7 +15,7 @@ MonoBehaviour:
   actorOnLeftBool: 0
   actorOnRightBool: 0
   speakerName: 
-  speakerOneNewImage: {fileID: 21300000, guid: bfb8b7ce720c0564dae4f6287c5fcb21, type: 3}
+  speakerOneNewImage: {fileID: 21300000, guid: 3963126770ca2224e8a0f523a6940050, type: 3}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
   BodyText: "As the brightness of the star filled the screen the inner temperature
@@ -27,11 +27,15 @@ MonoBehaviour:
     Dialogue: {fileID: 11400000, guid: 4a4e58f5159d94c40932abe0bdf01aee, type: 2}
   DialogueBlockers:
   - {fileID: 11400000, guid: bb5747aceef6c3b4eb6b78c8a334a79b, type: 2}
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
   voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 0
   endigNumber: 0

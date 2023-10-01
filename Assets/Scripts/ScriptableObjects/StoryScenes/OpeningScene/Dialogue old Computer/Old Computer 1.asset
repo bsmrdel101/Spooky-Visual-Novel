@@ -12,32 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
   m_Name: Old Computer 1
   m_EditorClassIdentifier: 
-  actorOnLeftBool: 0
-  actorOnRightBool: 0
+  actorOnLeftBool: 1
+  actorOnRightBool: 1
   speakerName: 
   speakerOneNewImage: {fileID: 0}
   speakerTwoNewImage: {fileID: 0}
   speakerColor: {r: 147, g: 61, b: 95, a: 255}
-  BodyText: '(To be Written)
+  BodyText: 'Loading OS [sheep barn production]
 
-    MOVE TO NEW SCREEN - THIS IS INSIDE THE COMPUTER.
+    Protocol number: #### [Skip]
 
-    THIS
-    IS A FULLY BLACK SCREEN IN THE CENTRE WITH THREE OPTIONS
+    .
 
-    The Last Crew of
-    the Serin
+    Warning!
+    Explorer disabled.
+
+    Failure to load the advanced visual OS functionality.
+
+    Activating
+    backup Explorer application.
+
+    Loading applications shortcuts. [Skip incompatible
+    commands]
+
+    The Last Crew of the Serin
 
     Charlie''s Great Adventure
 
     Noir
 
-
-
-    Can the text for the
-    three options look like this:
-
-'
+    Please,
+    choose you option.'
   reputationIncrease: 0
   reputationDecrease: 0
   DialogueOptions:
