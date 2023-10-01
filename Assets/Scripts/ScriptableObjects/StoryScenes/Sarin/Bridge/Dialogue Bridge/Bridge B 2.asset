@@ -16,7 +16,7 @@ MonoBehaviour:
   actorOnRightBool: 1
   speakerName: Serin
   speakerOneNewImage: {fileID: 21300000, guid: 3963126770ca2224e8a0f523a6940050, type: 3}
-  speakerTwoNewImage: {fileID: 21300000, guid: 094e041d9efebef4dbb302f9811c2743, type: 3}
+  speakerTwoNewImage: {fileID: 21300000, guid: c1b9a9da44dab2b47a53c5e0aa69bd8a, type: 3}
   speakerColor: {r: 0.22459061, g: 0.4956185, b: 0.9716981, a: 255}
   BodyText: There is no average, sir. Every individual is different.
   reputationIncrease: 0

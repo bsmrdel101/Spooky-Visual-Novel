@@ -11976,14 +11976,12 @@ MonoBehaviour:
     endVoiceActorClip: {fileID: 0}
     endAudioClip: {fileID: 8300000, guid: 14c091a3f80205b4894c9ac01ab3b848, type: 3}
   creditsMesages:
-  - 'As we state before, this is for now a demo version of our unfinished game. We
+  - "As we state before, this is for now a demo version of our unfinished game. We
     are team of (11?) and we join the jam in second half-way to cook something. We
-    have writers, programmer(s?), sound and art artist, (voice actors?).
-
-    We
-    still agreed to finish this game even if it not in the time limit of game jam.
-
-    :)'
+    have writers, programmer(s?), sound and art artist, (voice actors?).\r\nWe still
+    agreed to finish this game even if it not in the time limit of game jam.\r\n:)\r\nSome
+    other credits:\r\nSprite: Hologram girl - original LisadiKaprio\r\nImage of bridge 
+    - wallpaperaccess.com\r\ncoridors \u2013 freepik and such"
   listOfCreditsPages: []
   thisPanel: {fileID: 108292614}
   smallTextPanel: {fileID: 1747841763}

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: Left Coridor StorySceneData
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 87869ca85e51f6c46a532df5c8fcd43f, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 7dd5ba18d3b99814aa61626de6e74d7e, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 11400000, guid: 936e1b3cebe80c34393f4b50f5a77ef4, type: 2}

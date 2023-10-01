@@ -31,9 +31,10 @@ MonoBehaviour:
   musicAudioClip: {fileID: 0}
   informativeBSBol: 0
   informativeLeadsToDialogue: {fileID: 0}
+  informativeSuportSprite: {fileID: 0}
   redirectionOnStoryScene: {fileID: 0}
   endingTheStoryBool: 1
-  endigNumber: 0
+  endigNumber: 2
   ItemNewSprite: {fileID: 0}
   itemPlaceLeft: 0
   itemPlaceRight: 0

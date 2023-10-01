@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: RightCorridor StorySceneData
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 87869ca85e51f6c46a532df5c8fcd43f, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: a5976231aac1ece448f4a386d2c83817, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 11400000, guid: 5b98821df70bf554aa2158bcf6387e80, type: 2}
