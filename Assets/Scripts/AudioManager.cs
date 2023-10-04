@@ -100,11 +100,11 @@ public class AudioManager : MonoBehaviour
             _voiceActorMiddlePlayer.clip = newAudio;
             _voiceActorMiddlePlayer.Play();
         }else{
-            if(dialogueManager._curentActiveDialog.actorOnLeftBool){
+            if(dialogueManager._curentActiveDialog.characterOnLeftWhiteBool){
                 if(useThisClipBool) _voiceActorLeftPlayer.clip = newAudio;
                 _voiceActorLeftPlayer.Play();    
             }
-            if(dialogueManager._curentActiveDialog.actorOnRightBool){
+            if(dialogueManager._curentActiveDialog.characterOnRightWhiteBool){
                 if(useThisClipBool) _voiceActorRightPlayer.clip = newAudio;
                 _voiceActorRightPlayer.Play();    
             }    

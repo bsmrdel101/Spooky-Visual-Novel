@@ -68,8 +68,8 @@ public class MenuPanelManager : MonoBehaviour
             ShakeTheMenuButtonsPanel();
             //dialogueManager.StartTheGame();
             dialogueManager.StopTheMusic();
-            dialogueManager.ChangeNpcImage(null, true);
-            dialogueManager.ChangeNpcImage(null, false);
+            dialogueManager.ChangeNpcImage(true, null, 0);
+            dialogueManager.ChangeNpcImage(false, null, 0);
             creditsManager.OpenStartEndCreditsPanel(true, false);
             audioManager.PlayMenuButtonClick(true);   
         }else{

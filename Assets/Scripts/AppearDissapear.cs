@@ -165,4 +165,18 @@ public class AppearDissapear : MonoBehaviour
         
     }
 
+    public void OrderAlpha0(bool itsLeftBool){
+        if(itsLeftBool){
+            v4Visibility = (Vector4) dialogueManager._actorLeftSprite.color;
+            v4Visibility.w = 0;
+            dialogueManager._actorLeftSprite.color = v4Visibility;
+            actorLeftVisibleBool = false;
+        }else{
+            v4Visibility = (Vector4) dialogueManager._actorRightSprite.color;
+            v4Visibility.w = 0;
+            dialogueManager._actorRightSprite.color = v4Visibility;
+            actorRightVisibleBool = false;
+        }
+    }
+
 }

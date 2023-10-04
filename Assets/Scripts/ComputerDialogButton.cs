@@ -12,7 +12,7 @@ public class ComputerDialogButton : MonoBehaviour
 
 
     public void ButtonClick(){
-        dialogueManager.OnClickSelectDialogueOption(myDialougue);
+        dialogueManager.OnClickSelectDialogueOption(myDialougue, true);
     }
 
     public void SetThisButon(string newString, Dialogue newDialogue){
