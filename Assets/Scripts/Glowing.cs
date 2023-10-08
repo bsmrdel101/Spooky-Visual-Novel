@@ -21,7 +21,8 @@ public class Glowing : MonoBehaviour
                 v4Color = (Vector4) myImage.color;
                 if(glowUP) {v4Color.w += power;}
                 if(glowDown) {v4Color.w -= power;}
-                if(v4Color.w >= 0.20f){
+                if(v4Color.w >= targetUp || v4Color.w >=  1.0f ){
+                    if(v4Color.w > 1f) v4Color.w = 1f;
                     glowUP = false; glowDown = true;
                 }
                 if(v4Color.w <= 0f){

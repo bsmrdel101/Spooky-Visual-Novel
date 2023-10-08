@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Rendering;
 using System.Runtime.CompilerServices;
 using System.Data.Common;
+using UnityEngine.Assertions.Must;
 
 
 public class DialogueManager : MonoBehaviour
@@ -14,14 +15,15 @@ public class DialogueManager : MonoBehaviour
     public bool spaceIsDownBool; 
     public bool enterIsDownBool, mouseIsDownBool;
     
-    public bool soundEfectHoldingTippingBool, voiceActorReadyBool=true, typingBool;
-    public bool haveOptionsBool, optionsAreDisplayedBool, clearToTypeBool;
+    public bool soundEfectHoldingTippingBool, voiceActorReadyBool=true
+        , typingBool, bodyTextDisplayedBool;
+    public bool haveOptionsBool, optionsAreDisplayedBool, clearToTypeBool, normalDialogBool;
     public bool nextDialogButtonOnBool; 
     public bool reputationEnabledBool;  
-    public Dialogue _curentActiveDialog;
     [SerializeField] private Sprite emptyTransparentSprite;
     public bool preparedForTheNextDialogueBool;
     private Dialogue preparedForTheNextDialogueValue=null;
+    public bool waitInputBool, waitProtectTippingBool;
     
     
     
@@ -33,9 +35,9 @@ public class DialogueManager : MonoBehaviour
     [Header("Scene")]
     public StoryScene ActiveStoryScene;
     public StoryScene startingStoryScene;
+    public Dialogue _curentActiveDialog, _lastActiveDialog;
 
-    [Header("Dialogue")]
-    [SerializeField] private float _textReadDelay = 0.01f;
+    [Header("Dialogue")]    
     public bool stopReadingText = false;
     [SerializeField] private List<Dialogue> _blockedDialogue = new List<Dialogue>();
     [SerializeField] private List<Dialogue> _listOfDialogOptions = new List<Dialogue>();
@@ -45,7 +47,7 @@ public class DialogueManager : MonoBehaviour
     float uiMenuSelectorTimer=0, uiMenuSelectorInterval=0.5f;
     Vector4 v4Visibility= new Vector4(1,1,1,1); 
     float valueW=0;
-    float timerSpace=0, timerEnter=0, timerMouse=0;
+    float timerSpace=0, timerEnter=0, timerMouse=0, timerWaitInput=0, timerProtectTyping=0;
     public TMP_FontAsset standartSpeakingFont;
 
     
@@ -122,24 +124,83 @@ public class DialogueManager : MonoBehaviour
             timerMouse += Time.deltaTime;
             if(timerMouse >= 0.50f){
                 timerMouse = 0;
-                enterIsDownBool = false;
+                mouseIsDownBool = false;
+                //OperateDiodes(3, false, false);
+            }
+        }
+
+        if(waitInputBool){
+            timerWaitInput += Time.deltaTime;
+            if(timerWaitInput >= 0.40f){
+                timerWaitInput = 0;
+                waitInputBool = false;
                 //OperateDiodes(3, false, false);
             }
         }
         
+        if(waitProtectTippingBool){
+            timerProtectTyping += Time.deltaTime;
+            if(timerProtectTyping >= 1f){
+                timerProtectTyping = 0;
+                waitProtectTippingBool = false;
+                //OperateDiodes(3, false, false);
+            }
+        }
+
+        
+
         // Stop text from reading if player presses spacebar
         if (Input.GetKeyDown(KeyCode.Space)) 
         if (!spaceIsDownBool)
+        if (!waitProtectTippingBool)
         {
             stopReadingText = true; 
             OperateSpace();
             
         }        
-        if(!mouseIsDownBool)
+        
+        
         if (Input.GetKeyDown(KeyCode.Mouse0)){
-            if(typingBool == true){
+            
+            if(typingBool == true)
+            if(bodyTextDisplayedBool == false)
+            if (!waitProtectTippingBool)
+            if(!mouseIsDownBool)
+            {
+                mouseIsDownBool = true;
                 stopReadingText = true;
                 OperateSpace();
+            }
+
+            if(nextDialogButtonOnBool == true)
+            if(bodyTextDisplayedBool)
+            if(!menuManager.creditPanelOnBool)
+            if(normalDialogBool)
+            if(!mouseIsDownBool)
+            {
+                mouseIsDownBool = true;
+                nextDialogButtonOnBool = false;
+                OrderFromNextDialogueButton();
+            }
+
+            if(menuManager.creditPanelOnBool)
+            if(menuManager.creditsManager.bodyTextDisplayedBool)
+            if(typingBool == false)
+            if(!mouseIsDownBool)
+            {
+                mouseIsDownBool = true;
+                Debug.Log("Mouse0 triger next button on credits manager.");
+                menuManager.creditsManager.NextButton();
+            }
+
+            if(menuManager.informativeBSPanelBool)
+            if(!normalDialogBool)
+            if(typingBool == false)
+            if(!mouseIsDownBool)
+            if(_informativeBSButton.gameObject.activeInHierarchy){
+                mouseIsDownBool = true;
+                Debug.Log("Mouse0 triger next button on informative panel.");
+                appearDissapear.OrderForBSPanel(false, true, false);
             }
 
         }
@@ -150,6 +211,7 @@ public class DialogueManager : MonoBehaviour
                 OperateSpace();
 
                 if(nextDialogButtonOnBool){
+                    enterIsDownBool = true;
                     nextDialogButtonOnBool = false;
                     OrderFromNextDialogueButton();
                     //OnClickSelectDialogueOption(_curentActiveDialog.DialogueNext, false);
@@ -166,14 +228,18 @@ public class DialogueManager : MonoBehaviour
                 if(menuManager.creditPanelOnBool)
                 if(menuManager.creditsManager.typingBool == false)
                 if(typingBool == false){
-                    Debug.Log("Space triger next button.");
+                    enterIsDownBool = true;
+                    Debug.Log("Enter triger next button on credits manager.");
                     menuManager.creditsManager.NextButton();
                 }
 
                 if(menuManager.informativeBSPanelBool)
                 if(typingBool == false)
-                if(_informativeBSButton.gameObject.activeInHierarchy)
+                if(_informativeBSButton.gameObject.activeInHierarchy){
+                    enterIsDownBool = true;
+                    Debug.Log("Enter triger next button on informative panel.");
                     appearDissapear.OrderForBSPanel(false, true, false);
+                }
 
             }
         } 
@@ -243,7 +309,8 @@ public class DialogueManager : MonoBehaviour
                         textString += "<color=#00000000>" + textTarget.Substring(textPostition);
                         if (stopReadingText){
                             typingBool = false;
-                            textString = textTarget;      
+                            textString = textTarget;
+                            bodyTextDisplayedBool = true; 
                         }
 
                         if(menuManager.computerDialogPanelOnBool){
@@ -257,9 +324,10 @@ public class DialogueManager : MonoBehaviour
                         textPostition++;
                         if(textPostition >= textLenght) typingBool = false;
                         if(!typingBool){
-                            //RevealDialougeOptions(_curentActiveDialog);
-                            RevealNextButton();
+                            if(menuManager.computerDialogPanelOnBool)
+                                RevealDialougeOptions(_curentActiveDialog);
                             OperateDiodes(1, false, false);
+                            RevealNextButton();
                         }
                     }
                 }
@@ -295,10 +363,14 @@ public class DialogueManager : MonoBehaviour
     {
         ResetDialogueOptions();
         HandleDialogueBlocking(dialogue.DialogueBlockers);
+        bodyTextDisplayedBool = false;
         
 
+        if(_curentActiveDialog != null) _lastActiveDialog = _curentActiveDialog;
         _curentActiveDialog = dialogue;
         audioManager.StopActorsAndSfxAudio();
+
+        if(dialogue.newSpriteForScene != null) ChangeBackgroundImage(dialogue.newSpriteForScene);
 
         
         WhiteOrGrayNpcImage(true, dialogue.characterOnLeftWhiteBool);
@@ -316,6 +388,7 @@ public class DialogueManager : MonoBehaviour
 
        
         _speakerName.text = charactersInGame[dialogue.characterInUse].characterName;
+        if(dialogue.overwriteNameText != "") _speakerName.text = dialogue.overwriteNameText;
         _speakerName.color = charactersInGame[dialogue.characterInUse].nameColor;
         _dialogueBodyText.text = "";
         if(charactersInGame[dialogue.characterInUse].speakingFont == null)
@@ -350,15 +423,19 @@ public class DialogueManager : MonoBehaviour
                 audioManager.PlayVoiceActorAudio(null, false, false);
                 voiceActorReadyBool = false;
             }
-            OperateDiodes(1, true, false);
-            audioManager.PlayTyppingSound();
+
+            //shall i stop these two
+            
+
+
+
         }else{}
         
-        ReadTextVariantTwo();
+        
         
         
 
-        // Renders the dialogue options
+        
         _listOfDialogOptions.Clear();
         _listOfCDButtons.Clear();
         foreach (DialogueOption option in dialogue.DialogueOptions)
@@ -377,6 +454,26 @@ public class DialogueManager : MonoBehaviour
                     buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = option.OptionName;
                     button.onClick.AddListener(() => OnClickSelectDialogueOption(option.Dialogue, true));
                     _listOfCDButtons.Add(buttonObj.GetComponent<ComputerDialogButton>());
+                }
+
+                //reputation limiter
+                if(option.reputationLimiterBool){
+                    bool passBool = false;
+                    if(option.mustBeEqualBool)
+                        if(option.requiredValue == reputationManager._reputation) passBool = true;
+
+                    if(option.mustBeLessBool)
+                        if(reputationManager._reputation < option.requiredValue) passBool = true;
+
+                    if(option.mustBeMoreBool)
+                        if(reputationManager._reputation > option.requiredValue) passBool = true;
+
+                    Debug.Log("Reputation Limiter in Action. Actual reputation ("+ reputationManager._reputation 
+                        +") Equal ["+ option.mustBeEqualBool +"]"
+                        +") More ["+ option.mustBeMoreBool +"]"
+                        +") Less ["+ option.mustBeLessBool +"]"
+                        + " Target reputation (" + option.requiredValue + ")");
+                    if(!passBool) Destroy(buttonObj);
                 }
             }
         }
@@ -399,6 +496,23 @@ public class DialogueManager : MonoBehaviour
         }//else{Debug.Log("There is no safety line[dialog] to put in when there are no options.");}
 
 
+        //sound and typping
+        if(haveOptionsBool){
+            if(dialogue.computerDialogBool) ReadTextStartTypping();
+            RevealDialougeOptions(dialogue);
+            normalDialogBool = false;
+        }else{
+            if(!dialogue.computerDialogBool)
+                normalDialogBool = true;
+            ReadTextStartTypping();
+
+            if(soundEfectHoldingTippingBool == false){
+                OperateDiodes(1, true, false);
+                audioManager.PlayTyppingSound();
+            }
+        }
+
+
         if(dialogue.informativeBSBool){
             appearDissapear.OrderForBSPanel(true, false, false);
             if(dialogue.informativeSuportSprite != null){
@@ -407,6 +521,7 @@ public class DialogueManager : MonoBehaviour
                 if(_informativeBSImage.sprite != emptyTransparentSprite)
                     _informativeBSImage.sprite = emptyTransparentSprite;
             }
+            normalDialogBool = false;
         }
 
         if(dialogue.computerDialogBool){
@@ -414,6 +529,7 @@ public class DialogueManager : MonoBehaviour
             _computerDialogPanel.gameObject.SetActive(true);
             _computerButtonsPanel.gameObject.SetActive(false);
             _computerDialogText.text = "";
+            normalDialogBool = false;
         }
 
 
@@ -434,7 +550,7 @@ public class DialogueManager : MonoBehaviour
             ClearTheGame();
             menuManager.creditsManager.OpenStartEndCreditsPanel(false, true);
         }
-    }
+    }//UpdateDialogueBox
 
 
 
@@ -455,6 +571,7 @@ public class DialogueManager : MonoBehaviour
         menuManager.gameIsOnBool = false;
         clearToTypeBool = true;
         typingBool = false;
+        bodyTextDisplayedBool = false;
         voiceActorReadyBool = false;
         soundEfectHoldingTippingBool = false;        
         _reputationNumberText.text = "";
@@ -470,9 +587,7 @@ public class DialogueManager : MonoBehaviour
         ActiveStoryScene = storyScene;
         ChangeBackgroundImage(storyScene.BackgroundImage);
         if(storyScene.sceneMusicAudioClip != null)
-            audioManager.ChangeBacgroundMusic(storyScene.sceneMusicAudioClip);
-        if(storyScene.enableReputationBool)
-            ReputationTransformEnable(true);
+            audioManager.ChangeBacgroundMusic(storyScene.sceneMusicAudioClip);        
         PrepareToUpdateDialogueBox(storyScene.StartingDialogue);
     }
 
@@ -601,9 +716,10 @@ public class DialogueManager : MonoBehaviour
 
 
 
-    private void ReadTextVariantTwo(){
+    private void ReadTextStartTypping(){
         stopReadingText = false;
         typingBool = true;        
+        waitProtectTippingBool = true;
         textLenght = _curentActiveDialog.BodyText.Length +1;
         textTarget = _curentActiveDialog.BodyText +" ";
         textPostition = 0;
@@ -611,59 +727,46 @@ public class DialogueManager : MonoBehaviour
 
 
     private void RevealNextButton(){
+        /*
         if(     menuManager.creditPanelOnBool 
             ||  menuManager.informativeBSPanelBool 
             ||  menuManager.computerDialogPanelOnBool
             ){
             RevealDialougeOptions(_curentActiveDialog);
         }else{ 
+            */
             nextDialogButtonOnBool = true;
             _nextDialogButtonTransform.gameObject.SetActive(true);
             OperateDiodes(4, true, false);
-            }
+            //}
 
     }
 
     private void RevealDialougeOptions(Dialogue dialogue)
     {
-        OperateDiodes(1, false, false);
-
-        if (dialogue.DialogueOptions.Count > 0){
-            if (_dialogueOptionsBox.gameObject.activeInHierarchy == false)
+            if(!menuManager.computerDialogPanelOnBool)
                 _dialogueOptionsBox.gameObject.SetActive(true);
+            else
+                _computerButtonsPanel.gameObject.SetActive(true);
 
-            _computerButtonsPanel.gameObject.SetActive(true);
             OperateDiodes(2, true, false);
             optionsAreDisplayedBool = true;
-        
-        }else{
-            Debug.Log("Need to be alter!");
-            /*
-            if(!menuManager.creditPanelOnBool && !menuManager.informativeBSPanelBool)
-            if(_curentActiveDialog.DialogueNext != null){
-                nextDialogButtonOnBool = true;
-                _nextDialogButtonTransform.gameObject.SetActive(true);
-                OperateDiodes(4, true, false);
-            }
-            */
-        }
-
-        
     }
+
     public void OrderFromInfoBlackScreen(){
         PrepareToUpdateDialogueBox(_curentActiveDialog.DialogueNext);
     }
 
 
     public void OrderFromNextDialogueButton(){
-        if (_curentActiveDialog.DialogueOptions.Count > 0){
-            RevealDialougeOptions(_curentActiveDialog);
-        }else{
+        //if (_curentActiveDialog.DialogueOptions.Count > 0){
+        //    RevealDialougeOptions(_curentActiveDialog);
+        //}else{
             OperateDiodes(4, false, false);
             _nextDialogButtonTransform.gameObject.SetActive(false);
             nextDialogButtonOnBool = false;
             PrepareToUpdateDialogueBox(_curentActiveDialog.DialogueNext);
-        }
+        //}
     }
 
     public void OnClickSelectDialogueOption(Dialogue dialogue, bool playSFxBool)
@@ -679,10 +782,13 @@ public class DialogueManager : MonoBehaviour
         clearToTypeBool = false;
         OperateDiodes(2, false, false);
         if(nextDialogButtonOnBool) OperateDiodes(4, false, false);
-        ReputationManager.IncreaseReputationAction(dialogue.reputationIncrease);
-        ReputationManager.DecreaseReputationAction(dialogue.reputationDecrease);        
+        
+        //ReputationManager.IncreaseReputationAction(dialogue.reputationIncrease);
+        //ReputationManager.DecreaseReputationAction(dialogue.reputationDecrease);        
+        reputationManager.ReputationChange(dialogue.reputation);
         PrepareToUpdateDialogueBox(dialogue);
     }
+
 
     private void HandleDialogueBlocking(List<Dialogue> dialogueList)
     {
@@ -695,7 +801,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StopTheMusic(){audioManager._musicPlayer.Stop();}
 
+
     public void SetReputation(int number, string addon){
+        if(!reputationEnabledBool) ReputationTransformEnable(true);
         _reputationNumberText.text = number.ToString();
         if(addon != "") _reputationNumberText.text += addon; 
 
@@ -707,6 +815,16 @@ public class DialogueManager : MonoBehaviour
             _reputationNumberText.color =Color.magenta;
     }
 
+
+    void ReputationTransformEnable(bool option){
+        if(option){
+            _reputationTransform.gameObject.SetActive(false);
+            reputationEnabledBool = false;
+        }else{
+            _reputationTransform.gameObject.SetActive(true);
+            reputationEnabledBool = true;
+        }
+    }
 
     
 
@@ -742,14 +860,6 @@ public class DialogueManager : MonoBehaviour
         OperateDiodes(3, true, false);
     }
 
-    void ReputationTransformEnable(bool option){
-        if(option){
-            _reputationTransform.gameObject.SetActive(false);
-            reputationEnabledBool = false;
-        }else{
-            _reputationTransform.gameObject.SetActive(true);
-            reputationEnabledBool = true;
-        }
-    }
+    
 
 }

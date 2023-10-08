@@ -30,11 +30,17 @@ public class Dialogue : MonoBehaviour
     
     [Header("Scene")]
     [TextArea(10, 100)] public string BodyText;
+    public string overwriteNameText="";
 
-    public int reputationIncrease = 0;
-    public int reputationDecrease = 0;
+    //public int reputationIncrease = 0;
+    //public int reputationDecrease = 0;
+    [SerializeField] public int reputation;
 
     public Dialogue DialogueNext;
+
+    [Tooltip("Redirectino put on new dialog step. For now you must create an empty redirection.")]
+    public StoryScene redirectionOnStoryScene;
+
     [Tooltip("If Dialougue Next empty. Display Options")]
     public List<DialogueOption> DialogueOptions;
     [Tooltip("Blocks the dialogue options below from being chosen in the future")]
@@ -59,8 +65,7 @@ public class Dialogue : MonoBehaviour
 
     
     [Header("Scene Operators")]
-    [Tooltip("Redirectino put on new dialog step.")]
-    public StoryScene redirectionOnStoryScene;
+    public Sprite newSpriteForScene=null;
     [Tooltip("Put ending from Credits on new dialog step")]
     public bool endingTheStoryBool; public int endigNumber=0;
 
@@ -73,16 +78,7 @@ public class Dialogue : MonoBehaviour
 
 
 
-    
-
-
 }
-
-
-
-
-
-
 
 
 
@@ -91,9 +87,11 @@ public class Dialogue : MonoBehaviour
 [System.Serializable]
 public class DialogueOption
 {
-    [SerializeField]
-    public string OptionName;
-
-    [SerializeField]
-    public Dialogue Dialogue;
+    [SerializeField]     public string OptionName;
+    [SerializeField]     public Dialogue Dialogue;
+    [SerializeField]    public bool reputationLimiterBool;
+    [SerializeField]    public int requiredValue;
+    [SerializeField]    public bool mustBeMoreBool;
+    [SerializeField]    public bool mustBeEqualBool;
+    [SerializeField]    public bool mustBeLessBool;
 }

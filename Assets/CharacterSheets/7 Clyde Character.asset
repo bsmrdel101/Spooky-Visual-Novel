@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b85c6cc90076444b9435e6413ab0ae, type: 3}
+  m_Name: 7 Clyde Character
+  m_EditorClassIdentifier: 
+  characterName: Clyde
+  baseSprite: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  spritesArray:
+  - {fileID: 21300000, guid: 7cf76487f5b68f84799b9d5e21d21d54, type: 3}
+  - {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  nameColor: {r: 0, g: 0, b: 0.5849056, a: 255}
+  speakingFont: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

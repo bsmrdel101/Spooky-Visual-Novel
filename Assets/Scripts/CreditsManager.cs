@@ -36,7 +36,7 @@ public class CreditsManager : MonoBehaviour
     //public float typpingSpeed =0.05f;
     float timer=0;
     int numberOfCredits=0, actualCreditsPage=0;
-    public bool typingBool=false, creditsBool=false;
+    public bool typingBool=false, creditsBool=false, bodyTextDisplayedBool=false;
     string actualMesage="", targetMesage="";
     int mesageStep=0, mesageLenght=0;
 
@@ -57,6 +57,7 @@ public class CreditsManager : MonoBehaviour
                 if(dialogueManager.stopReadingText){
                     actualMesage = targetMesage;
                     typingBool = false;
+                    bodyTextDisplayedBool = true;
                     dialogueManager.stopReadingText = false;
                 }
 
@@ -166,6 +167,7 @@ public class CreditsManager : MonoBehaviour
 
     public void SetTypping(string mesageString){
         dialogueManager.stopReadingText = false;
+        bodyTextDisplayedBool = false;
         smallText.text = "";
         targetMesage = mesageString;
         mesageLenght = targetMesage.Length;

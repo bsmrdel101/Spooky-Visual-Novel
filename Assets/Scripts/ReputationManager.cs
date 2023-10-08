@@ -29,6 +29,26 @@ public class ReputationManager : MonoBehaviour
         IncreaseReputationAction -= IncreaseReputation;
     }
 
+
+    public void ReputationChange(int amount){
+        if(amount > 0){
+            _reputation += amount;
+            addonString = "";
+            addonString = "(+"+amount+")";
+            menuManager.dialogueManager.SetReputation(_reputation, addonString);
+            menuManager.audioManager.PlayReputationSound(true);
+        }
+
+        if(amount < 0){
+            _reputation -= amount;
+            addonString = "";
+            addonString = "(-"+amount+")";
+            menuManager.dialogueManager.SetReputation(_reputation, addonString);
+            menuManager.audioManager.PlayReputationSound(false);
+        }
+
+    }
+
     private void DecreaseReputation(int amount)
     {
         if(amount != 0){
