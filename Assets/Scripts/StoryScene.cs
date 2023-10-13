@@ -9,5 +9,5 @@ public class StoryScene : MonoBehaviour
     public Sprite BackgroundImage;
     public AudioClip sceneMusicAudioClip;
     public Dialogue StartingDialogue;
-    
+    public bool startingPointOfStoryBool;
 }

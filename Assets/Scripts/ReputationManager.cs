@@ -8,15 +8,17 @@ public class ReputationManager : MonoBehaviour
     [Header("Actions")]
     public static Action<int> DecreaseReputationAction;
     public static Action<int> IncreaseReputationAction;
+    
 
     [Header("Reputation System")]
     [SerializeField] public int _reputation = 0;
     private string addonString="";
+    public int reputationOnStartOfTheStory=50, reputationChangesDuringTheGame=0; 
     
     [Header("Managers")]
     public MenuPanelManager menuManager;
 
-
+    /*
     private void OnEnable()
     {
         DecreaseReputationAction += DecreaseReputation;
@@ -28,6 +30,7 @@ public class ReputationManager : MonoBehaviour
         DecreaseReputationAction -= DecreaseReputation;
         IncreaseReputationAction -= IncreaseReputation;
     }
+    */
 
 
     public void ReputationChange(int amount){
@@ -47,8 +50,11 @@ public class ReputationManager : MonoBehaviour
             menuManager.audioManager.PlayReputationSound(false);
         }
 
+        reputationChangesDuringTheGame += amount;
+
     }
 
+    /*
     private void DecreaseReputation(int amount)
     {
         if(amount != 0){
@@ -69,5 +75,10 @@ public class ReputationManager : MonoBehaviour
             menuManager.dialogueManager.SetReputation(_reputation, addonString);
             menuManager.audioManager.PlayReputationSound(true);
         }
+    }
+    */
+
+    public void ReputationBeginStory(){
+        _reputation = reputationOnStartOfTheStory;
     }
 }

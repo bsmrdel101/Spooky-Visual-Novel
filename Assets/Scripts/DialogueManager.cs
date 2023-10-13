@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Rendering;
-using System.Runtime.CompilerServices;
-using System.Data.Common;
-using UnityEngine.Assertions.Must;
+using UnityEngine.EventSystems;
 
 
 public class DialogueManager : MonoBehaviour
@@ -38,7 +35,7 @@ public class DialogueManager : MonoBehaviour
     public Dialogue _curentActiveDialog, _lastActiveDialog;
 
     [Header("Dialogue")]    
-    public bool stopReadingText = false;
+    public bool stopReadingTextBool = false;
     [SerializeField] private List<Dialogue> _blockedDialogue = new List<Dialogue>();
     [SerializeField] private List<Dialogue> _listOfDialogOptions = new List<Dialogue>();
     int textLenght = 0, textPostition=0;
@@ -49,6 +46,7 @@ public class DialogueManager : MonoBehaviour
     float valueW=0;
     float timerSpace=0, timerEnter=0, timerMouse=0, timerWaitInput=0, timerProtectTyping=0;
     public TMP_FontAsset standartSpeakingFont;
+    
 
     
 
@@ -80,6 +78,7 @@ public class DialogueManager : MonoBehaviour
     public MenuPanelManager menuManager;
     public ReputationManager reputationManager;
     public AudioManager audioManager;
+    public CreditsManager creditsManager;
     public AppearDissapear appearDissapear;
 
 
@@ -154,56 +153,88 @@ public class DialogueManager : MonoBehaviour
         if (!spaceIsDownBool)
         if (!waitProtectTippingBool)
         {
-            stopReadingText = true; 
-            OperateSpace();
-            
+            stopReadingTextBool = true;
+            if(menuManager.creditPanelOnBool) creditsManager.stopReadingTextBoll = true;
+            OperateSpace();            
         }        
         
         
-        if (Input.GetKeyDown(KeyCode.Mouse0)){
-            
-            if(typingBool == true)
-            if(bodyTextDisplayedBool == false)
-            if (!waitProtectTippingBool)
-            if(!mouseIsDownBool)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (!IsMouseOverUIButton())
+        {            
+            if (typingBool)
             {
-                mouseIsDownBool = true;
-                stopReadingText = true;
-                OperateSpace();
+                if (!waitProtectTippingBool)
+                if (!soundEfectHoldingTippingBool)
+                if (clearToTypeBool)
+                if (!mouseIsDownBool)
+                {
+                    mouseIsDownBool = true;
+                    stopReadingTextBool = true;
+                    Debug.Log("Mouse 0 typping off!");
+                }
             }
 
-            if(nextDialogButtonOnBool == true)
-            if(bodyTextDisplayedBool)
-            if(!menuManager.creditPanelOnBool)
-            if(normalDialogBool)
-            if(!mouseIsDownBool)
+
+
+            if (nextDialogButtonOnBool == true)
             {
-                mouseIsDownBool = true;
-                nextDialogButtonOnBool = false;
-                OrderFromNextDialogueButton();
+                if (!menuManager.informativeBSPanelBool)
+                if (!menuManager.computerDialogPanelOnBool)
+                if (!typingBool)
+                if (bodyTextDisplayedBool)
+                if (!waitProtectTippingBool)
+                if (!mouseIsDownBool)
+                {
+                    mouseIsDownBool = true;
+                    nextDialogButtonOnBool = false;
+                    Debug.Log("Mouse OrderFromNextDialogueButton");
+                    OrderFromNextDialogueButton();
+                }
             }
+
 
             if(menuManager.creditPanelOnBool)
-            if(menuManager.creditsManager.bodyTextDisplayedBool)
-            if(typingBool == false)
-            if(!mouseIsDownBool)
             {
-                mouseIsDownBool = true;
-                Debug.Log("Mouse0 triger next button on credits manager.");
-                menuManager.creditsManager.NextButton();
+                
+                
+                if(creditsManager.typingBool)
+                if (!waitProtectTippingBool)
+                if(!mouseIsDownBool)
+                {
+                    mouseIsDownBool = true;
+                    creditsManager.stopReadingTextBoll = true;
+                    Debug.Log("Mouse0 triger typing stop on credits manager.");
+                }
+                
+
+                if(menuManager.creditsManager.bodyTextDisplayedBool)
+                if(!mouseIsDownBool)
+                {
+                    mouseIsDownBool = true;
+                    Debug.Log("Mouse0 triger next button on credits manager.");
+                    menuManager.creditsManager.NextButton();
+                }
             }
 
+
+            
             if(menuManager.informativeBSPanelBool)
-            if(!normalDialogBool)
             if(typingBool == false)
+            if(bodyTextDisplayedBool)
+            if(_informativeBSButton.gameObject.activeInHierarchy)
             if(!mouseIsDownBool)
-            if(_informativeBSButton.gameObject.activeInHierarchy){
+            {
                 mouseIsDownBool = true;
                 Debug.Log("Mouse0 triger next button on informative panel.");
                 appearDissapear.OrderForBSPanel(false, true, false);
             }
+            
 
-        }
+
+
+
+        }// MOUSE 0
 
 
         if (Input.GetKeyDown(KeyCode.Return)){
@@ -307,10 +338,9 @@ public class DialogueManager : MonoBehaviour
                         timerTyping = 0;
                         textString = textTarget.Substring(0, textPostition);
                         textString += "<color=#00000000>" + textTarget.Substring(textPostition);
-                        if (stopReadingText){
+                        if (stopReadingTextBool){
                             typingBool = false;
                             textString = textTarget;
-                            bodyTextDisplayedBool = true; 
                         }
 
                         if(menuManager.computerDialogPanelOnBool){
@@ -326,6 +356,7 @@ public class DialogueManager : MonoBehaviour
                         if(!typingBool){
                             if(menuManager.computerDialogPanelOnBool)
                                 RevealDialougeOptions(_curentActiveDialog);
+                            bodyTextDisplayedBool = true; 
                             OperateDiodes(1, false, false);
                             RevealNextButton();
                         }
@@ -348,6 +379,33 @@ public class DialogueManager : MonoBehaviour
     
 
     }// update
+
+
+
+
+
+    private bool IsMouseOverUIButton(){
+        //return EventSystem.current.IsPointerOverGameObject();        
+        //return false;
+        bool resultBool = false;
+
+        PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+        pointerEventData.position = Input.mousePosition;
+
+        List<RaycastResult> raycastResultsList = new List<RaycastResult>();
+        
+        EventSystem.current.RaycastAll(pointerEventData, raycastResultsList);
+
+        for (int i = 0; i < raycastResultsList.Count; i++)
+        {
+            if(raycastResultsList[i].gameObject.activeInHierarchy)
+            if(raycastResultsList[i].gameObject.GetComponent<Button>() != null){
+                resultBool = true;
+            }
+        }
+
+        return resultBool;
+    }
 
 
 
@@ -558,7 +616,8 @@ public class DialogueManager : MonoBehaviour
 
 
 
-    public void StartTheGame(){        
+    public void StartTheGame(){
+        reputationManager.reputationChangesDuringTheGame = 0;  
         ChangeStoryScene(startingStoryScene);
         clearToTypeBool = true;
     }
@@ -589,6 +648,9 @@ public class DialogueManager : MonoBehaviour
         if(storyScene.sceneMusicAudioClip != null)
             audioManager.ChangeBacgroundMusic(storyScene.sceneMusicAudioClip);        
         PrepareToUpdateDialogueBox(storyScene.StartingDialogue);
+        if (storyScene.startingPointOfStoryBool){
+            reputationManager.ReputationBeginStory();
+        }
     }
 
 
@@ -717,7 +779,7 @@ public class DialogueManager : MonoBehaviour
 
 
     private void ReadTextStartTypping(){
-        stopReadingText = false;
+        stopReadingTextBool = false;
         typingBool = true;        
         waitProtectTippingBool = true;
         textLenght = _curentActiveDialog.BodyText.Length +1;

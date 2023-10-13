@@ -37,6 +37,7 @@ public class CreditsManager : MonoBehaviour
     float timer=0;
     int numberOfCredits=0, actualCreditsPage=0;
     public bool typingBool=false, creditsBool=false, bodyTextDisplayedBool=false;
+    public bool stopReadingTextBoll=false;
     string actualMesage="", targetMesage="";
     int mesageStep=0, mesageLenght=0;
 
@@ -54,11 +55,11 @@ public class CreditsManager : MonoBehaviour
                 timer = 0;
                 actualMesage = targetMesage.Substring(0, mesageStep);
                 actualMesage += "<color=#00000000>" + targetMesage.Substring(mesageStep);
-                if(dialogueManager.stopReadingText){
+                if(stopReadingTextBoll){
                     actualMesage = targetMesage;
                     typingBool = false;
                     bodyTextDisplayedBool = true;
-                    dialogueManager.stopReadingText = false;
+                    stopReadingTextBoll = false;
                 }
 
                 if(menuPanelManager.settingPanleOnBool){
@@ -68,7 +69,10 @@ public class CreditsManager : MonoBehaviour
                 if(!creditsBool){smallText.text = actualMesage;}
                 else{creditText.text = actualMesage;}
                 mesageStep++;
-                if(mesageStep > mesageLenght) typingBool = false;
+                if(mesageStep > mesageLenght){
+                    typingBool = false;  
+                    bodyTextDisplayedBool = true;
+                } 
             }
         }
     }
@@ -166,7 +170,7 @@ public class CreditsManager : MonoBehaviour
 
 
     public void SetTypping(string mesageString){
-        dialogueManager.stopReadingText = false;
+        dialogueManager.stopReadingTextBool = false;
         bodyTextDisplayedBool = false;
         smallText.text = "";
         targetMesage = mesageString;

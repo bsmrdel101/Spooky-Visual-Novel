@@ -2723,7 +2723,7 @@ MonoBehaviour:
   actorOnRightAppearBool: 0
   actorOnRightDisapearBool: 0
   actorOnRightAlpha0Bool: 0
-  BodyText: Percy freezes as the gun is pressed to the back of his head.
+  BodyText: Percy freezes at the sound of the gun being cocked and aimed behind him.
   overwriteNameText: 
   reputation: 0
   DialogueNext: {fileID: 1705558060}
@@ -3302,7 +3302,8 @@ MonoBehaviour:
   actorOnRightAppearBool: 0
   actorOnRightDisapearBool: 0
   actorOnRightAlpha0Bool: 0
-  BodyText: '"And that warrants you putting a gun to the first head you see?"'
+  BodyText: '"And that warrants you putting a gun to the first body you see, that
+    is not death yet?"'
   overwriteNameText: 
   reputation: 0
   DialogueNext: {fileID: 1473216625}
@@ -8636,6 +8637,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 54661ab97c0a3ba48ad4f2f061a70d26, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 20c906a90d17d174b84962f0a32651af, type: 3}
   StartingDialogue: {fileID: 484864384}
+  startingPointOfStoryBool: 0
 --- !u!1 &278840783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11874,6 +11876,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 790ffef3dc6580548a1a97527816adc8, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 3d54533345a9e2f489fa202b5ddff074, type: 3}
   StartingDialogue: {fileID: 910834679}
+  startingPointOfStoryBool: 0
 --- !u!1 &356991720
 GameObject:
   m_ObjectHideFlags: 0
@@ -15013,6 +15016,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: a5976231aac1ece448f4a386d2c83817, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 1615592752}
+  startingPointOfStoryBool: 0
 --- !u!1 &468950465
 GameObject:
   m_ObjectHideFlags: 0
@@ -19682,6 +19686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reputation: 0
+  reputationOnStartOfTheStory: 50
+  reputationChangesDuringTheGame: 0
   menuManager: {fileID: 783373171}
 --- !u!1 &621340931
 GameObject:
@@ -24701,6 +24707,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 7ad95c29edd085e429e2e19d894780af, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 110d8a357356b0740a7405247300dcc4, type: 3}
   StartingDialogue: {fileID: 1615267934}
+  startingPointOfStoryBool: 0
 --- !u!1 &780121776
 GameObject:
   m_ObjectHideFlags: 0
@@ -31722,6 +31729,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 17e73021d5fc8c645a8fb47fd4fabb7e, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 1599000869}
+  startingPointOfStoryBool: 0
 --- !u!1 &988576867
 GameObject:
   m_ObjectHideFlags: 0
@@ -33132,6 +33140,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 4304b1def8a9f2a47ac2bfe2191b3601, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: d22cd481358d88c46bb2cce5e7aa33c1, type: 3}
   StartingDialogue: {fileID: 1739237464}
+  startingPointOfStoryBool: 0
 --- !u!1 &1037192696
 GameObject:
   m_ObjectHideFlags: 0
@@ -33847,8 +33856,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1324799913}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 8933832022133177603}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1069782083
 GameObject:
@@ -46361,7 +46370,7 @@ GameObject:
   - component: {fileID: 1504445190}
   - component: {fileID: 1504445189}
   m_Layer: 0
-  m_Name: Narator B (5)
+  m_Name: Percy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46379,9 +46388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterInUse: 0
+  characterInUse: 1
   leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
-  characterOnLeftWhiteBool: 0
+  characterOnLeftWhiteBool: 1
   characterOnLeftSpriteNumber: 0
   actorOnLeftAppearBool: 0
   actorOnLeftDisapearBool: 0
@@ -47723,7 +47732,7 @@ MonoBehaviour:
   actorOnRightAppearBool: 0
   actorOnRightDisapearBool: 0
   actorOnRightAlpha0Bool: 0
-  BodyText: '"Make any sudden movements and I''ll paint the ground with your brains.
+  BodyText: '"Make any sudden movements and I''ll paint the ground with your blood.
     Now put your hands up nice and slow!"'
   overwriteNameText: (Mysterious Man)
   reputation: 0
@@ -51343,6 +51352,7 @@ MonoBehaviour:
   typingBool: 0
   creditsBool: 0
   bodyTextDisplayedBool: 0
+  stopReadingTextBoll: 0
   dialogueManager: {fileID: 1795281535}
   menuPanelManager: {fileID: 783373171}
   audioManager: {fileID: 1370477677}
@@ -53395,6 +53405,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: e4ce83975ee681644a93b1630228b502, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 353370386ff1198478c644f08782946e, type: 3}
   StartingDialogue: {fileID: 2020476722}
+  startingPointOfStoryBool: 0
 --- !u!1 &1712423923
 GameObject:
   m_ObjectHideFlags: 0
@@ -57124,7 +57135,7 @@ MonoBehaviour:
   startingStoryScene: {fileID: 6972606996344403630}
   _curentActiveDialog: {fileID: 0}
   _lastActiveDialog: {fileID: 0}
-  stopReadingText: 0
+  stopReadingTextBool: 0
   _blockedDialogue: []
   _listOfDialogOptions: []
   typpingSpeed: 0.02
@@ -57157,6 +57168,7 @@ MonoBehaviour:
   menuManager: {fileID: 783373171}
   reputationManager: {fileID: 620206962}
   audioManager: {fileID: 1370477677}
+  creditsManager: {fileID: 1668238652}
   appearDissapear: {fileID: 1795281536}
 --- !u!114 &1795281536
 MonoBehaviour:
@@ -60621,6 +60633,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 54661ab97c0a3ba48ad4f2f061a70d26, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 20c906a90d17d174b84962f0a32651af, type: 3}
   StartingDialogue: {fileID: 1747191532}
+  startingPointOfStoryBool: 0
 --- !u!1 &1913820438
 GameObject:
   m_ObjectHideFlags: 0
@@ -61018,6 +61031,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 747effdffc032764ca8a048144c57962, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: bb99065db7145434581d7ff189c035f4, type: 3}
   StartingDialogue: {fileID: 812223931}
+  startingPointOfStoryBool: 0
 --- !u!1 &1926915901
 GameObject:
   m_ObjectHideFlags: 0
@@ -63853,8 +63867,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 8933832022133177603}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005200217
 GameObject:
@@ -64544,6 +64558,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 6f94f91e95eea1b42abee797dabbd928, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 468950467}
+  startingPointOfStoryBool: 0
 --- !u!1 &2031711037
 GameObject:
   m_ObjectHideFlags: 0
@@ -68318,6 +68333,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 7dd5ba18d3b99814aa61626de6e74d7e, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 507987641}
+  startingPointOfStoryBool: 0
 --- !u!1 &2139390764
 GameObject:
   m_ObjectHideFlags: 0
@@ -68556,6 +68572,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 87869ca85e51f6c46a532df5c8fcd43f, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 7046629469075494539}
+  startingPointOfStoryBool: 0
 --- !u!114 &255405800515069031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68781,6 +68798,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: b45f570a7df136c4ea470f7e88489d18, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: d22cd481358d88c46bb2cce5e7aa33c1, type: 3}
   StartingDialogue: {fileID: 2913160}
+  startingPointOfStoryBool: 0
 --- !u!114 &2751211596513998056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68850,6 +68868,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: b45f570a7df136c4ea470f7e88489d18, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 3d54533345a9e2f489fa202b5ddff074, type: 3}
   StartingDialogue: {fileID: 4953615251368401025}
+  startingPointOfStoryBool: 0
 --- !u!4 &3334360364970100468
 Transform:
   m_ObjectHideFlags: 0
@@ -69048,6 +69067,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 6f94f91e95eea1b42abee797dabbd928, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 2751211596513998056}
+  startingPointOfStoryBool: 0
 --- !u!1 &5012462872349159608
 GameObject:
   m_ObjectHideFlags: 0
@@ -69222,6 +69242,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: ac8d0140983fe1245b8904520c240a5b, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 1217847983}
+  startingPointOfStoryBool: 0
 --- !u!114 &7046629469075494539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69345,6 +69366,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: f126498a1f7453448b3af965031e2193, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 1535687491}
+  startingPointOfStoryBool: 0
 --- !u!1 &8090498176138298058
 GameObject:
   m_ObjectHideFlags: 0
@@ -69516,6 +69538,8 @@ Transform:
   - {fileID: 311725015}
   - {fileID: 1095398141}
   - {fileID: 1043850840}
+  - {fileID: 2004696480}
+  - {fileID: 1063419314}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
