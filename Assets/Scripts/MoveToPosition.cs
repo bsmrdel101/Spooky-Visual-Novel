@@ -41,7 +41,7 @@ public class MoveToPosition : MonoBehaviour
     public void OrderToMove (bool setOnLeft,bool setOnRight,  bool moveBool, int X){
         pos = this.transform.localPosition;
         if(setOnLeft){
-            pos.x = -300; //- placingPosition;d
+            pos.x = -1300; //- placingPosition;d
             this.transform.localPosition = pos;
         }
         if(setOnRight){

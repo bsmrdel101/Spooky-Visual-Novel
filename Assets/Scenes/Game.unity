@@ -68798,7 +68798,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: b45f570a7df136c4ea470f7e88489d18, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: d22cd481358d88c46bb2cce5e7aa33c1, type: 3}
   StartingDialogue: {fileID: 2913160}
-  startingPointOfStoryBool: 0
+  startingPointOfStoryBool: 1
 --- !u!114 &2751211596513998056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69067,7 +69067,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: 6f94f91e95eea1b42abee797dabbd928, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 2751211596513998056}
-  startingPointOfStoryBool: 0
+  startingPointOfStoryBool: 1
 --- !u!1 &5012462872349159608
 GameObject:
   m_ObjectHideFlags: 0
@@ -69366,7 +69366,7 @@ MonoBehaviour:
   BackgroundImage: {fileID: 21300000, guid: f126498a1f7453448b3af965031e2193, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 1535687491}
-  startingPointOfStoryBool: 0
+  startingPointOfStoryBool: 1
 --- !u!1 &8090498176138298058
 GameObject:
   m_ObjectHideFlags: 0
