@@ -20,12 +20,21 @@ public class Dialogue : MonoBehaviour
     public bool characterOnLeftWhiteBool = true;
     public int  characterOnLeftSpriteNumber = 0;
     public bool actorOnLeftAppearBool, actorOnLeftDisapearBool, actorOnLeftAlpha0Bool;
+    public bool editLeftActorOnEndBool;
     
     
     public CharacterSheet rightCharacterSheet;
     public bool characterOnRightWhiteBool=false;
     public int  characterOnRightSpriteNumber = 0;
     public bool actorOnRightAppearBool, actorOnRightDisapearBool, actorOnRightAlpha0Bool;
+    public bool editRightActorOnEndBool;
+
+
+    public CharacterSheet middleCharacterSheet;
+    public bool characterOnMiddleWhiteBool=false;
+    public int  characterOnMiddleSpriteNumber = 0;
+    public bool actorOnMiddleAppearBool, actorOnMiddleDisapearBool, actorOnMiddleAlpha0Bool;
+    public bool editMiddleActorOnEndBool;
 
     
     [Header("Scene")]
@@ -59,13 +68,14 @@ public class Dialogue : MonoBehaviour
     [Header("Audio")]
     [Tooltip("If set it will be played.")]
     public AudioClip voiceActorAudioClip;
-    [Tooltip("If set it will dellay other things.")]
+    [Tooltip("If Sound Effect set it will dellay other things.")]
     public AudioClip soundEffectAudioClip;
-    public AudioClip musicAudioClip;
+    public AudioClip soundEffectAtEndClip;
 
     
     [Header("Scene Operators")]
     public Sprite newSpriteForScene=null;
+    public AudioClip musicAudioClip;
     [Tooltip("Put ending from Credits on new dialog step")]
     public bool endingTheStoryBool; public int endigNumber=0;
 
@@ -75,6 +85,9 @@ public class Dialogue : MonoBehaviour
     public bool itemPlaceLeft, itemPlaceRight, itemMoveBool;
     [Tooltip("-1300(left) and 1300(right) shall be safe outside of the screen. -300 and 300 shall be a good bets to move the items.")]
     public int itemNewCordinates; 
+
+
+    
 
 
 

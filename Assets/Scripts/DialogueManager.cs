@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     public bool haveOptionsBool, optionsAreDisplayedBool, clearToTypeBool, normalDialogBool;
     public bool nextDialogButtonOnBool; 
     public bool reputationEnabledBool;  
-    [SerializeField] private Sprite emptyTransparentSprite;
+    public Sprite emptyTransparentSprite;
     public bool preparedForTheNextDialogueBool;
     private Dialogue preparedForTheNextDialogueValue=null;
     public bool waitInputBool, waitProtectTippingBool;
@@ -52,7 +52,8 @@ public class DialogueManager : MonoBehaviour
 
 
     [Header("References")]
-    [SerializeField] public Image _actorLeftSprite, _actorRightSprite;
+    public Image _actorLeftSprite; public Image _actorRightSprite, _actorMiddleSprite;
+    public Image _actorTagLeftSprite, _actorTagRightSprite, _actorTagMiddleSprite;
     [SerializeField] private Image _bgImage;
     [SerializeField] private TextMeshProUGUI _speakerName;
     [SerializeField] private TextMeshProUGUI _dialogueBodyText;
@@ -71,7 +72,8 @@ public class DialogueManager : MonoBehaviour
     public List<ComputerDialogButton> _listOfCDButtons;
     [SerializeField] private GameObject _computerDialogButtonPrefab;
 
-    public Transform _diodTyping, _diodOptions, _diodSpaceBar, _diodNextBtn;
+    public Transform _diodTyping, _diodOptions, _diodSpaceBar, _diodNextBtn,
+        _diodEnter, _diodMouse, _diodTextDisplayed, _diodSFXHold;
     
 
     [Header("Managers")]
@@ -115,7 +117,7 @@ public class DialogueManager : MonoBehaviour
             if(timerEnter >= 0.50f){
                 timerEnter = 0;
                 enterIsDownBool = false;
-                //OperateDiodes(3, false, false);
+                OperateDiodes(5, false, false);
             }
         }
 
@@ -124,7 +126,7 @@ public class DialogueManager : MonoBehaviour
             if(timerMouse >= 0.50f){
                 timerMouse = 0;
                 mouseIsDownBool = false;
-                //OperateDiodes(3, false, false);
+                OperateDiodes(6, false, false);
             }
         }
 
@@ -171,7 +173,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     mouseIsDownBool = true;
                     stopReadingTextBool = true;
-                    Debug.Log("Mouse 0 typping off!");
+                    //Debug.Log("Mouse 0 typping off!");
                 }
             }
 
@@ -188,7 +190,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     mouseIsDownBool = true;
                     nextDialogButtonOnBool = false;
-                    Debug.Log("Mouse OrderFromNextDialogueButton");
+                    //Debug.Log("Mouse OrderFromNextDialogueButton");
                     OrderFromNextDialogueButton();
                 }
             }
@@ -196,15 +198,13 @@ public class DialogueManager : MonoBehaviour
 
             if(menuManager.creditPanelOnBool)
             {
-                
-                
                 if(creditsManager.typingBool)
                 if (!waitProtectTippingBool)
                 if(!mouseIsDownBool)
                 {
                     mouseIsDownBool = true;
                     creditsManager.stopReadingTextBoll = true;
-                    Debug.Log("Mouse0 triger typing stop on credits manager.");
+                    //Debug.Log("Mouse0 triger typing stop on credits manager.");
                 }
                 
 
@@ -226,14 +226,14 @@ public class DialogueManager : MonoBehaviour
             if(!mouseIsDownBool)
             {
                 mouseIsDownBool = true;
-                Debug.Log("Mouse0 triger next button on informative panel.");
+                //Debug.Log("Mouse0 triger next button on informative panel.");
                 appearDissapear.OrderForBSPanel(false, true, false);
             }
             
 
 
 
-
+            if(mouseIsDownBool) OperateDiodes(6, true, false);
         }// MOUSE 0
 
 
@@ -245,22 +245,13 @@ public class DialogueManager : MonoBehaviour
                     enterIsDownBool = true;
                     nextDialogButtonOnBool = false;
                     OrderFromNextDialogueButton();
-                    //OnClickSelectDialogueOption(_curentActiveDialog.DialogueNext, false);
                 }
-                /*
-                if(optionsAreDisplayedBool){
-                    if(_listOfDialogOptions.Count == 1){
-                        Debug.Log("Enter triger Next on dialog.");
-                       OnClickSelectDialogueOption(_listOfDialogOptions[0]);
-                    }
-                }
-                */
 
                 if(menuManager.creditPanelOnBool)
                 if(menuManager.creditsManager.typingBool == false)
                 if(typingBool == false){
                     enterIsDownBool = true;
-                    Debug.Log("Enter triger next button on credits manager.");
+                    //Debug.Log("Enter triger next button on credits manager.");
                     menuManager.creditsManager.NextButton();
                 }
 
@@ -268,14 +259,16 @@ public class DialogueManager : MonoBehaviour
                 if(typingBool == false)
                 if(_informativeBSButton.gameObject.activeInHierarchy){
                     enterIsDownBool = true;
-                    Debug.Log("Enter triger next button on informative panel.");
+                    //Debug.Log("Enter triger next button on informative panel.");
                     appearDissapear.OrderForBSPanel(false, true, false);
                 }
 
             }
+            if(enterIsDownBool) OperateDiodes(5, true, false);
         } 
         
         
+        //dialogue options
         if(haveOptionsBool && optionsAreDisplayedBool){
             if(_listOfDialogOptions.Count > 0)
             for(int i=0; i< _listOfDialogOptions.Count; i++){
@@ -321,6 +314,7 @@ public class DialogueManager : MonoBehaviour
                 
                 audioManager.PlayTyppingSound();
                 OperateDiodes(1, true, false);
+                OperateDiodes(8, false, false);
 
                 if(voiceActorReadyBool) {
                     audioManager.PlayVoiceActorAudio(null, false, false);
@@ -358,6 +352,7 @@ public class DialogueManager : MonoBehaviour
                                 RevealDialougeOptions(_curentActiveDialog);
                             bodyTextDisplayedBool = true; 
                             OperateDiodes(1, false, false);
+                            OperateDiodes(7, true, false);
                             RevealNextButton();
                         }
                     }
@@ -385,8 +380,6 @@ public class DialogueManager : MonoBehaviour
 
 
     private bool IsMouseOverUIButton(){
-        //return EventSystem.current.IsPointerOverGameObject();        
-        //return false;
         bool resultBool = false;
 
         PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
@@ -431,24 +424,35 @@ public class DialogueManager : MonoBehaviour
         if(dialogue.newSpriteForScene != null) ChangeBackgroundImage(dialogue.newSpriteForScene);
 
         
-        WhiteOrGrayNpcImage(true, dialogue.characterOnLeftWhiteBool);
-        ChangeNpcImage(true, dialogue.leftCharacterSheet, dialogue.characterOnLeftSpriteNumber);            
-        if(dialogue.actorOnLeftAppearBool) appearDissapear.OrderToAppearDisaper(true, true);
-        if(dialogue.actorOnLeftDisapearBool) appearDissapear.OrderToAppearDisaper(true, false);
-        if(dialogue.actorOnLeftAlpha0Bool) appearDissapear.OrderAlpha0(true);
+        WhiteOrGrayNpcImage(true, false, false, dialogue.characterOnLeftWhiteBool);
+        ChangeNpcImage(true, false, false, dialogue.leftCharacterSheet, dialogue.characterOnLeftSpriteNumber);            
+        if(dialogue.actorOnLeftAppearBool) appearDissapear.OrderToAppearDisaper(true, false, false, true);
+        if(dialogue.actorOnLeftDisapearBool) appearDissapear.OrderToAppearDisaper(true, false, false, false);
+        if(dialogue.actorOnLeftAlpha0Bool) appearDissapear.OrderAlpha0(true, false, false);
+        if(dialogue.editLeftActorOnEndBool) appearDissapear.holdLeftTippingBool = true;
 
 
-        WhiteOrGrayNpcImage(false, dialogue.characterOnRightWhiteBool);
-        ChangeNpcImage(false, dialogue.rightCharacterSheet, dialogue.characterOnRightSpriteNumber);
-        if(dialogue.actorOnRightAppearBool) appearDissapear.OrderToAppearDisaper(false, true);
-        if(dialogue.actorOnRightDisapearBool) appearDissapear.OrderToAppearDisaper(false, false);
-        if(dialogue.actorOnRightAlpha0Bool) appearDissapear.OrderAlpha0(false);
+        WhiteOrGrayNpcImage(false, true, false, dialogue.characterOnRightWhiteBool);
+        ChangeNpcImage(false, true, false, dialogue.rightCharacterSheet, dialogue.characterOnRightSpriteNumber);
+        if(dialogue.actorOnRightAppearBool) appearDissapear.OrderToAppearDisaper(false, true, false, true);
+        if(dialogue.actorOnRightDisapearBool) appearDissapear.OrderToAppearDisaper(false, true, false, false);
+        if(dialogue.actorOnRightAlpha0Bool) appearDissapear.OrderAlpha0(false, true, false);
+        if(dialogue.editRightActorOnEndBool) appearDissapear.holdRightTippingBool = true;
+
+        
+        WhiteOrGrayNpcImage(false, false, true, dialogue.characterOnMiddleWhiteBool);
+        ChangeNpcImage(false, false, true, dialogue.middleCharacterSheet, dialogue.characterOnRightSpriteNumber);
+        if(dialogue.actorOnMiddleAppearBool) appearDissapear.OrderToAppearDisaper(false, false, true, true);
+        if(dialogue.actorOnMiddleDisapearBool) appearDissapear.OrderToAppearDisaper(false, false, true, false);
+        if(dialogue.actorOnMiddleAlpha0Bool) appearDissapear.OrderAlpha0(false, false, true);
+        if(dialogue.editMiddleActorOnEndBool) appearDissapear.holdMiddleTippingBool = true;
 
        
         _speakerName.text = charactersInGame[dialogue.characterInUse].characterName;
         if(dialogue.overwriteNameText != "") _speakerName.text = dialogue.overwriteNameText;
         _speakerName.color = charactersInGame[dialogue.characterInUse].nameColor;
         _dialogueBodyText.text = "";
+        OperateDiodes(7, false, false);
         if(charactersInGame[dialogue.characterInUse].speakingFont == null)
             _dialogueBodyText.font = standartSpeakingFont;
         else
@@ -461,14 +465,23 @@ public class DialogueManager : MonoBehaviour
         {            
             soundEfectHoldingTippingBool = true;
             audioManager.PlaySfxAudio(dialogue.soundEffectAudioClip);
+            OperateDiodes(8, true, false);
+        }
+
+        if(dialogue.soundEffectAtEndClip != null){
+            audioManager.PlaySFXatEnd(dialogue.soundEffectAtEndClip);
         }
 
         if(dialogue.voiceActorAudioClip != null){
             voiceActorReadyBool = true;
+            //We dont having the voice actor so why i still managing this?
             if(dialogue.characterOnLeftWhiteBool)
-                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, true);
+                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, true, false, false);
             if(dialogue.characterOnRightWhiteBool)
-                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, false);
+                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, false, true, false);
+            if(dialogue.characterOnMiddleWhiteBool || 
+                (!dialogue.characterOnRightWhiteBool && !dialogue.characterOnLeftWhiteBool) )
+                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, false, false, true);
         }
 
         if(dialogue.musicAudioClip != null){
@@ -634,6 +647,15 @@ public class DialogueManager : MonoBehaviour
         voiceActorReadyBool = false;
         soundEfectHoldingTippingBool = false;        
         _reputationNumberText.text = "";
+
+        movableItemImage.sprite = emptyTransparentSprite;
+        _actorLeftSprite.sprite = emptyTransparentSprite;
+        _actorRightSprite.sprite = emptyTransparentSprite;
+        _actorMiddleSprite.sprite = emptyTransparentSprite;
+        _actorTagLeftSprite.sprite = emptyTransparentSprite;
+        _actorTagRightSprite.sprite = emptyTransparentSprite;
+        _actorTagMiddleSprite.sprite = emptyTransparentSprite;
+
         appearDissapear.Clear();
         movabelItemScript.OrderToMove(true, false, false, 0);
         OperateDiodes(0, false, true);
@@ -675,7 +697,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void ChangeNpcImage(bool itsLeftBool, CharacterSheet characterSheet, int number)
+    public void ChangeNpcImage(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool, CharacterSheet characterSheet, int number)
     {
         Sprite chosenSprite = emptyTransparentSprite;
         if(characterSheet != null){
@@ -692,38 +714,46 @@ public class DialogueManager : MonoBehaviour
 
             if(itsLeftBool){
                 _actorLeftSprite.sprite = chosenSprite;
-                /*
-                if(image != null){
-                    _actorLeftSprite.sprite = image;
-                    
+                _actorTagLeftSprite.sprite = characterSheet.nameTagSprite;
+            }
+            if(itsRightBool){
+                _actorRightSprite.sprite = chosenSprite; 
+                _actorTagRightSprite.sprite = characterSheet.nameTagSprite;               
+            }
+            if(itsMiddleBool){
+                _actorRightSprite.sprite = chosenSprite;  
+                _actorTagMiddleSprite.sprite = characterSheet.nameTagSprite;              
+            }
+
+            if(_curentActiveDialog.overwriteNameText != "")
+                if(charactersInGame[_curentActiveDialog.characterInUse] != null)
+                if(charactersInGame[_curentActiveDialog.characterInUse] 
+                == characterSheet)
+                {
+                    if(itsLeftBool) _actorTagLeftSprite.sprite = emptyTransparentSprite;
+                    if(itsRightBool) _actorTagRightSprite.sprite = emptyTransparentSprite;
+                    if(itsMiddleBool) _actorTagMiddleSprite.sprite = emptyTransparentSprite;
                 }
-                else
-                _actorLeftSprite.sprite = emptyTransparentSprite; 
-                */ 
-            }else{
-                _actorRightSprite.sprite = chosenSprite;
-                /*
-                if(image != null){
-                    _actorRightSprite.sprite = image; 
-                    
-                }            
-                else
-                _actorRightSprite.sprite = emptyTransparentSprite;
-                */
-            }  
 
         }else{
-            if(itsLeftBool)
-                _actorLeftSprite.sprite = emptyTransparentSprite; 
-            else
+            if(itsLeftBool){
+                _actorLeftSprite.sprite = emptyTransparentSprite;
+                _actorTagLeftSprite.sprite = emptyTransparentSprite;
+            }
+            if(itsRightBool){
                 _actorRightSprite.sprite = emptyTransparentSprite;
-            //Debug.Log("Warning character Sheet empty on ChangeNpcImage!");
+                _actorTagRightSprite.sprite = emptyTransparentSprite;
+            }
+            if(itsMiddleBool){
+                _actorMiddleSprite.sprite = emptyTransparentSprite;
+                _actorTagMiddleSprite.sprite = emptyTransparentSprite;
+            }
         }
         
         
     }
 
-    private void WhiteOrGrayNpcImage(bool itsLeftBool, bool whiteBool){
+    private void WhiteOrGrayNpcImage(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool, bool whiteBool){
         if(itsLeftBool){
 
             if(whiteBool){
@@ -741,8 +771,9 @@ public class DialogueManager : MonoBehaviour
                         _actorLeftSprite.color = v4Visibility;
                 }     
             }    
-
-        }else{
+        }
+        
+        if(itsRightBool){
 
             if(whiteBool){
                 if(_actorRightSprite.color != Color.white) {
@@ -757,6 +788,26 @@ public class DialogueManager : MonoBehaviour
                         v4Visibility = (Vector4)Color.grey;
                         v4Visibility.w = valueW;
                         _actorRightSprite.color = v4Visibility;
+                }     
+            }
+            
+        }
+
+        if(itsMiddleBool){
+
+            if(whiteBool){
+                if(_actorMiddleSprite.color != Color.white) {
+                    valueW = _actorMiddleSprite.color.a;
+                    v4Visibility = (Vector4)Color.white;
+                    v4Visibility.w = valueW;
+                    _actorMiddleSprite.color = v4Visibility;
+                }
+            }else{
+                if(_actorMiddleSprite.color != Color.grey) {
+                        valueW = _actorMiddleSprite.color.a;
+                        v4Visibility = (Vector4)Color.grey;
+                        v4Visibility.w = valueW;
+                        _actorMiddleSprite.color = v4Visibility;
                 }     
             }
             
@@ -894,10 +945,14 @@ public class DialogueManager : MonoBehaviour
 
     void OperateDiodes(int diodeNumber, bool option, bool clearAllBool){
         if(clearAllBool){
-            _diodTyping.gameObject.SetActive(false);
-            _diodOptions.gameObject.SetActive(false);
-            _diodSpaceBar.gameObject.SetActive(false);
-            _diodNextBtn.gameObject.SetActive(false);
+            _diodTyping.gameObject.SetActive(false); //1
+            _diodOptions.gameObject.SetActive(false); //2
+            _diodSpaceBar.gameObject.SetActive(false); //3
+            _diodNextBtn.gameObject.SetActive(false); //4
+            _diodEnter.gameObject.SetActive(false); //5
+            _diodMouse.gameObject.SetActive(false); //6
+            _diodTextDisplayed.gameObject.SetActive(false); //7
+            _diodSFXHold.gameObject.SetActive(false); //8
         }else{
             if(diodeNumber == 1)
             if(!option) _diodTyping.gameObject.SetActive(false);
@@ -914,6 +969,22 @@ public class DialogueManager : MonoBehaviour
             if(diodeNumber == 4)
             if(!option) _diodNextBtn.gameObject.SetActive(false);
             else _diodNextBtn.gameObject.SetActive(true);
+
+            if(diodeNumber == 5)
+            if(!option) _diodEnter.gameObject.SetActive(false);
+            else _diodEnter.gameObject.SetActive(true);
+
+            if(diodeNumber == 6)
+            if(!option) _diodMouse.gameObject.SetActive(false);
+            else _diodMouse.gameObject.SetActive(true);
+
+            if(diodeNumber == 7)
+            if(!option) _diodTextDisplayed.gameObject.SetActive(false);
+            else _diodTextDisplayed.gameObject.SetActive(true);
+
+            if(diodeNumber == 8)
+            if(!option) _diodSFXHold.gameObject.SetActive(false);
+            else _diodSFXHold.gameObject.SetActive(true);
         }
     }
 

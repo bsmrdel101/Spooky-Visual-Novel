@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public bool secondarySfxPreparedBool;
+    public bool secondarySfxPreparedBool, reputationSfxPreparedBool;
     public bool typingBool;
 
     [Header("Players")]
     public AudioSource _musicPlayer;
     public AudioSource _mainMenuMusicPlayer, 
-        _sfxPlayer, _sfxSecondaryPlayer, _uiPlayer, _typpingSoundPlayer, 
+        _sfxPlayer, _sfxSecondaryPlayer, _reputationSfxPlayer, _uiPlayer, _typpingSoundPlayer, 
         _voiceActorLeftPlayer, _voiceActorRightPlayer, _voiceActorMiddlePlayer;
 
     [Header("clips")]
@@ -35,6 +35,15 @@ public class AudioManager : MonoBehaviour
             if(!dialogueManager.typingBool){
                 _sfxSecondaryPlayer.Play();
                 secondarySfxPreparedBool = false;
+            }
+        }
+
+        if(reputationSfxPreparedBool){
+            if(!secondarySfxPreparedBool)
+            if(!dialogueManager.soundEfectHoldingTippingBool)
+            if(!dialogueManager.typingBool){
+                _reputationSfxPlayer.Play();
+                reputationSfxPreparedBool = false;
             }
         }
 
@@ -79,6 +88,7 @@ public class AudioManager : MonoBehaviour
         if(_voiceActorMiddlePlayer.isPlaying == true){_voiceActorMiddlePlayer.Stop();}
         if(_sfxPlayer.isPlaying == true){_sfxPlayer.Stop();}
         if(_sfxSecondaryPlayer.isPlaying == true){_sfxSecondaryPlayer.Stop();}
+        //I let reputation to slide even if is order to stop
         if(_typpingSoundPlayer.isPlaying == true) _typpingSoundPlayer.Stop();
         if(secondarySfxPreparedBool) secondarySfxPreparedBool = false;
         //Debug.Log("Stopping sfx audio.");
@@ -108,14 +118,26 @@ public class AudioManager : MonoBehaviour
                 if(useThisClipBool) _voiceActorRightPlayer.clip = newAudio;
                 _voiceActorRightPlayer.Play();    
             }    
+            if(dialogueManager._curentActiveDialog.characterOnMiddleWhiteBool){
+                if(useThisClipBool) _voiceActorMiddlePlayer.clip = newAudio;
+                _voiceActorMiddlePlayer.Play();    
+            }   
         }
     }
 
-    public void InsertVoiceAudioClip(AudioClip newAudio, bool itsLeftBool){
+    public void InsertVoiceAudioClip(AudioClip newAudio, bool itsLeftBool, bool itsRightBool, bool itsMiddleBool){
         if(itsLeftBool){
-            _voiceActorLeftPlayer.Play();
-        }else{
-            _voiceActorRightPlayer.Play();
+            //_actorMiddleSpritePlay();
+            _voiceActorLeftPlayer.clip = newAudio;
+        }
+        //warning what the heck i have here?
+        if(itsMiddleBool){
+            //_voiceActorRightPlayer.Play();
+            _voiceActorRightPlayer.clip = newAudio;
+        }
+
+        if(itsMiddleBool){
+            _voiceActorMiddlePlayer.clip = newAudio;
         }
         
     }
@@ -126,11 +148,18 @@ public class AudioManager : MonoBehaviour
         _uiPlayer.Play(); 
     }
 
-    public void PlayReputationSound(bool option){
+    public void PlaySFXatEnd(bool option){
         //after finishing typing
         if(option){_sfxSecondaryPlayer.clip = reputationUpAC;
         }else{_sfxSecondaryPlayer.clip = reputationDownAC;}
         secondarySfxPreparedBool = true;
+    }
+
+    public void PlayReputationSound(bool option){
+        //after finishing typing and after the second sfx
+        if(option){_reputationSfxPlayer.clip = reputationUpAC;
+        }else{_reputationSfxPlayer.clip = reputationDownAC;}
+        reputationSfxPreparedBool = true;
     }
 
     public void PlayTyppingSound(){

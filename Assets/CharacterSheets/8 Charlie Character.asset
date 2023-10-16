@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 8 Charlie Character
   m_EditorClassIdentifier: 
   characterName: Charlie
-  baseSprite: {fileID: 21300000, guid: 210778f3e78678444a5a09870113c6a8, type: 3}
+  baseSprite: {fileID: 21300000, guid: 84a788abf94fdb04b95db64e47a278b6, type: 3}
   spritesArray:
-  - {fileID: 21300000, guid: 210778f3e78678444a5a09870113c6a8, type: 3}
+  - {fileID: 21300000, guid: 84a788abf94fdb04b95db64e47a278b6, type: 3}
+  nameTagSprite: {fileID: -1167664142, guid: e7952c1efa066304c931fc5d2a74615a, type: 3}
   nameColor: {r: 0.9433962, g: 0.25424257, b: 0.14684942, a: 255}
   speakingFont: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

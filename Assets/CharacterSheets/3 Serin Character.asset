@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 3 Serin Character
   m_EditorClassIdentifier: 
   characterName: Serin
-  baseSprite: {fileID: 21300000, guid: c1b9a9da44dab2b47a53c5e0aa69bd8a, type: 3}
+  baseSprite: {fileID: 21300000, guid: 1d6b08ffb0205f24da82ea7603494fe2, type: 3}
   spritesArray:
-  - {fileID: 21300000, guid: c1b9a9da44dab2b47a53c5e0aa69bd8a, type: 3}
+  - {fileID: 21300000, guid: 1d6b08ffb0205f24da82ea7603494fe2, type: 3}
+  nameTagSprite: {fileID: 1036578984, guid: e7952c1efa066304c931fc5d2a74615a, type: 3}
   nameColor: {r: 0.22459061, g: 0.4956185, b: 0.9716981, a: 255}
   speakingFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

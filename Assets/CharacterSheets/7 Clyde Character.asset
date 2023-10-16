@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: 7 Clyde Character
   m_EditorClassIdentifier: 
   characterName: Clyde
-  baseSprite: {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  baseSprite: {fileID: 21300000, guid: cf01d92a3b0bfdd44a2b2520297c6f2c, type: 3}
   spritesArray:
-  - {fileID: 21300000, guid: 7cf76487f5b68f84799b9d5e21d21d54, type: 3}
-  - {fileID: 21300000, guid: 86e3d0d6e287b0249bbcc5d8b407b528, type: 3}
+  - {fileID: 21300000, guid: cf01d92a3b0bfdd44a2b2520297c6f2c, type: 3}
+  - {fileID: 21300000, guid: cf01d92a3b0bfdd44a2b2520297c6f2c, type: 3}
+  nameTagSprite: {fileID: -1527618716, guid: e7952c1efa066304c931fc5d2a74615a, type: 3}
   nameColor: {r: 0, g: 0, b: 0.5849056, a: 255}
   speakingFont: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

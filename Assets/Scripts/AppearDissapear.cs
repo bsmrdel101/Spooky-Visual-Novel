@@ -8,11 +8,13 @@ public class AppearDissapear : MonoBehaviour
     public DialogueManager dialogueManager;
 
     [Header("Apper and Disapear")]
-    public bool actorLeftVisibleBool; public bool actorRightVisibleBool;
+    public bool actorLeftVisibleBool; 
+    public bool actorRightVisibleBool, actorMidleVisibleBool;
     Vector4 v4Visibility= new Vector4(1,1,1,1);
     float timerVisibility=0; public float intervalVisibility = 0.01f;
-    public bool actorleftAppearingBool, actorLeftDisapearingBool, 
-        actorRightAppearingBool, actorRightDisapearingBool;
+    public bool actorleftAppearingBool, actorLeftDisapearingBool, holdLeftTippingBool, 
+        actorRightAppearingBool, actorRightDisapearingBool, holdRightTippingBool,
+        actorMidleAppearingBool, actorMidleDisapearingBool, holdMiddleTippingBool;
 
     [Header("Informative Black Screen")]
     public bool infoBSlDisapearingBool;
@@ -37,7 +39,14 @@ public class AppearDissapear : MonoBehaviour
                     timerVisibility = 0;
                     if(actorleftAppearingBool && actorLeftDisapearingBool) actorLeftDisapearingBool = false;
                     if(actorRightAppearingBool && actorRightDisapearingBool) actorRightDisapearingBool = false;
+                    if(actorMidleAppearingBool && actorMidleDisapearingBool) actorMidleDisapearingBool = false;
                     
+                    if(holdLeftTippingBool) if(!dialogueManager.typingBool) holdLeftTippingBool = false;
+                    if(holdRightTippingBool) if(!dialogueManager.typingBool) holdRightTippingBool = false;
+                    if(holdMiddleTippingBool) if(!dialogueManager.typingBool) holdMiddleTippingBool = false;
+                    
+                    
+                    if(!holdLeftTippingBool)
                     if(actorleftAppearingBool || actorLeftDisapearingBool){
                         //v4Visibility.w = dialogueManager._actorLeftSprite.color.a;
                         v4Visibility = (Vector4)dialogueManager._actorLeftSprite.color;
@@ -59,8 +68,9 @@ public class AppearDissapear : MonoBehaviour
                         dialogueManager._actorLeftSprite.color = v4Visibility;
                     }
 
+                    
+                    if(!holdRightTippingBool)
                     if(actorRightAppearingBool || actorRightDisapearingBool){
-                        //v4Visibility.w = dialogueManager._actorRightSprite.color.a;
                         v4Visibility = (Vector4)dialogueManager._actorRightSprite.color;
                         if(actorRightDisapearingBool) {
                             v4Visibility.w -= 0.01f;
@@ -79,6 +89,29 @@ public class AppearDissapear : MonoBehaviour
                         }
                         dialogueManager._actorRightSprite.color = v4Visibility;
                     }
+
+
+                    if(!holdMiddleTippingBool)
+                    if(actorMidleAppearingBool || actorMidleDisapearingBool){
+                        v4Visibility = (Vector4)dialogueManager._actorRightSprite.color;
+                        if(actorMidleDisapearingBool) {
+                            v4Visibility.w -= 0.01f;
+                            if(v4Visibility.w <= 0){
+                                v4Visibility.w = 0;
+                                actorMidleDisapearingBool = false;
+                            }
+                        }
+                        if(actorMidleAppearingBool) {
+                            v4Visibility.w += 0.01f;
+                            if(v4Visibility.w >= 1){
+                                v4Visibility.w = 1;
+                                actorMidleAppearingBool = false;
+                                actorMidleVisibleBool = true;
+                            }   
+                        }
+                        dialogueManager._actorMiddleSprite.color = v4Visibility;
+                    }
+
                 }
             }
     
@@ -138,7 +171,7 @@ public class AppearDissapear : MonoBehaviour
         actorRightVisibleBool = false;
     }
 
-    public void OrderToAppearDisaper(bool itsLeftBool, bool appearBool){
+    public void OrderToAppearDisaper(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool, bool appearBool){
         if(itsLeftBool){
             if(appearBool){
                 actorleftAppearingBool = true; 
@@ -150,7 +183,9 @@ public class AppearDissapear : MonoBehaviour
                 actorLeftVisibleBool = false;
                 actorLeftDisapearingBool = true;
             }
-        }else{
+        }
+        
+        if(itsRightBool){
             if(appearBool){
                 actorRightAppearingBool = true;
                 actorRightVisibleBool = false;
@@ -162,20 +197,42 @@ public class AppearDissapear : MonoBehaviour
                 actorRightDisapearingBool = true;
             }
         }
+
+        if(itsMiddleBool){
+            if(appearBool){
+                actorMidleAppearingBool = true;
+                actorMidleVisibleBool = false;
+                v4Visibility = (Vector4) dialogueManager._actorMiddleSprite.color;
+                v4Visibility.w = 0;
+                dialogueManager._actorMiddleSprite.color = v4Visibility;
+            }else{
+                actorMidleVisibleBool = false;
+                actorMidleDisapearingBool = true;
+            }
+        }
         
     }
 
-    public void OrderAlpha0(bool itsLeftBool){
+    public void OrderAlpha0(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool){
         if(itsLeftBool){
             v4Visibility = (Vector4) dialogueManager._actorLeftSprite.color;
             v4Visibility.w = 0;
             dialogueManager._actorLeftSprite.color = v4Visibility;
             actorLeftVisibleBool = false;
-        }else{
+        }
+        
+        if(itsRightBool){
             v4Visibility = (Vector4) dialogueManager._actorRightSprite.color;
             v4Visibility.w = 0;
             dialogueManager._actorRightSprite.color = v4Visibility;
             actorRightVisibleBool = false;
+        }
+
+        if(itsMiddleBool){
+            v4Visibility = (Vector4) dialogueManager._actorMiddleSprite.color;
+            v4Visibility.w = 0;
+            dialogueManager._actorMiddleSprite.color = v4Visibility;
+            actorMidleVisibleBool = false;
         }
     }
 

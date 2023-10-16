@@ -9,6 +9,7 @@ public class CharacterSheet : ScriptableObject
     public string characterName;
     public Sprite baseSprite;
     public Sprite[] spritesArray;
+    public Sprite nameTagSprite;
     public Color nameColor = new Color(147, 61, 95, 255);
     public TMP_FontAsset speakingFont;
 }

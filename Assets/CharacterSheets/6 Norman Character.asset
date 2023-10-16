@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: 6 Norman Character
   m_EditorClassIdentifier: 
   characterName: Norman
-  baseSprite: {fileID: 21300000, guid: 894d55c38ed6ecb4ba596b2802326fc3, type: 3}
-  spritesArray: []
+  baseSprite: {fileID: 21300000, guid: f3b683ef49b77c747822598f17f5d970, type: 3}
+  spritesArray:
+  - {fileID: 21300000, guid: f3b683ef49b77c747822598f17f5d970, type: 3}
+  nameTagSprite: {fileID: 1483540806, guid: e7952c1efa066304c931fc5d2a74615a, type: 3}
   nameColor: {r: 0.08627451, g: 0.31020656, b: 0.130162, a: 255}
   speakingFont: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
