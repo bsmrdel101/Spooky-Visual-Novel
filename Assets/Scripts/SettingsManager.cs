@@ -78,7 +78,8 @@ public class SettingsManager : MonoBehaviour
         audioManager._voiceActorLeftPlayer.volume = valueTechnical;
         audioManager._voiceActorMiddlePlayer.volume = valueTechnical;
         audioManager._voiceActorRightPlayer.volume = valueTechnical;
-        audioManager.PlayVoiceActorAudio(audioManager.selectDialogAC, true, true);
+        //audioManager.PlayVoiceActorAudio(audioManager.selectDialogAC, true, true);
+        audioManager.PlayTestVoiceActor();
     }
 
     public void TyppingSpeed(bool option){

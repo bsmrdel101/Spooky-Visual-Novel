@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     [Header("Vital Data")]
     public bool spaceIsDownBool; 
+    public bool technicalStepsPanelOpenBool;
     public bool enterIsDownBool, mouseIsDownBool;
     
     public bool soundEfectHoldingTippingBool, voiceActorReadyBool=true
@@ -21,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     public bool preparedForTheNextDialogueBool;
     private Dialogue preparedForTheNextDialogueValue=null;
     public bool waitInputBool, waitProtectTippingBool;
+    public bool stepBackBool;
     
     
     
@@ -32,7 +34,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Scene")]
     public StoryScene ActiveStoryScene;
     public StoryScene startingStoryScene;
-    public Dialogue _curentActiveDialog, _lastActiveDialog;
+    public Dialogue _curentActiveDialog, _lastActiveDialog, _lastDialogChoice;
 
     [Header("Dialogue")]    
     public bool stopReadingTextBool = false;
@@ -65,6 +67,7 @@ public class DialogueManager : MonoBehaviour
     public Transform _informativeBlackScreenPanel, _informativeBSButton;
     public TMP_Text _informativeBSText;
     public Image _informativeBSImage;
+    public Transform _informativeBSCloudImage;
     public MoveToPosition movabelItemScript;
     public Image movableItemImage;
     public Transform _computerDialogPanel, _computerButtonsPanel;
@@ -153,7 +156,9 @@ public class DialogueManager : MonoBehaviour
         // Stop text from reading if player presses spacebar
         if (Input.GetKeyDown(KeyCode.Space)) 
         if (!spaceIsDownBool)
+        if (!technicalStepsPanelOpenBool)
         if (!waitProtectTippingBool)
+        if (!stopReadingTextBool)
         {
             stopReadingTextBool = true;
             if(menuManager.creditPanelOnBool) creditsManager.stopReadingTextBoll = true;
@@ -163,7 +168,8 @@ public class DialogueManager : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Mouse0))
         if (!IsMouseOverUIButton())
-        {            
+        if (!technicalStepsPanelOpenBool)
+        {                        
             if (typingBool)
             {
                 if (!waitProtectTippingBool)
@@ -237,7 +243,8 @@ public class DialogueManager : MonoBehaviour
         }// MOUSE 0
 
 
-        if (Input.GetKeyDown(KeyCode.Return)){
+        if (Input.GetKeyDown(KeyCode.Return))
+        if (!technicalStepsPanelOpenBool){
             if (!enterIsDownBool){
                 OperateSpace();
 
@@ -269,7 +276,8 @@ public class DialogueManager : MonoBehaviour
         
         
         //dialogue options
-        if(haveOptionsBool && optionsAreDisplayedBool){
+        if(haveOptionsBool && optionsAreDisplayedBool)
+        if (!technicalStepsPanelOpenBool){
             if(_listOfDialogOptions.Count > 0)
             for(int i=0; i< _listOfDialogOptions.Count; i++){
                 if(_listOfDialogOptions[i] != null){
@@ -317,14 +325,16 @@ public class DialogueManager : MonoBehaviour
                 OperateDiodes(8, false, false);
 
                 if(voiceActorReadyBool) {
-                    audioManager.PlayVoiceActorAudio(null, false, false);
+                    audioManager.PlayNormalVoiceActor(0);
+                    //audioManager.PlayVoiceActorAudio(null, false, false);
                     voiceActorReadyBool = false;
                 }
             }            
         }
 
 
-        if(typingBool){
+        if(typingBool)
+        if (!technicalStepsPanelOpenBool){
             if(!soundEfectHoldingTippingBool)
                 if(clearToTypeBool){
                     timerTyping += Time.deltaTime;
@@ -360,7 +370,8 @@ public class DialogueManager : MonoBehaviour
         }
 
 
-        if(preparedForTheNextDialogueBool){
+        if(preparedForTheNextDialogueBool)
+        if (!technicalStepsPanelOpenBool){
             if(preparedForTheNextDialogueValue != null){
                 Dialogue nextDialogue = preparedForTheNextDialogueValue;
                 preparedForTheNextDialogueValue = null;
@@ -474,14 +485,7 @@ public class DialogueManager : MonoBehaviour
 
         if(dialogue.voiceActorAudioClip != null){
             voiceActorReadyBool = true;
-            //We dont having the voice actor so why i still managing this?
-            if(dialogue.characterOnLeftWhiteBool)
-                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, true, false, false);
-            if(dialogue.characterOnRightWhiteBool)
-                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, false, true, false);
-            if(dialogue.characterOnMiddleWhiteBool || 
-                (!dialogue.characterOnRightWhiteBool && !dialogue.characterOnLeftWhiteBool) )
-                audioManager.InsertVoiceAudioClip(dialogue.voiceActorAudioClip, false, false, true);
+            audioManager.norvalVoiceAudioClip = dialogue.voiceActorAudioClip;
         }
 
         if(dialogue.musicAudioClip != null){
@@ -491,7 +495,8 @@ public class DialogueManager : MonoBehaviour
         if(soundEfectHoldingTippingBool == false){
             
             if(voiceActorReadyBool) {
-                audioManager.PlayVoiceActorAudio(null, false, false);
+                //audioManager.PlayVoiceActorAudio(null, false, false);
+                audioManager.PlayNormalVoiceActor(0);
                 voiceActorReadyBool = false;
             }
 
@@ -569,6 +574,7 @@ public class DialogueManager : MonoBehaviour
 
         //sound and typping
         if(haveOptionsBool){
+            //_lastDialogChoice = dialogue;
             if(dialogue.computerDialogBool) ReadTextStartTypping();
             RevealDialougeOptions(dialogue);
             normalDialogBool = false;
@@ -584,6 +590,9 @@ public class DialogueManager : MonoBehaviour
         }
 
 
+        if(_informativeBSCloudImage.gameObject.activeInHierarchy)
+            _informativeBSCloudImage.gameObject.SetActive(false);
+
         if(dialogue.informativeBSBool){
             appearDissapear.OrderForBSPanel(true, false, false);
             if(dialogue.informativeSuportSprite != null){
@@ -593,6 +602,9 @@ public class DialogueManager : MonoBehaviour
                     _informativeBSImage.sprite = emptyTransparentSprite;
             }
             normalDialogBool = false;
+            if(dialogue.placeMistUnderInformativeBool){
+                _informativeBSCloudImage.gameObject.SetActive(true);
+            }
         }
 
         if(dialogue.computerDialogBool){
@@ -610,6 +622,18 @@ public class DialogueManager : MonoBehaviour
             movabelItemScript.OrderToMove(false, false, true, dialogue.itemNewCordinates);
         if(dialogue.ItemNewSprite != null) movableItemImage.sprite = dialogue.ItemNewSprite;
 
+
+        //step back
+        if(stepBackBool){
+            Debug.Log("Step back, try to make an alternations on bacground image and music.");
+            stepBackBool = false;
+            if(dialogue.lastBacgroundSprite != null)
+                if(_bgImage.sprite != dialogue.lastBacgroundSprite)
+                _bgImage.sprite = dialogue.lastBacgroundSprite;
+            if (dialogue.lastMusicClip != null)
+                if(audioManager._musicPlayer.clip != dialogue.lastMusicClip)
+                audioManager._musicPlayer.clip = dialogue.lastMusicClip;
+        }
 
         if(dialogue.redirectionOnStoryScene != null){
             ChangeStoryScene(dialogue.redirectionOnStoryScene);
@@ -639,6 +663,9 @@ public class DialogueManager : MonoBehaviour
         _blockedDialogue.Clear();
         audioManager._musicPlayer.Stop();
         ResetDialogueOptions();
+        _lastActiveDialog = null;
+        _lastDialogChoice = null;
+
         reputationManager._reputation = 0;
         menuManager.gameIsOnBool = false;
         clearToTypeBool = true;
@@ -699,7 +726,8 @@ public class DialogueManager : MonoBehaviour
 
     public void ChangeNpcImage(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool, CharacterSheet characterSheet, int number)
     {
-        Sprite chosenSprite = emptyTransparentSprite;
+        Sprite chosenSprite = emptyTransparentSprite,
+            chosenTagSprite = emptyTransparentSprite ;
         if(characterSheet != null){
 
             if(characterSheet.spritesArray.Length > number){
@@ -712,17 +740,20 @@ public class DialogueManager : MonoBehaviour
                     chosenSprite = characterSheet.baseSprite;
             }
 
+            if(characterSheet.nameTagSprite != null)
+                chosenTagSprite = characterSheet.nameTagSprite;
+
             if(itsLeftBool){
                 _actorLeftSprite.sprite = chosenSprite;
-                _actorTagLeftSprite.sprite = characterSheet.nameTagSprite;
+                _actorTagLeftSprite.sprite = chosenTagSprite;
             }
             if(itsRightBool){
                 _actorRightSprite.sprite = chosenSprite; 
-                _actorTagRightSprite.sprite = characterSheet.nameTagSprite;               
+                _actorTagRightSprite.sprite = chosenTagSprite;               
             }
             if(itsMiddleBool){
                 _actorRightSprite.sprite = chosenSprite;  
-                _actorTagMiddleSprite.sprite = characterSheet.nameTagSprite;              
+                _actorTagMiddleSprite.sprite = chosenTagSprite;              
             }
 
             if(_curentActiveDialog.overwriteNameText != "")
@@ -840,19 +871,9 @@ public class DialogueManager : MonoBehaviour
 
 
     private void RevealNextButton(){
-        /*
-        if(     menuManager.creditPanelOnBool 
-            ||  menuManager.informativeBSPanelBool 
-            ||  menuManager.computerDialogPanelOnBool
-            ){
-            RevealDialougeOptions(_curentActiveDialog);
-        }else{ 
-            */
             nextDialogButtonOnBool = true;
             _nextDialogButtonTransform.gameObject.SetActive(true);
             OperateDiodes(4, true, false);
-            //}
-
     }
 
     private void RevealDialougeOptions(Dialogue dialogue)
@@ -872,14 +893,10 @@ public class DialogueManager : MonoBehaviour
 
 
     public void OrderFromNextDialogueButton(){
-        //if (_curentActiveDialog.DialogueOptions.Count > 0){
-        //    RevealDialougeOptions(_curentActiveDialog);
-        //}else{
             OperateDiodes(4, false, false);
             _nextDialogButtonTransform.gameObject.SetActive(false);
             nextDialogButtonOnBool = false;
             PrepareToUpdateDialogueBox(_curentActiveDialog.DialogueNext);
-        //}
     }
 
     public void OnClickSelectDialogueOption(Dialogue dialogue, bool playSFxBool)
@@ -894,11 +911,11 @@ public class DialogueManager : MonoBehaviour
         optionsAreDisplayedBool = false;
         clearToTypeBool = false;
         OperateDiodes(2, false, false);
-        if(nextDialogButtonOnBool) OperateDiodes(4, false, false);
-        
-        //ReputationManager.IncreaseReputationAction(dialogue.reputationIncrease);
-        //ReputationManager.DecreaseReputationAction(dialogue.reputationDecrease);        
+        if(nextDialogButtonOnBool) OperateDiodes(4, false, false);        
         reputationManager.ReputationChange(dialogue.reputation);
+        _lastDialogChoice = _curentActiveDialog;
+        _lastDialogChoice.lastBacgroundSprite = _bgImage.sprite;
+        _lastDialogChoice.lastMusicClip = audioManager._musicPlayer.clip;
         PrepareToUpdateDialogueBox(dialogue);
     }
 
@@ -992,6 +1009,12 @@ public class DialogueManager : MonoBehaviour
         spaceIsDownBool = true;
         OperateDiodes(3, true, false);
     }
+
+
+
+    
+
+
 
     
 

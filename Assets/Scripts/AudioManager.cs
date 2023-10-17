@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip selectDialogAC;
     public AudioClip[] typingACArray; int typingCurrentInteger=0;
     public AudioClip[] dialougueBeepACArray, PCShutingDownACArray, selectMenuACArray;
+    public AudioClip norvalVoiceAudioClip;
+    public AudioClip testVoiceAudioClip;
     
 
 
@@ -105,25 +107,34 @@ public class AudioManager : MonoBehaviour
             _sfxPlayer.Play();
     }
 
-    public void PlayVoiceActorAudio(AudioClip newAudio, bool useThisClipBool, bool nonDialogBool){
-        if(nonDialogBool){
-            _voiceActorMiddlePlayer.clip = newAudio;
+    
+
+
+    public void PlayNormalVoiceActor(int side){
+        if(side == -1){
+            _voiceActorLeftPlayer.clip = norvalVoiceAudioClip;
+            _voiceActorLeftPlayer.Play();
+        }
+        if(side == 0){
+            _voiceActorMiddlePlayer.clip = norvalVoiceAudioClip;
             _voiceActorMiddlePlayer.Play();
-        }else{
-            if(dialogueManager._curentActiveDialog.characterOnLeftWhiteBool){
-                if(useThisClipBool) _voiceActorLeftPlayer.clip = newAudio;
-                _voiceActorLeftPlayer.Play();    
-            }
-            if(dialogueManager._curentActiveDialog.characterOnRightWhiteBool){
-                if(useThisClipBool) _voiceActorRightPlayer.clip = newAudio;
-                _voiceActorRightPlayer.Play();    
-            }    
-            if(dialogueManager._curentActiveDialog.characterOnMiddleWhiteBool){
-                if(useThisClipBool) _voiceActorMiddlePlayer.clip = newAudio;
-                _voiceActorMiddlePlayer.Play();    
-            }   
+        }
+        if(side == 1){
+            _voiceActorRightPlayer.clip = norvalVoiceAudioClip;
+            _voiceActorRightPlayer.Play();
         }
     }
+
+    public void PlayTestVoiceActor(){
+        _voiceActorMiddlePlayer.clip = testVoiceAudioClip;
+        _voiceActorMiddlePlayer.Play();
+    }
+
+    public void JustPlayVoiceActor(AudioClip theClip){
+        _voiceActorMiddlePlayer.clip = theClip;
+        _voiceActorMiddlePlayer.Play();
+    }
+
 
     public void InsertVoiceAudioClip(AudioClip newAudio, bool itsLeftBool, bool itsRightBool, bool itsMiddleBool){
         if(itsLeftBool){
@@ -138,8 +149,7 @@ public class AudioManager : MonoBehaviour
 
         if(itsMiddleBool){
             _voiceActorMiddlePlayer.clip = newAudio;
-        }
-        
+        }        
     }
 
     public void PlayMenuButtonClick(bool option){
@@ -160,6 +170,7 @@ public class AudioManager : MonoBehaviour
         if(option){_reputationSfxPlayer.clip = reputationUpAC;
         }else{_reputationSfxPlayer.clip = reputationDownAC;}
         reputationSfxPreparedBool = true;
+        Debug.Log("Reputation sfx played!");
     }
 
     public void PlayTyppingSound(){

@@ -66,6 +66,7 @@ public class AppearDissapear : MonoBehaviour
                             }   
                         }
                         dialogueManager._actorLeftSprite.color = v4Visibility;
+                        dialogueManager._actorTagLeftSprite.color = v4Visibility;
                     }
 
                     
@@ -88,6 +89,7 @@ public class AppearDissapear : MonoBehaviour
                             }   
                         }
                         dialogueManager._actorRightSprite.color = v4Visibility;
+                        dialogueManager._actorTagRightSprite.color = v4Visibility;
                     }
 
 
@@ -110,6 +112,7 @@ public class AppearDissapear : MonoBehaviour
                             }   
                         }
                         dialogueManager._actorMiddleSprite.color = v4Visibility;
+                        dialogueManager._actorTagMiddleSprite.color = v4Visibility;
                     }
 
                 }
@@ -166,9 +169,14 @@ public class AppearDissapear : MonoBehaviour
     public void Clear () {
         v4Visibility = new Vector4(1,1,1, 0);
         dialogueManager._actorLeftSprite.color = v4Visibility;
+        dialogueManager._actorTagLeftSprite.color = v4Visibility;
         actorLeftVisibleBool = false;
         dialogueManager._actorRightSprite.color = v4Visibility;
+        dialogueManager._actorTagRightSprite.color = v4Visibility;
         actorRightVisibleBool = false;
+        dialogueManager._actorMiddleSprite.color = v4Visibility;
+        dialogueManager._actorTagMiddleSprite.color = v4Visibility;
+        actorMidleVisibleBool = false;
     }
 
     public void OrderToAppearDisaper(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool, bool appearBool){
@@ -179,6 +187,7 @@ public class AppearDissapear : MonoBehaviour
                 v4Visibility = (Vector4) dialogueManager._actorLeftSprite.color;
                 v4Visibility.w = 0;
                 dialogueManager._actorLeftSprite.color = v4Visibility;
+                dialogueManager._actorTagLeftSprite.color = v4Visibility;
             }else{
                 actorLeftVisibleBool = false;
                 actorLeftDisapearingBool = true;
@@ -192,6 +201,7 @@ public class AppearDissapear : MonoBehaviour
                 v4Visibility = (Vector4) dialogueManager._actorRightSprite.color;
                 v4Visibility.w = 0;
                 dialogueManager._actorRightSprite.color = v4Visibility;
+                dialogueManager._actorTagRightSprite.color = v4Visibility;
             }else{
                 actorRightVisibleBool = false;
                 actorRightDisapearingBool = true;
@@ -205,6 +215,7 @@ public class AppearDissapear : MonoBehaviour
                 v4Visibility = (Vector4) dialogueManager._actorMiddleSprite.color;
                 v4Visibility.w = 0;
                 dialogueManager._actorMiddleSprite.color = v4Visibility;
+                dialogueManager._actorTagMiddleSprite.color = v4Visibility;
             }else{
                 actorMidleVisibleBool = false;
                 actorMidleDisapearingBool = true;
@@ -217,7 +228,8 @@ public class AppearDissapear : MonoBehaviour
         if(itsLeftBool){
             v4Visibility = (Vector4) dialogueManager._actorLeftSprite.color;
             v4Visibility.w = 0;
-            dialogueManager._actorLeftSprite.color = v4Visibility;
+            dialogueManager._actorLeftSprite.color = v4Visibility;            
+            dialogueManager._actorTagLeftSprite.color = v4Visibility;
             actorLeftVisibleBool = false;
         }
         
@@ -225,6 +237,7 @@ public class AppearDissapear : MonoBehaviour
             v4Visibility = (Vector4) dialogueManager._actorRightSprite.color;
             v4Visibility.w = 0;
             dialogueManager._actorRightSprite.color = v4Visibility;
+            dialogueManager._actorTagRightSprite.color = v4Visibility;
             actorRightVisibleBool = false;
         }
 
@@ -232,6 +245,7 @@ public class AppearDissapear : MonoBehaviour
             v4Visibility = (Vector4) dialogueManager._actorMiddleSprite.color;
             v4Visibility.w = 0;
             dialogueManager._actorMiddleSprite.color = v4Visibility;
+            dialogueManager._actorTagMiddleSprite.color = v4Visibility;
             actorMidleVisibleBool = false;
         }
     }

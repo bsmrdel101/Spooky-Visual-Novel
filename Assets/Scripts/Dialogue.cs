@@ -57,7 +57,7 @@ public class Dialogue : MonoBehaviour
     public DialogueOption DialogueWhenNoneAviable;
 
     [Tooltip("Put a information on a black screen.")]
-    public bool informativeBSBool;
+    public bool informativeBSBool, placeMistUnderInformativeBool;
     public Sprite informativeSuportSprite;
     [Tooltip("Use the Computer screen dialog. No Actors!")]
     public bool computerDialogBool;
@@ -85,6 +85,11 @@ public class Dialogue : MonoBehaviour
     public bool itemPlaceLeft, itemPlaceRight, itemMoveBool;
     [Tooltip("-1300(left) and 1300(right) shall be safe outside of the screen. -300 and 300 shall be a good bets to move the items.")]
     public int itemNewCordinates; 
+
+
+    [Header("Theory about step back")]
+    public Sprite lastBacgroundSprite;
+    public AudioClip lastMusicClip;
 
 
     

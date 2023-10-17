@@ -141,7 +141,8 @@ public class CreditsManager : MonoBehaviour
             openingBool = true;
             displayedImage.sprite = openSprite;
             if(openVoiceActorClip != null)
-                audioManager.PlayVoiceActorAudio(openVoiceActorClip, true, true);
+                //audioManager.PlayVoiceActorAudio(openVoiceActorClip, true, true);
+                audioManager.JustPlayVoiceActor(openVoiceActorClip);
             audioManager.PlaySfxAudio(openSfxAudiClip);            
             SetTypping(openMesage);
         }
@@ -152,7 +153,8 @@ public class CreditsManager : MonoBehaviour
             if(listOfEndings[endingNumber] != null){
                 displayedImage.sprite = listOfEndings[endingNumber].endSprite;
                 if(listOfEndings[endingNumber].endVoiceActorClip != null)
-                    audioManager.PlayVoiceActorAudio(listOfEndings[endingNumber].endVoiceActorClip, true, true);
+                    //audioManager.PlayVoiceActorAudio(listOfEndings[endingNumber].endVoiceActorClip, true, true);
+                    audioManager.JustPlayVoiceActor(listOfEndings[endingNumber].endVoiceActorClip);
                 if(listOfEndings[endingNumber].endAudioClip != null)
                     audioManager.PlaySfxAudio(listOfEndings[endingNumber].endAudioClip);
                 SetTypping(listOfEndings[endingNumber].endMesage);
