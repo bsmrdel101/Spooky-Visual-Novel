@@ -10235,7 +10235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 54661ab97c0a3ba48ad4f2f061a70d26, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 20c906a90d17d174b84962f0a32651af, type: 3}
   StartingDialogue: {fileID: 484864384}
   startingPointOfStoryBool: 0
@@ -13841,7 +13841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 790ffef3dc6580548a1a97527816adc8, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 3d54533345a9e2f489fa202b5ddff074, type: 3}
   StartingDialogue: {fileID: 910834679}
   startingPointOfStoryBool: 0
@@ -29293,7 +29293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 7ad95c29edd085e429e2e19d894780af, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 110d8a357356b0740a7405247300dcc4, type: 3}
   StartingDialogue: {fileID: 1615267934}
   startingPointOfStoryBool: 0
@@ -40382,7 +40382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 4304b1def8a9f2a47ac2bfe2191b3601, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: d22cd481358d88c46bb2cce5e7aa33c1, type: 3}
   StartingDialogue: {fileID: 1739237464}
   startingPointOfStoryBool: 0
@@ -41363,7 +41363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.529114, y: -38.979187}
+  m_AnchoredPosition: {x: 12.529053, y: -38.979248}
   m_SizeDelta: {x: -1071.9282, y: -189.3275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073597695
@@ -64205,7 +64205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: e4ce83975ee681644a93b1630228b502, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 353370386ff1198478c644f08782946e, type: 3}
   StartingDialogue: {fileID: 2020476722}
   startingPointOfStoryBool: 0
@@ -72934,7 +72934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 54661ab97c0a3ba48ad4f2f061a70d26, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: 20c906a90d17d174b84962f0a32651af, type: 3}
   StartingDialogue: {fileID: 1747191532}
   startingPointOfStoryBool: 0
@@ -73384,7 +73384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: 747effdffc032764ca8a048144c57962, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: bb99065db7145434581d7ff189c035f4, type: 3}
   StartingDialogue: {fileID: 812223931}
   startingPointOfStoryBool: 0
@@ -82836,7 +82836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImage: {fileID: 21300000, guid: b45f570a7df136c4ea470f7e88489d18, type: 3}
+  BackgroundImage: {fileID: 21300000, guid: 32bc8effca215dc40b6481ec037f4176, type: 3}
   sceneMusicAudioClip: {fileID: 8300000, guid: d22cd481358d88c46bb2cce5e7aa33c1, type: 3}
   StartingDialogue: {fileID: 2913160}
   startingPointOfStoryBool: 1

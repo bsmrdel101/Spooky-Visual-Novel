@@ -722,6 +722,12 @@ public class DialogueManager : MonoBehaviour
         foreach (Button button in _computerButtonsPanel.GetComponentsInChildren<Button>()){
             Destroy(button.gameObject);
         }
+
+        if(optionsAreDisplayedBool){
+            Debug.Log("Options are on? Turning off that panel.");
+            _dialogueOptionsBox.gameObject.SetActive(false);
+            optionsAreDisplayedBool = false;
+        }
     }
 
     public void ChangeNpcImage(bool itsLeftBool, bool itsRightBool, bool itsMiddleBool, CharacterSheet characterSheet, int number)
