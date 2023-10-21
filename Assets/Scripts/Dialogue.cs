@@ -71,6 +71,9 @@ public class Dialogue : MonoBehaviour
     [Tooltip("If Sound Effect set it will dellay other things.")]
     public AudioClip soundEffectAudioClip;
     public AudioClip soundEffectAtEndClip;
+    [Tooltip("An attached string (on its end) will determinate when the sfx will be play.")]
+    public AudioClip delayedSoundEffectClip;
+    public string delayedSoundEffectString;
 
     
     [Header("Scene Operators")]

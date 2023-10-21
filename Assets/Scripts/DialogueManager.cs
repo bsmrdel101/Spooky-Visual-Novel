@@ -155,15 +155,15 @@ public class DialogueManager : MonoBehaviour
 
         // Stop text from reading if player presses spacebar
         if (Input.GetKeyDown(KeyCode.Space)) 
-        if (!spaceIsDownBool)
-        if (!technicalStepsPanelOpenBool)
-        if (!waitProtectTippingBool)
-        if (!stopReadingTextBool)
-        {
-            stopReadingTextBool = true;
-            if(menuManager.creditPanelOnBool) creditsManager.stopReadingTextBoll = true;
-            OperateSpace();            
-        }        
+            if (!spaceIsDownBool)
+            if (!technicalStepsPanelOpenBool)
+            if (!waitProtectTippingBool)
+            if (!stopReadingTextBool)
+            {
+                stopReadingTextBool = true;
+                if(menuManager.creditPanelOnBool) creditsManager.stopReadingTextBoll = true;
+                OperateSpace();            
+            }        
         
         
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -358,6 +358,12 @@ public class DialogueManager : MonoBehaviour
                         textPostition++;
                         if(textPostition >= textLenght) typingBool = false;
                         if(!typingBool){
+                            if(_curentActiveDialog.reputation != 0){
+                                Debug.Log("Aditional change to reputation! "
+                                    + _curentActiveDialog.reputation);
+                                reputationManager.ReputationChange(_curentActiveDialog.reputation);
+                            }
+
                             if(menuManager.computerDialogPanelOnBool)
                                 RevealDialougeOptions(_curentActiveDialog);
                             bodyTextDisplayedBool = true; 
@@ -421,6 +427,15 @@ public class DialogueManager : MonoBehaviour
 
 
 
+
+
+
+
+
+
+
+
+
     private void UpdateDialogueBox(Dialogue dialogue)
     {
         ResetDialogueOptions();
@@ -481,6 +496,10 @@ public class DialogueManager : MonoBehaviour
 
         if(dialogue.soundEffectAtEndClip != null){
             audioManager.PlaySFXatEnd(dialogue.soundEffectAtEndClip);
+        }
+
+        if(dialogue.delayedSoundEffectClip != null){
+            audioManager.PlayDelayedSfx(dialogue.delayedSoundEffectClip, dialogue.delayedSoundEffectString);
         }
 
         if(dialogue.voiceActorAudioClip != null){
@@ -646,6 +665,10 @@ public class DialogueManager : MonoBehaviour
             menuManager.creditsManager.OpenStartEndCreditsPanel(false, true);
         }
     }//UpdateDialogueBox
+
+
+
+
 
 
 

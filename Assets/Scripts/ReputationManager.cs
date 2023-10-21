@@ -43,7 +43,7 @@ public class ReputationManager : MonoBehaviour
         }
 
         if(amount < 0){
-            _reputation -= amount;
+            _reputation = amount;
             addonString = "";
             addonString = "(-"+amount+")";
             menuManager.dialogueManager.SetReputation(_reputation, addonString);

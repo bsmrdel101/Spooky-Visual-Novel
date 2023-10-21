@@ -55,6 +55,7 @@ public class SettingsManager : MonoBehaviour
         sfxVolumeText.text = intValueForText +"%";
         audioManager._sfxPlayer.volume = valueTechnical;
         audioManager._sfxSecondaryPlayer.volume = valueTechnical;
+        audioManager._sfxDelayedPlayer.volume = valueTechnical;
         audioManager._typpingSoundPlayer.volume = valueTechnical;
         audioManager.PlaySfxAudio(audioManager.selectDialogAC);
     }

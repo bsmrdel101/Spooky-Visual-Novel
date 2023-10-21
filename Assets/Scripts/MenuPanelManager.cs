@@ -7,17 +7,25 @@ using UnityEngine.UI;
 public class MenuPanelManager : MonoBehaviour
 {
     [Header("Variables")]
+    public bool dontOpenCoverPageBool;
     public bool menuIsOnBool; 
-    public bool coverPageOnBool, settingPanleOnBool;
+    public bool coverPageOnBool, settingPanleOnBool, creditsPanelOnBool;
     public bool gameIsOnBool, creditPanelOnBool, informativeBSPanelBool, 
         computerDialogPanelOnBool;
     public bool muteMusicBool;
 
+    [Header("Version display")]  
+    public string versionString;
+
     [Header("references")]    
     public Transform _menuPanel;
-    public Transform _menuButtonsPanel, _coverPagePanel;
+    public Transform _menuButtonsPanel, _coverPagePanel, _creditsPanel;
     public Transform _settingsPanel;
+    public TMP_Text[] versionDisplayTextsArray;
 
+    [Header("Mute Music")]
+    public TMP_Text mmbText;
+    public Image mmbImageUnMute, mmbImageMute;
     
     
     
@@ -30,12 +38,23 @@ public class MenuPanelManager : MonoBehaviour
 
 
     private void Start() {
-        OrderToOpenCloseCoverPage(true);        
+        if(!dontOpenCoverPageBool) OrderToOpenCloseCoverPage(true);
+        if(versionDisplayTextsArray.Length > 0){
+            for (int i = 0; i < versionDisplayTextsArray.Length; i++)
+            {
+                versionDisplayTextsArray[i].text = versionString;
+            }
+        }     
     }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Return)){
             if(coverPageOnBool){ OrderToOpenCloseCoverPage(false);}
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            if(coverPageOnBool){ OrderToOpenCloseCoverPage(false);}
+            //if()
         }
     }
 
@@ -121,6 +140,17 @@ public class MenuPanelManager : MonoBehaviour
     }
 
 
+    public void OrderToOpenCloseCreditsPanel(bool option){
+        if(option){
+            creditPanelOnBool = true;
+            _creditsPanel.gameObject.SetActive(true);
+        }else{
+            creditPanelOnBool = false;
+            _creditsPanel.gameObject.SetActive(false);
+        }
+    }
+
+
 
     void MenuPanelONOff(bool option){
         if(option){
@@ -140,6 +170,17 @@ public class MenuPanelManager : MonoBehaviour
     }
 
     
+    public void MuteMusicButton(bool option){
+        if(option){
+            mmbText.text = "Muted";
+            mmbImageMute.gameObject.SetActive(true);
+            mmbImageUnMute.gameObject.SetActive(false);
+        }else{
+            mmbText.text = "Laud";
+            mmbImageMute.gameObject.SetActive(false);
+            mmbImageUnMute.gameObject.SetActive(true);
+        }
+    }
 
     
 
