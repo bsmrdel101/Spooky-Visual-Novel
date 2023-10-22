@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MenuPanelManager : MonoBehaviour
 {
     [Header("Variables")]
-    public bool dontOpenCoverPageBool;
+    public bool dontOpenCoverPageBool; public bool dontOpenStartingCreditsBool;
     public bool menuIsOnBool; 
     public bool coverPageOnBool, settingPanleOnBool, creditsPanelOnBool;
     public bool gameIsOnBool, creditPanelOnBool, informativeBSPanelBool, 
@@ -67,8 +67,6 @@ public class MenuPanelManager : MonoBehaviour
         }else{
             _coverPagePanel.gameObject.SetActive(false);
             coverPageOnBool = false;
-            //audioManager.MainMenuMusicDominator(true, false, true);
-            //OrderToOperateMainMenu();
             OrderToStartTheNewGame();
         }
     }
@@ -85,14 +83,16 @@ public class MenuPanelManager : MonoBehaviour
             MenuPanelONOff(false);
             gameIsOnBool = true;
             ShakeTheMenuButtonsPanel();
-            //dialogueManager.StartTheGame();
             dialogueManager.StopTheMusic();
             dialogueManager.ChangeNpcImage(true, false, false, null, 0);
             dialogueManager.ChangeNpcImage(false, true, false, null, 0);
             dialogueManager.ChangeNpcImage(false, false, true, null, 0);
             dialogueManager.movableItemImage.sprite = dialogueManager.emptyTransparentSprite;
-            creditsManager.OpenStartEndCreditsPanel(true, false);
             audioManager.PlayMenuButtonClick(true);   
+            if(dontOpenStartingCreditsBool)
+                dialogueManager.StartTheGame();
+            else
+                creditsManager.OpenStartEndCreditsPanel(true, false);
         }else{
             audioManager.PlayMenuButtonClick(false);   
             }

@@ -467,7 +467,7 @@ public class DialogueManager : MonoBehaviour
 
         
         WhiteOrGrayNpcImage(false, false, true, dialogue.characterOnMiddleWhiteBool);
-        ChangeNpcImage(false, false, true, dialogue.middleCharacterSheet, dialogue.characterOnRightSpriteNumber);
+        ChangeNpcImage(false, false, true, dialogue.middleCharacterSheet, dialogue.characterOnMiddleSpriteNumber);
         if(dialogue.actorOnMiddleAppearBool) appearDissapear.OrderToAppearDisaper(false, false, true, true);
         if(dialogue.actorOnMiddleDisapearBool) appearDissapear.OrderToAppearDisaper(false, false, true, false);
         if(dialogue.actorOnMiddleAlpha0Bool) appearDissapear.OrderAlpha0(false, false, true);
@@ -720,6 +720,7 @@ public class DialogueManager : MonoBehaviour
         if(storyScene.sceneMusicAudioClip != null)
             audioManager.ChangeBacgroundMusic(storyScene.sceneMusicAudioClip);        
         PrepareToUpdateDialogueBox(storyScene.StartingDialogue);
+        movabelItemScript.OrderToMove(false, true, false, 0);
         if (storyScene.startingPointOfStoryBool){
             reputationManager.ReputationBeginStory();
         }
@@ -781,7 +782,7 @@ public class DialogueManager : MonoBehaviour
                 _actorTagRightSprite.sprite = chosenTagSprite;               
             }
             if(itsMiddleBool){
-                _actorRightSprite.sprite = chosenSprite;  
+                _actorMiddleSprite.sprite = chosenSprite;  
                 _actorTagMiddleSprite.sprite = chosenTagSprite;              
             }
 
@@ -941,7 +942,7 @@ public class DialogueManager : MonoBehaviour
         clearToTypeBool = false;
         OperateDiodes(2, false, false);
         if(nextDialogButtonOnBool) OperateDiodes(4, false, false);        
-        reputationManager.ReputationChange(dialogue.reputation);
+        //reputationManager.ReputationChange(dialogue.reputation);
         _lastDialogChoice = _curentActiveDialog;
         _lastDialogChoice.lastBacgroundSprite = _bgImage.sprite;
         _lastDialogChoice.lastMusicClip = audioManager._musicPlayer.clip;

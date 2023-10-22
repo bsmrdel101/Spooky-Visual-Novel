@@ -95,7 +95,7 @@ public class AppearDissapear : MonoBehaviour
 
                     if(!holdMiddleTippingBool)
                     if(actorMidleAppearingBool || actorMidleDisapearingBool){
-                        v4Visibility = (Vector4)dialogueManager._actorRightSprite.color;
+                        v4Visibility = (Vector4)dialogueManager._actorMiddleSprite.color;
                         if(actorMidleDisapearingBool) {
                             v4Visibility.w -= 0.01f;
                             if(v4Visibility.w <= 0){
