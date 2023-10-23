@@ -224,6 +224,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1255993
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +450,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &5240706
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +541,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &5240708
 Transform:
   m_ObjectHideFlags: 0
@@ -642,6 +645,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &6950939
 Transform:
   m_ObjectHideFlags: 0
@@ -743,6 +747,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &7999440
 Transform:
   m_ObjectHideFlags: 0
@@ -847,6 +852,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &9493872
 Transform:
   m_ObjectHideFlags: 0
@@ -949,6 +955,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &12060518
 Transform:
   m_ObjectHideFlags: 0
@@ -1052,6 +1059,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &13632897
 Transform:
   m_ObjectHideFlags: 0
@@ -1098,11 +1106,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 851787124}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.718811, y: 385.67}
+  m_AnchoredPosition: {x: -1.718811, y: 394}
   m_SizeDelta: {x: 1627.65, y: 97.73999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &14311969
@@ -1125,7 +1133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Black Flover Studio
+  m_text: Black Flower Studio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1306,6 +1314,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &21818693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1401,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &21818695
 Transform:
   m_ObjectHideFlags: 0
@@ -1493,6 +1503,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &24163690
 Transform:
   m_ObjectHideFlags: 0
@@ -1594,6 +1605,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &26321513
 Transform:
   m_ObjectHideFlags: 0
@@ -1710,6 +1722,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &31726558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,6 +1810,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &31726560
 Transform:
   m_ObjectHideFlags: 0
@@ -1974,6 +1988,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &34860283
 Transform:
   m_ObjectHideFlags: 0
@@ -2226,6 +2241,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &38154984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,6 +2329,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &38154986
 Transform:
   m_ObjectHideFlags: 0
@@ -2416,6 +2433,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &41723034
 Transform:
   m_ObjectHideFlags: 0
@@ -2517,6 +2535,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &45647900
 Transform:
   m_ObjectHideFlags: 0
@@ -2710,6 +2729,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &56263628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,6 +2816,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &56263630
 Transform:
   m_ObjectHideFlags: 0
@@ -2899,6 +2920,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &58102435
 Transform:
   m_ObjectHideFlags: 0
@@ -3016,6 +3038,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &61229444
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,6 +3126,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &61229446
 Transform:
   m_ObjectHideFlags: 0
@@ -3205,6 +3229,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &65156775
 Transform:
   m_ObjectHideFlags: 0
@@ -3306,6 +3331,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &65899262
 Transform:
   m_ObjectHideFlags: 0
@@ -3408,6 +3434,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &66262385
 Transform:
   m_ObjectHideFlags: 0
@@ -3509,6 +3536,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &66818228
 Transform:
   m_ObjectHideFlags: 0
@@ -3610,6 +3638,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &71142996
 Transform:
   m_ObjectHideFlags: 0
@@ -3876,6 +3905,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &99575559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,6 +3992,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &99575561
 Transform:
   m_ObjectHideFlags: 0
@@ -4288,6 +4319,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &109319963
 Transform:
   m_ObjectHideFlags: 0
@@ -4390,6 +4422,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &113567914
 Transform:
   m_ObjectHideFlags: 0
@@ -4491,6 +4524,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &114369672
 Transform:
   m_ObjectHideFlags: 0
@@ -4592,6 +4626,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &116789365
 Transform:
   m_ObjectHideFlags: 0
@@ -4777,6 +4812,7 @@ MonoBehaviour:
   itemNewCordinates: 600
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &121765254
 Transform:
   m_ObjectHideFlags: 0
@@ -4878,6 +4914,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &122870348
 Transform:
   m_ObjectHideFlags: 0
@@ -5113,6 +5150,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &124372393
 Transform:
   m_ObjectHideFlags: 0
@@ -5167,8 +5205,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399.862, y: -440}
-  m_SizeDelta: {x: 799.724, y: 120}
+  m_AnchoredPosition: {x: 361.00006, y: -420}
+  m_SizeDelta: {x: 733.6373, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124701320
 MonoBehaviour:
@@ -5396,6 +5434,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &125018502
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,7 +5467,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5984,6 +6023,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &143890127
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,6 +6126,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &148195219
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,6 +6372,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &154174230
 Transform:
   m_ObjectHideFlags: 0
@@ -6543,6 +6585,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &165449009
 Transform:
   m_ObjectHideFlags: 0
@@ -6658,6 +6701,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &170475240
 Transform:
   m_ObjectHideFlags: 0
@@ -6768,9 +6812,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca5e18d97e2de643828c84772dbb906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearingBool: 0
+  disappearingBool: 0
+  waitingBool: 0
+  showedBool: 0
   typpingSpeed: 0.05
-  mesageString: 
-  mesageText: {fileID: 0}
+  waitInterval: 1
+  mesageString: Hard Drive Bargain by  team Black flover
+  mesageText: {fileID: 547800666}
 --- !u!1 &178412846
 GameObject:
   m_ObjectHideFlags: 0
@@ -7067,6 +7116,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &179460101
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,6 +7430,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &185117593
 GameObject:
   m_ObjectHideFlags: 0
@@ -7646,6 +7697,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &186998241
 Transform:
   m_ObjectHideFlags: 0
@@ -7957,6 +8009,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &197105971
 Transform:
   m_ObjectHideFlags: 0
@@ -8058,6 +8111,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &201189526
 Transform:
   m_ObjectHideFlags: 0
@@ -8401,6 +8455,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &214663562
 Transform:
   m_ObjectHideFlags: 0
@@ -8503,6 +8558,7 @@ MonoBehaviour:
   itemNewCordinates: 150
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &219426796
 Transform:
   m_ObjectHideFlags: 0
@@ -8604,6 +8660,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &220129633
 Transform:
   m_ObjectHideFlags: 0
@@ -8720,6 +8777,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &224341004
 GameObject:
   m_ObjectHideFlags: 0
@@ -8823,6 +8881,7 @@ MonoBehaviour:
   itemNewCordinates: 300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &226699023
 GameObject:
   m_ObjectHideFlags: 0
@@ -9052,6 +9111,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &246983396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9153,6 +9213,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &251662891
 GameObject:
   m_ObjectHideFlags: 0
@@ -9239,6 +9300,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &251662893
 Transform:
   m_ObjectHideFlags: 0
@@ -9340,6 +9402,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &252086729
 Transform:
   m_ObjectHideFlags: 0
@@ -9457,6 +9520,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &255232906
 GameObject:
   m_ObjectHideFlags: 0
@@ -9543,6 +9607,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &255232908
 Transform:
   m_ObjectHideFlags: 0
@@ -9658,6 +9723,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &255335528
 Transform:
   m_ObjectHideFlags: 0
@@ -9704,11 +9770,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -609, y: -478.49258}
+  m_AnchoredPosition: {x: -564, y: 391}
   m_SizeDelta: {x: 585.6433, y: 70.4438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255994745
@@ -9740,8 +9806,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279025185
-  m_fontColor: {r: 0.12996654, g: 0.74509805, b: 0.04705884, a: 1}
+    rgba: 4278677780
+  m_fontColor: {r: 0.078431375, g: 0.4431373, b: 0.027450982, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9894,6 +9960,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &256826886
 Transform:
   m_ObjectHideFlags: 0
@@ -10145,6 +10212,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &258363100
 Transform:
   m_ObjectHideFlags: 0
@@ -10262,6 +10330,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &265865208
 GameObject:
   m_ObjectHideFlags: 0
@@ -10363,6 +10432,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &266244565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10463,6 +10533,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &266244567
 Transform:
   m_ObjectHideFlags: 0
@@ -10565,6 +10636,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &268090836
 Transform:
   m_ObjectHideFlags: 0
@@ -11158,6 +11230,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &277866694
 GameObject:
   m_ObjectHideFlags: 0
@@ -11322,6 +11395,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &278840785
 Transform:
   m_ObjectHideFlags: 0
@@ -11423,6 +11497,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &280521213
 Transform:
   m_ObjectHideFlags: 0
@@ -11525,6 +11600,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &281043610
 Transform:
   m_ObjectHideFlags: 0
@@ -11641,6 +11717,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &281415583
 GameObject:
   m_ObjectHideFlags: 0
@@ -11727,6 +11804,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &281415585
 Transform:
   m_ObjectHideFlags: 0
@@ -11962,12 +12040,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1629184020}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -393.05, y: -0.99239}
-  m_SizeDelta: {x: 1060.7, y: 1028.2}
+  m_AnchoredPosition: {x: -362.94864, y: -12.5579}
+  m_SizeDelta: {x: 1000.4973, y: 886.1141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &285266823
 GameObject:
@@ -12089,6 +12167,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &290731070
 Transform:
   m_ObjectHideFlags: 0
@@ -12190,6 +12269,7 @@ MonoBehaviour:
   itemNewCordinates: 300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &292068348
 Transform:
   m_ObjectHideFlags: 0
@@ -12291,6 +12371,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &295532696
 Transform:
   m_ObjectHideFlags: 0
@@ -12673,6 +12754,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &302308040
 Transform:
   m_ObjectHideFlags: 0
@@ -12789,6 +12871,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &304678691
 GameObject:
   m_ObjectHideFlags: 0
@@ -12890,6 +12973,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &304689638
 GameObject:
   m_ObjectHideFlags: 0
@@ -12994,6 +13078,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &308934591
 GameObject:
   m_ObjectHideFlags: 0
@@ -13098,6 +13183,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &310300081
 GameObject:
   m_ObjectHideFlags: 0
@@ -13260,6 +13346,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &311002008
 Transform:
   m_ObjectHideFlags: 0
@@ -13361,6 +13448,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &311725015
 Transform:
   m_ObjectHideFlags: 0
@@ -13462,6 +13550,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &318183306
 Transform:
   m_ObjectHideFlags: 0
@@ -13716,6 +13805,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &321760153
 Transform:
   m_ObjectHideFlags: 0
@@ -13818,6 +13908,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &323284766
 Transform:
   m_ObjectHideFlags: 0
@@ -13919,6 +14010,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &324340826
 Transform:
   m_ObjectHideFlags: 0
@@ -14035,6 +14127,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &326358576
 GameObject:
   m_ObjectHideFlags: 0
@@ -14276,6 +14369,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &332331608
 Transform:
   m_ObjectHideFlags: 0
@@ -14406,6 +14500,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &344664272
 GameObject:
   m_ObjectHideFlags: 0
@@ -14493,6 +14588,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &344664274
 Transform:
   m_ObjectHideFlags: 0
@@ -14608,6 +14704,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &345833078
 Transform:
   m_ObjectHideFlags: 0
@@ -14709,6 +14806,7 @@ MonoBehaviour:
   itemNewCordinates: 700
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &346832991
 Transform:
   m_ObjectHideFlags: 0
@@ -14814,6 +14912,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &347421950
 Transform:
   m_ObjectHideFlags: 0
@@ -14915,6 +15014,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &348730812
 Transform:
   m_ObjectHideFlags: 0
@@ -15208,6 +15308,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &356991722
 Transform:
   m_ObjectHideFlags: 0
@@ -15310,6 +15411,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &360041797
 Transform:
   m_ObjectHideFlags: 0
@@ -15411,6 +15513,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &362911998
 Transform:
   m_ObjectHideFlags: 0
@@ -15519,6 +15622,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &363852949
 Transform:
   m_ObjectHideFlags: 0
@@ -15620,6 +15724,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &364915341
 Transform:
   m_ObjectHideFlags: 0
@@ -15788,6 +15893,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &367429138
 Transform:
   m_ObjectHideFlags: 0
@@ -15889,6 +15995,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &367849348
 Transform:
   m_ObjectHideFlags: 0
@@ -16140,6 +16247,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &378341229
 GameObject:
   m_ObjectHideFlags: 0
@@ -16321,6 +16429,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &379392706
 Transform:
   m_ObjectHideFlags: 0
@@ -16423,6 +16532,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &382862337
 Transform:
   m_ObjectHideFlags: 0
@@ -16524,6 +16634,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &383935947
 Transform:
   m_ObjectHideFlags: 0
@@ -16640,6 +16751,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &386162568
 GameObject:
   m_ObjectHideFlags: 0
@@ -16728,6 +16840,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &386162570
 Transform:
   m_ObjectHideFlags: 0
@@ -16829,6 +16942,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &395010129
 Transform:
   m_ObjectHideFlags: 0
@@ -16945,6 +17059,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &402744430
 GameObject:
   m_ObjectHideFlags: 0
@@ -17107,6 +17222,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &402850681
 Transform:
   m_ObjectHideFlags: 0
@@ -17208,6 +17324,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &403431705
 Transform:
   m_ObjectHideFlags: 0
@@ -17389,6 +17506,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &419387874
 Transform:
   m_ObjectHideFlags: 0
@@ -17505,6 +17623,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &421745109
 GameObject:
   m_ObjectHideFlags: 0
@@ -17606,6 +17725,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &424338586
 GameObject:
   m_ObjectHideFlags: 0
@@ -17692,6 +17812,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &424338588
 Transform:
   m_ObjectHideFlags: 0
@@ -17808,6 +17929,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &426751082
 GameObject:
   m_ObjectHideFlags: 0
@@ -17894,6 +18016,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &426751084
 Transform:
   m_ObjectHideFlags: 0
@@ -18147,6 +18270,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &434819898
 GameObject:
   m_ObjectHideFlags: 0
@@ -18386,6 +18510,7 @@ MonoBehaviour:
   itemNewCordinates: 300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &444350715
 GameObject:
   m_ObjectHideFlags: 0
@@ -18472,6 +18597,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &444350717
 Transform:
   m_ObjectHideFlags: 0
@@ -18633,6 +18759,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &449634139
 GameObject:
   m_ObjectHideFlags: 0
@@ -18754,6 +18881,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &458304538
 Transform:
   m_ObjectHideFlags: 0
@@ -18932,6 +19060,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &459239537
 Transform:
   m_ObjectHideFlags: 0
@@ -19033,6 +19162,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &467780302
 Transform:
   m_ObjectHideFlags: 0
@@ -19215,6 +19345,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &469193265
 GameObject:
   m_ObjectHideFlags: 0
@@ -19401,12 +19532,12 @@ RectTransform:
   - {fileID: 2065621983}
   - {fileID: 1738200001}
   m_Father: {fileID: 1629184020}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 537.15796, y: 0}
-  m_SizeDelta: {x: -1120.2761, y: 0}
+  m_AnchoredPosition: {x: 506.86, y: 14.105713}
+  m_SizeDelta: {x: -1180.9, y: -173.6017}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470661981
 MonoBehaviour:
@@ -19574,6 +19705,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &471297304
 GameObject:
   m_ObjectHideFlags: 0
@@ -19663,6 +19795,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &471297306
 Transform:
   m_ObjectHideFlags: 0
@@ -19765,6 +19898,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &474197858
 Transform:
   m_ObjectHideFlags: 0
@@ -19866,6 +20000,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &481330235
 Transform:
   m_ObjectHideFlags: 0
@@ -19982,6 +20117,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &494198675
 GameObject:
   m_ObjectHideFlags: 0
@@ -20073,6 +20209,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &494198677
 Transform:
   m_ObjectHideFlags: 0
@@ -20174,6 +20311,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &494706309
 Transform:
   m_ObjectHideFlags: 0
@@ -20393,6 +20531,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &507711397
 Transform:
   m_ObjectHideFlags: 0
@@ -20512,6 +20651,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &508741989
 GameObject:
   m_ObjectHideFlags: 0
@@ -20599,6 +20739,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &508741991
 Transform:
   m_ObjectHideFlags: 0
@@ -20701,6 +20842,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &510615938
 Transform:
   m_ObjectHideFlags: 0
@@ -20920,6 +21062,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &520490625
 Transform:
   m_ObjectHideFlags: 0
@@ -20960,7 +21103,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521645654}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -21173,6 +21316,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &524090860
 Transform:
   m_ObjectHideFlags: 0
@@ -21274,6 +21418,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &524946351
 Transform:
   m_ObjectHideFlags: 0
@@ -21411,6 +21556,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &528194932
 Transform:
   m_ObjectHideFlags: 0
@@ -21742,6 +21888,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &531964196
 GameObject:
   m_ObjectHideFlags: 0
@@ -21828,6 +21975,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &531964198
 Transform:
   m_ObjectHideFlags: 0
@@ -21944,6 +22092,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &532510834
 GameObject:
   m_ObjectHideFlags: 0
@@ -22364,6 +22513,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &539489714
 Transform:
   m_ObjectHideFlags: 0
@@ -22570,6 +22720,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &543565671
 Transform:
   m_ObjectHideFlags: 0
@@ -22838,6 +22989,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &551717877
 Transform:
   m_ObjectHideFlags: 0
@@ -23150,6 +23302,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &567019364
 Transform:
   m_ObjectHideFlags: 0
@@ -23252,6 +23405,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &567764328
 Transform:
   m_ObjectHideFlags: 0
@@ -23367,6 +23521,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &568522785
 Transform:
   m_ObjectHideFlags: 0
@@ -23475,6 +23630,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &571350340
 Transform:
   m_ObjectHideFlags: 0
@@ -23590,6 +23746,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &571915624
 Transform:
   m_ObjectHideFlags: 0
@@ -23691,6 +23848,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &572879442
 Transform:
   m_ObjectHideFlags: 0
@@ -23821,6 +23979,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &575197967
 GameObject:
   m_ObjectHideFlags: 0
@@ -23907,6 +24066,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &575197969
 Transform:
   m_ObjectHideFlags: 0
@@ -24103,6 +24263,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &576614555
 Transform:
   m_ObjectHideFlags: 0
@@ -24205,6 +24366,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &581018704
 Transform:
   m_ObjectHideFlags: 0
@@ -24306,6 +24468,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &586174056
 Transform:
   m_ObjectHideFlags: 0
@@ -24578,6 +24741,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &594866578
 Transform:
   m_ObjectHideFlags: 0
@@ -24694,6 +24858,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &597063010
 GameObject:
   m_ObjectHideFlags: 0
@@ -24781,6 +24946,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &597063012
 Transform:
   m_ObjectHideFlags: 0
@@ -25026,6 +25192,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &615869719
 GameObject:
   m_ObjectHideFlags: 0
@@ -25343,6 +25510,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &621340933
 Transform:
   m_ObjectHideFlags: 0
@@ -25444,6 +25612,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &621699632
 Transform:
   m_ObjectHideFlags: 0
@@ -25545,6 +25714,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &621985084
 Transform:
   m_ObjectHideFlags: 0
@@ -25705,6 +25875,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &623006145
 Transform:
   m_ObjectHideFlags: 0
@@ -25806,6 +25977,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &627354028
 Transform:
   m_ObjectHideFlags: 0
@@ -25907,6 +26079,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &627863819
 Transform:
   m_ObjectHideFlags: 0
@@ -26129,6 +26302,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630931250}
   m_CullTransparentMesh: 1
+--- !u!1 &631203512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631203513}
+  - component: {fileID: 631203515}
+  - component: {fileID: 631203514}
+  m_Layer: 0
+  m_Name: WindowPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &631203513
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631203512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 851787124}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &631203514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631203512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5d31d21bd5e60a46b3df070b1c3df50, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &631203515
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631203512}
+  m_CullTransparentMesh: 1
 --- !u!1 &634157877
 GameObject:
   m_ObjectHideFlags: 0
@@ -26231,6 +26480,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &635028895
 GameObject:
   m_ObjectHideFlags: 0
@@ -26317,6 +26567,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &635028897
 Transform:
   m_ObjectHideFlags: 0
@@ -26418,6 +26669,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &637778556
 Transform:
   m_ObjectHideFlags: 0
@@ -26610,6 +26862,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &640170994
 GameObject:
   m_ObjectHideFlags: 0
@@ -26711,6 +26964,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &641204152
 GameObject:
   m_ObjectHideFlags: 0
@@ -26933,6 +27187,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &641759875
 Transform:
   m_ObjectHideFlags: 0
@@ -27035,6 +27290,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &642284586
 Transform:
   m_ObjectHideFlags: 0
@@ -27138,6 +27394,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &644238016
 Transform:
   m_ObjectHideFlags: 0
@@ -27509,6 +27766,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &648406440
 Transform:
   m_ObjectHideFlags: 0
@@ -27610,6 +27868,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &658278481
 Transform:
   m_ObjectHideFlags: 0
@@ -27902,6 +28161,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &671034819
 GameObject:
   m_ObjectHideFlags: 0
@@ -28064,6 +28324,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &683457899
 Transform:
   m_ObjectHideFlags: 0
@@ -28166,6 +28427,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &684443922
 Transform:
   m_ObjectHideFlags: 0
@@ -28395,6 +28657,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &690599839
 Transform:
   m_ObjectHideFlags: 0
@@ -28631,6 +28894,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &694287749
 Transform:
   m_ObjectHideFlags: 0
@@ -28732,6 +28996,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &695707388
 Transform:
   m_ObjectHideFlags: 0
@@ -28833,6 +29098,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &695815013
 Transform:
   m_ObjectHideFlags: 0
@@ -28949,6 +29215,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &697693148
 GameObject:
   m_ObjectHideFlags: 0
@@ -29050,6 +29317,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &698422147
 GameObject:
   m_ObjectHideFlags: 0
@@ -29307,6 +29575,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &699810680
 Transform:
   m_ObjectHideFlags: 0
@@ -29408,6 +29677,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &707335104
 Transform:
   m_ObjectHideFlags: 0
@@ -29511,6 +29781,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &709634636
 Transform:
   m_ObjectHideFlags: 0
@@ -29526,6 +29797,82 @@ Transform:
   m_Father: {fileID: 1689655264}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &710680104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710680105}
+  - component: {fileID: 710680107}
+  - component: {fileID: 710680106}
+  m_Layer: 0
+  m_Name: WindowPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &710680105
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710680104}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1629184020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &710680106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710680104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5d31d21bd5e60a46b3df070b1c3df50, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &710680107
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710680104}
+  m_CullTransparentMesh: 1
 --- !u!1 &711425707
 GameObject:
   m_ObjectHideFlags: 0
@@ -29749,6 +30096,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &712314800
 Transform:
   m_ObjectHideFlags: 0
@@ -29850,6 +30198,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &712543705
 Transform:
   m_ObjectHideFlags: 0
@@ -29951,6 +30300,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &713481838
 Transform:
   m_ObjectHideFlags: 0
@@ -30187,6 +30537,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &723422334
 Transform:
   m_ObjectHideFlags: 0
@@ -30304,6 +30655,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &726941981
 GameObject:
   m_ObjectHideFlags: 0
@@ -30390,6 +30742,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &726941983
 Transform:
   m_ObjectHideFlags: 0
@@ -30491,6 +30844,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &727558825
 Transform:
   m_ObjectHideFlags: 0
@@ -30593,6 +30947,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &727685891
 Transform:
   m_ObjectHideFlags: 0
@@ -30710,6 +31065,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &751175541
 GameObject:
   m_ObjectHideFlags: 0
@@ -30934,6 +31290,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &754736097
 GameObject:
   m_ObjectHideFlags: 0
@@ -31034,6 +31391,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &754736099
 Transform:
   m_ObjectHideFlags: 0
@@ -31135,6 +31493,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &755230271
 Transform:
   m_ObjectHideFlags: 0
@@ -31251,6 +31610,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &759262668
 GameObject:
   m_ObjectHideFlags: 0
@@ -31352,6 +31712,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &760044479
 GameObject:
   m_ObjectHideFlags: 0
@@ -31438,6 +31799,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &760044481
 Transform:
   m_ObjectHideFlags: 0
@@ -31630,6 +31992,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &768652998
 GameObject:
   m_ObjectHideFlags: 0
@@ -31825,6 +32188,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &783373169
 GameObject:
   m_ObjectHideFlags: 0
@@ -31870,7 +32234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca42cb8f1f239d044ac7a34a7403d3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontOpenCoverPageBool: 0
+  dontOpenCoverPageBool: 1
   dontOpenStartingCreditsBool: 1
   menuIsOnBool: 0
   coverPageOnBool: 0
@@ -31884,7 +32248,7 @@ MonoBehaviour:
   versionString: 'Version: Demo 10'
   _menuPanel: {fileID: 1688624641}
   _menuButtonsPanel: {fileID: 1060971187}
-  _coverPagePanel: {fileID: 170978212}
+  _coverPagePanel: {fileID: 752645064}
   _creditsPanel: {fileID: 851787124}
   _settingsPanel: {fileID: 1093178142}
   versionDisplayTextsArray:
@@ -32022,6 +32386,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &785665158
 GameObject:
   m_ObjectHideFlags: 0
@@ -32110,6 +32475,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &785665160
 Transform:
   m_ObjectHideFlags: 0
@@ -32212,6 +32578,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &792261349
 Transform:
   m_ObjectHideFlags: 0
@@ -32457,6 +32824,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &799709657
 GameObject:
   m_ObjectHideFlags: 0
@@ -32543,6 +32911,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &799709659
 Transform:
   m_ObjectHideFlags: 0
@@ -32721,6 +33090,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &806666711
 Transform:
   m_ObjectHideFlags: 0
@@ -32822,6 +33192,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &806691479
 Transform:
   m_ObjectHideFlags: 0
@@ -32938,6 +33309,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &811047758
 GameObject:
   m_ObjectHideFlags: 0
@@ -33043,6 +33415,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &811892302
 GameObject:
   m_ObjectHideFlags: 0
@@ -33129,6 +33502,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &811892304
 Transform:
   m_ObjectHideFlags: 0
@@ -33245,6 +33619,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &814384046
 GameObject:
   m_ObjectHideFlags: 0
@@ -33351,6 +33726,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &816651059
 GameObject:
   m_ObjectHideFlags: 0
@@ -33438,6 +33814,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &816651061
 Transform:
   m_ObjectHideFlags: 0
@@ -33554,6 +33931,7 @@ MonoBehaviour:
   itemNewCordinates: 600
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &818457400
 GameObject:
   m_ObjectHideFlags: 0
@@ -33661,6 +34039,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &818760765
 GameObject:
   m_ObjectHideFlags: 0
@@ -34280,6 +34659,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &829121298
 Transform:
   m_ObjectHideFlags: 0
@@ -34382,6 +34762,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &836314463
 Transform:
   m_ObjectHideFlags: 0
@@ -34633,6 +35014,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &837908351
 GameObject:
   m_ObjectHideFlags: 0
@@ -34719,6 +35101,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &837908353
 Transform:
   m_ObjectHideFlags: 0
@@ -34896,6 +35279,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &847319116
 Transform:
   m_ObjectHideFlags: 0
@@ -34997,6 +35381,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &850460830
 Transform:
   m_ObjectHideFlags: 0
@@ -35042,11 +35427,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 631203513}
   - {fileID: 14311968}
   - {fileID: 1331131002}
+  - {fileID: 1847167419}
   - {fileID: 1928459837}
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35422,6 +35809,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &860614005
 GameObject:
   m_ObjectHideFlags: 0
@@ -35508,6 +35896,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &860614007
 Transform:
   m_ObjectHideFlags: 0
@@ -35668,6 +36057,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &869477689
 GameObject:
   m_ObjectHideFlags: 0
@@ -35882,6 +36272,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &870495450
 Transform:
   m_ObjectHideFlags: 0
@@ -36156,6 +36547,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &874076431
 Transform:
   m_ObjectHideFlags: 0
@@ -36308,6 +36700,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &882911182
 GameObject:
   m_ObjectHideFlags: 0
@@ -36395,6 +36788,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &882911184
 Transform:
   m_ObjectHideFlags: 0
@@ -36530,6 +36924,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &884301390
 Transform:
   m_ObjectHideFlags: 0
@@ -36765,6 +37160,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &888360969
 Transform:
   m_ObjectHideFlags: 0
@@ -36967,6 +37363,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &889992404
 Transform:
   m_ObjectHideFlags: 0
@@ -37069,6 +37466,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &893735822
 Transform:
   m_ObjectHideFlags: 0
@@ -37170,6 +37568,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &896504455
 Transform:
   m_ObjectHideFlags: 0
@@ -37243,17 +37642,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Click to continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278908237
+  m_fontColor: {r: 0.30236167, g: 0.9622642, b: 0.040850822, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -37270,8 +37669,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -37556,6 +37955,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &899286550
 GameObject:
   m_ObjectHideFlags: 0
@@ -37642,6 +38042,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &899286552
 Transform:
   m_ObjectHideFlags: 0
@@ -37744,6 +38145,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &902075237
 Transform:
   m_ObjectHideFlags: 0
@@ -37792,7 +38194,7 @@ RectTransform:
   - {fileID: 575199355}
   - {fileID: 698422148}
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37977,6 +38379,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &911532493
 GameObject:
   m_ObjectHideFlags: 0
@@ -38199,6 +38602,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &912484233
 Transform:
   m_ObjectHideFlags: 0
@@ -38435,6 +38839,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &913995624
 Transform:
   m_ObjectHideFlags: 0
@@ -38536,6 +38941,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &914681701
 Transform:
   m_ObjectHideFlags: 0
@@ -38639,6 +39045,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &920888435
 Transform:
   m_ObjectHideFlags: 0
@@ -38741,6 +39148,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &925582569
 Transform:
   m_ObjectHideFlags: 0
@@ -38843,6 +39251,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &927200630
 Transform:
   m_ObjectHideFlags: 0
@@ -38945,6 +39354,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &927552645
 Transform:
   m_ObjectHideFlags: 0
@@ -39047,6 +39457,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &931133994
 Transform:
   m_ObjectHideFlags: 0
@@ -39148,6 +39559,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &932913010
 Transform:
   m_ObjectHideFlags: 0
@@ -39249,6 +39661,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &937882596
 Transform:
   m_ObjectHideFlags: 0
@@ -39365,6 +39778,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &944677182
 GameObject:
   m_ObjectHideFlags: 0
@@ -39466,6 +39880,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &944947331
 GameObject:
   m_ObjectHideFlags: 0
@@ -39554,6 +39969,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &944947333
 Transform:
   m_ObjectHideFlags: 0
@@ -39655,6 +40071,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &947757548
 Transform:
   m_ObjectHideFlags: 0
@@ -39757,6 +40174,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &948790025
 Transform:
   m_ObjectHideFlags: 0
@@ -39858,6 +40276,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &950610162
 Transform:
   m_ObjectHideFlags: 0
@@ -39974,6 +40393,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &957501313
 GameObject:
   m_ObjectHideFlags: 0
@@ -40063,6 +40483,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &957501315
 Transform:
   m_ObjectHideFlags: 0
@@ -40293,6 +40714,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &961173021
 Transform:
   m_ObjectHideFlags: 0
@@ -40395,6 +40817,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &961940708
 Transform:
   m_ObjectHideFlags: 0
@@ -40496,6 +40919,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &962224802
 Transform:
   m_ObjectHideFlags: 0
@@ -40600,6 +41024,7 @@ MonoBehaviour:
   itemNewCordinates: -1300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &963493784
 Transform:
   m_ObjectHideFlags: 0
@@ -40701,6 +41126,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &965998397
 Transform:
   m_ObjectHideFlags: 0
@@ -40952,6 +41378,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &970432565
 Transform:
   m_ObjectHideFlags: 0
@@ -41053,6 +41480,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &970637411
 Transform:
   m_ObjectHideFlags: 0
@@ -41155,6 +41583,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &971859174
 Transform:
   m_ObjectHideFlags: 0
@@ -41257,6 +41686,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &982881195
 Transform:
   m_ObjectHideFlags: 0
@@ -41411,6 +41841,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &988576869
 Transform:
   m_ObjectHideFlags: 0
@@ -41876,6 +42307,7 @@ MonoBehaviour:
   itemNewCordinates: 150
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &994862005
 Transform:
   m_ObjectHideFlags: 0
@@ -42271,6 +42703,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1002892544
 Transform:
   m_ObjectHideFlags: 0
@@ -42372,6 +42805,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1007412731
 Transform:
   m_ObjectHideFlags: 0
@@ -42608,6 +43042,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1008728711
 Transform:
   m_ObjectHideFlags: 0
@@ -42709,6 +43144,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1015465311
 Transform:
   m_ObjectHideFlags: 0
@@ -42810,6 +43246,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1017128998
 Transform:
   m_ObjectHideFlags: 0
@@ -43047,6 +43484,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1020091498
 Transform:
   m_ObjectHideFlags: 0
@@ -43163,6 +43601,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1027541925
 GameObject:
   m_ObjectHideFlags: 0
@@ -43249,6 +43688,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1027541927
 Transform:
   m_ObjectHideFlags: 0
@@ -43364,6 +43804,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1028787764
 Transform:
   m_ObjectHideFlags: 0
@@ -43617,6 +44058,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1039819642
 Transform:
   m_ObjectHideFlags: 0
@@ -43965,6 +44407,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1048675834
 Transform:
   m_ObjectHideFlags: 0
@@ -44082,6 +44525,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1054278486
 GameObject:
   m_ObjectHideFlags: 0
@@ -44156,7 +44600,7 @@ RectTransform:
   - {fileID: 191183166}
   - {fileID: 990709062}
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -44482,6 +44926,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1069782085
 Transform:
   m_ObjectHideFlags: 0
@@ -44690,6 +45135,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1077754730
 Transform:
   m_ObjectHideFlags: 0
@@ -45002,6 +45448,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1085114366
 Transform:
   m_ObjectHideFlags: 0
@@ -45204,6 +45651,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1095398141
 Transform:
   m_ObjectHideFlags: 0
@@ -45305,6 +45753,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1097366339
 Transform:
   m_ObjectHideFlags: 0
@@ -45406,6 +45855,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1100628512
 Transform:
   m_ObjectHideFlags: 0
@@ -45507,6 +45957,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1100762574
 Transform:
   m_ObjectHideFlags: 0
@@ -45609,6 +46060,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1101285929
 Transform:
   m_ObjectHideFlags: 0
@@ -45768,6 +46220,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1103573738
 GameObject:
   m_ObjectHideFlags: 0
@@ -45912,6 +46365,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1105040313
 GameObject:
   m_ObjectHideFlags: 0
@@ -46013,6 +46467,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1116615921
 GameObject:
   m_ObjectHideFlags: 0
@@ -46099,6 +46554,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1116615923
 Transform:
   m_ObjectHideFlags: 0
@@ -46200,6 +46656,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1118516416
 Transform:
   m_ObjectHideFlags: 0
@@ -46316,6 +46773,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1120929459
 GameObject:
   m_ObjectHideFlags: 0
@@ -46436,6 +46894,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1121667144
 Transform:
   m_ObjectHideFlags: 0
@@ -46537,6 +46996,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1129656918
 Transform:
   m_ObjectHideFlags: 0
@@ -46732,6 +47192,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1135636823
 GameObject:
   m_ObjectHideFlags: 0
@@ -46818,6 +47279,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1135636825
 Transform:
   m_ObjectHideFlags: 0
@@ -46919,6 +47381,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1138147454
 Transform:
   m_ObjectHideFlags: 0
@@ -47035,6 +47498,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1139550474
 GameObject:
   m_ObjectHideFlags: 0
@@ -47137,6 +47601,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1143122739
 GameObject:
   m_ObjectHideFlags: 0
@@ -47432,6 +47897,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1155088799
 GameObject:
   m_ObjectHideFlags: 0
@@ -47653,6 +48119,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1160851413
 Transform:
   m_ObjectHideFlags: 0
@@ -47849,6 +48316,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1171070442
 GameObject:
   m_ObjectHideFlags: 0
@@ -47888,8 +48356,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399.862, y: -580}
-  m_SizeDelta: {x: 799.724, y: 120}
+  m_AnchoredPosition: {x: 361, y: -560}
+  m_SizeDelta: {x: 733.6373, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171070444
 MonoBehaviour:
@@ -48103,6 +48571,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1172651927
 Transform:
   m_ObjectHideFlags: 0
@@ -48204,6 +48673,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1175184566
 Transform:
   m_ObjectHideFlags: 0
@@ -48396,6 +48866,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1180995304
 GameObject:
   m_ObjectHideFlags: 0
@@ -48482,6 +48953,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1180995306
 Transform:
   m_ObjectHideFlags: 0
@@ -48583,6 +49055,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1181566554
 Transform:
   m_ObjectHideFlags: 0
@@ -49026,6 +49499,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1192805529
 Transform:
   m_ObjectHideFlags: 0
@@ -49277,6 +49751,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1204549103
 GameObject:
   m_ObjectHideFlags: 0
@@ -49364,6 +49839,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1204549105
 Transform:
   m_ObjectHideFlags: 0
@@ -49480,6 +49956,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1206758972
 Transform:
   m_ObjectHideFlags: 0
@@ -49596,6 +50073,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1217847981
 GameObject:
   m_ObjectHideFlags: 0
@@ -49711,6 +50189,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1217929885
 GameObject:
   m_ObjectHideFlags: 0
@@ -49933,6 +50412,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1219455380
 Transform:
   m_ObjectHideFlags: 0
@@ -50049,6 +50529,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1223969245
 GameObject:
   m_ObjectHideFlags: 0
@@ -50150,6 +50631,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1224461909
 GameObject:
   m_ObjectHideFlags: 0
@@ -50236,6 +50718,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1224461911
 Transform:
   m_ObjectHideFlags: 0
@@ -50352,6 +50835,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1230285294
 GameObject:
   m_ObjectHideFlags: 0
@@ -50453,6 +50937,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1234978068
 GameObject:
   m_ObjectHideFlags: 0
@@ -50540,6 +51025,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1234978070
 Transform:
   m_ObjectHideFlags: 0
@@ -51005,6 +51491,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1245063508
 GameObject:
   m_ObjectHideFlags: 0
@@ -51091,6 +51578,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1245063510
 Transform:
   m_ObjectHideFlags: 0
@@ -51193,6 +51681,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1246823079
 Transform:
   m_ObjectHideFlags: 0
@@ -51295,6 +51784,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1247108791
 Transform:
   m_ObjectHideFlags: 0
@@ -51796,6 +52286,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1259052696
 Transform:
   m_ObjectHideFlags: 0
@@ -51974,6 +52465,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1259771916
 Transform:
   m_ObjectHideFlags: 0
@@ -52112,6 +52604,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1261329754
 Transform:
   m_ObjectHideFlags: 0
@@ -52213,6 +52706,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1263614790
 Transform:
   m_ObjectHideFlags: 0
@@ -52387,7 +52881,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -52728,6 +53222,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1287264837
 GameObject:
   m_ObjectHideFlags: 0
@@ -52816,6 +53311,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1287264839
 Transform:
   m_ObjectHideFlags: 0
@@ -52917,6 +53413,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1289768761
 Transform:
   m_ObjectHideFlags: 0
@@ -53034,6 +53531,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1298876331
 GameObject:
   m_ObjectHideFlags: 0
@@ -53120,6 +53618,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1298876333
 Transform:
   m_ObjectHideFlags: 0
@@ -53236,6 +53735,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1303783122
 GameObject:
   m_ObjectHideFlags: 0
@@ -53337,6 +53837,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1307025066
 GameObject:
   m_ObjectHideFlags: 0
@@ -53424,6 +53925,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1307025068
 Transform:
   m_ObjectHideFlags: 0
@@ -53844,6 +54346,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1322074584
 GameObject:
   m_ObjectHideFlags: 0
@@ -53959,6 +54462,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1323529309
 GameObject:
   m_ObjectHideFlags: 0
@@ -54137,6 +54641,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1326484850
 GameObject:
   m_ObjectHideFlags: 0
@@ -54224,6 +54729,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1326484852
 Transform:
   m_ObjectHideFlags: 0
@@ -54325,6 +54831,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1327685531
 Transform:
   m_ObjectHideFlags: 0
@@ -54560,6 +55067,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1329713512
 Transform:
   m_ObjectHideFlags: 0
@@ -54661,6 +55169,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1329723512
 Transform:
   m_ObjectHideFlags: 0
@@ -54707,12 +55216,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 851787124}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.718811, y: -78.579346}
-  m_SizeDelta: {x: -292.349, y: -249.2059}
+  m_AnchoredPosition: {x: -397.31714, y: -53.417603}
+  m_SizeDelta: {x: -1083.5457, y: -299.5294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331131003
 MonoBehaviour:
@@ -54734,9 +55243,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lead: Gosha\n\nArtists: Angrycuack, Epicron, Anastasia Kuzmenkova\n\nProgramers:  
-    Dretnoth\n\nMusic: Headphone Headache, kyber_Crystal\n\nWriters:  SHIMMY, CPFXIII\n\nmentions:
-    Relen231, Tall, \nOpenGAmeArt.org, PixaBay.Org, "
+  m_text: "Lead: \r\nJake Ratcliff\r\nGosha\r\n\r\nProgrammer: \r\nDretnoth\r\n\r\nArt:\r\nEpicRon\r\nAnastasia
+    Kuzmenkova\r\nAngryCuack\r\n\r\nSound:\r\nHeadphone Headache\r\nCrystal Fuentes\r\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -54763,10 +55271,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.8
-  m_fontSizeBase: 55
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -54900,6 +55408,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1331895948
 Transform:
   m_ObjectHideFlags: 0
@@ -54946,12 +55455,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1688624641}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 722.21954, y: -441.4762}
-  m_SizeDelta: {x: 424.4391, y: 144.4766}
+  m_AnchoredPosition: {x: 661, y: 397.0164}
+  m_SizeDelta: {x: 424.4391, y: 115.6628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333292291
 MonoBehaviour:
@@ -55301,6 +55810,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1342651009
 GameObject:
   m_ObjectHideFlags: 0
@@ -55387,6 +55897,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1342651011
 Transform:
   m_ObjectHideFlags: 0
@@ -55488,6 +55999,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1342839450
 Transform:
   m_ObjectHideFlags: 0
@@ -55589,6 +56101,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1343507200
 Transform:
   m_ObjectHideFlags: 0
@@ -55690,6 +56203,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1350077931
 Transform:
   m_ObjectHideFlags: 0
@@ -55791,6 +56305,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1357689193
 Transform:
   m_ObjectHideFlags: 0
@@ -56029,6 +56544,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1367762237
 Transform:
   m_ObjectHideFlags: 0
@@ -56133,6 +56649,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1368678992
 Transform:
   m_ObjectHideFlags: 0
@@ -56461,6 +56978,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1383310858
 Transform:
   m_ObjectHideFlags: 0
@@ -56562,6 +57080,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1389892797
 Transform:
   m_ObjectHideFlags: 0
@@ -56800,6 +57319,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1390828522
 Transform:
   m_ObjectHideFlags: 0
@@ -56901,6 +57421,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1397949021
 Transform:
   m_ObjectHideFlags: 0
@@ -57002,6 +57523,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1399163103
 Transform:
   m_ObjectHideFlags: 0
@@ -57104,6 +57626,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1402064583
 Transform:
   m_ObjectHideFlags: 0
@@ -57206,6 +57729,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1406639940
 Transform:
   m_ObjectHideFlags: 0
@@ -57520,6 +58044,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1422711268
 Transform:
   m_ObjectHideFlags: 0
@@ -57666,6 +58191,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1425540735
 Transform:
   m_ObjectHideFlags: 0
@@ -58007,6 +58533,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1438169632
 GameObject:
   m_ObjectHideFlags: 0
@@ -58108,6 +58635,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1449487472
 GameObject:
   m_ObjectHideFlags: 0
@@ -58344,6 +58872,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1451015733
 GameObject:
   m_ObjectHideFlags: 0
@@ -58436,6 +58965,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1451015735
 Transform:
   m_ObjectHideFlags: 0
@@ -58537,6 +59067,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1454681911
 Transform:
   m_ObjectHideFlags: 0
@@ -58643,6 +59174,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1456867486
 Transform:
   m_ObjectHideFlags: 0
@@ -58759,6 +59291,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1458430669
 GameObject:
   m_ObjectHideFlags: 0
@@ -58845,6 +59378,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1458430671
 Transform:
   m_ObjectHideFlags: 0
@@ -58960,6 +59494,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1458758252
 Transform:
   m_ObjectHideFlags: 0
@@ -59137,6 +59672,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1465155553
 Transform:
   m_ObjectHideFlags: 0
@@ -59315,6 +59851,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1473216626
 Transform:
   m_ObjectHideFlags: 0
@@ -59688,6 +60225,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1475487081
 Transform:
   m_ObjectHideFlags: 0
@@ -59789,6 +60327,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1476087947
 Transform:
   m_ObjectHideFlags: 0
@@ -59954,6 +60493,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1485582810
 GameObject:
   m_ObjectHideFlags: 0
@@ -60452,6 +60992,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1497358077
 GameObject:
   m_ObjectHideFlags: 0
@@ -60539,6 +61080,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1497358079
 Transform:
   m_ObjectHideFlags: 0
@@ -60640,6 +61182,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1497484557
 Transform:
   m_ObjectHideFlags: 0
@@ -60741,6 +61284,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1504445190
 Transform:
   m_ObjectHideFlags: 0
@@ -60857,6 +61401,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1508377540
 GameObject:
   m_ObjectHideFlags: 0
@@ -61078,6 +61623,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1513126088
 Transform:
   m_ObjectHideFlags: 0
@@ -61183,6 +61729,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1518638812
 Transform:
   m_ObjectHideFlags: 0
@@ -61343,7 +61890,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525998586}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -61665,6 +62212,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1530268975
 Transform:
   m_ObjectHideFlags: 0
@@ -61697,7 +62245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1531235339
 RectTransform:
   m_ObjectHideFlags: 0
@@ -61715,8 +62263,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -6.5179}
-  m_SizeDelta: {x: -0.0001, y: 13.0358}
+  m_AnchoredPosition: {x: 0.00012207031, y: -48}
+  m_SizeDelta: {x: -0.0001, y: -76.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531235340
 MonoBehaviour:
@@ -61740,15 +62288,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Un Mute
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278782415
-  m_fontColor: {r: 0.8113208, g: 0.03444285, b: 0.03444285, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -61765,7 +62313,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.25
+  m_fontSize: 22.4
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -61901,6 +62449,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1535687492
 Transform:
   m_ObjectHideFlags: 0
@@ -62002,6 +62551,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1538455822
 Transform:
   m_ObjectHideFlags: 0
@@ -62103,6 +62653,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1541547760
 Transform:
   m_ObjectHideFlags: 0
@@ -62204,6 +62755,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1543849620
 Transform:
   m_ObjectHideFlags: 0
@@ -62321,6 +62873,7 @@ MonoBehaviour:
   itemNewCordinates: 300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1544047156
 GameObject:
   m_ObjectHideFlags: 0
@@ -62407,6 +62960,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1544047158
 Transform:
   m_ObjectHideFlags: 0
@@ -62554,6 +63108,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1551967155
 Transform:
   m_ObjectHideFlags: 0
@@ -62656,6 +63211,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1554336922
 Transform:
   m_ObjectHideFlags: 0
@@ -62760,6 +63316,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1554636276
 Transform:
   m_ObjectHideFlags: 0
@@ -62775,6 +63332,82 @@ Transform:
   m_Father: {fileID: 1433488521}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1557802190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557802191}
+  - component: {fileID: 1557802193}
+  - component: {fileID: 1557802192}
+  m_Layer: 0
+  m_Name: WindowPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1557802191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557802190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1688624641}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -2, y: -2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1557802192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557802190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5d31d21bd5e60a46b3df070b1c3df50, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1557802193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557802190}
+  m_CullTransparentMesh: 1
 --- !u!1 &1559381401
 GameObject:
   m_ObjectHideFlags: 0
@@ -62861,6 +63494,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1559381403
 Transform:
   m_ObjectHideFlags: 0
@@ -62963,6 +63597,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1559961361
 Transform:
   m_ObjectHideFlags: 0
@@ -63065,6 +63700,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1564531821
 Transform:
   m_ObjectHideFlags: 0
@@ -63166,6 +63802,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1566240898
 Transform:
   m_ObjectHideFlags: 0
@@ -63267,6 +63904,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1569042746
 Transform:
   m_ObjectHideFlags: 0
@@ -63369,6 +64007,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1569778176
 Transform:
   m_ObjectHideFlags: 0
@@ -63506,6 +64145,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1576608205
 Transform:
   m_ObjectHideFlags: 0
@@ -63622,6 +64262,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1583052089
 GameObject:
   m_ObjectHideFlags: 0
@@ -63709,6 +64350,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1583052091
 Transform:
   m_ObjectHideFlags: 0
@@ -63810,6 +64452,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1583932418
 Transform:
   m_ObjectHideFlags: 0
@@ -63911,6 +64554,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1584069141
 Transform:
   m_ObjectHideFlags: 0
@@ -64013,6 +64657,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1590517784
 Transform:
   m_ObjectHideFlags: 0
@@ -64132,6 +64777,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1599000868
 GameObject:
   m_ObjectHideFlags: 0
@@ -64220,6 +64866,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1599000870
 Transform:
   m_ObjectHideFlags: 0
@@ -64321,6 +64968,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1600536091
 Transform:
   m_ObjectHideFlags: 0
@@ -64424,6 +65072,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1600883278
 Transform:
   m_ObjectHideFlags: 0
@@ -64540,6 +65189,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1606163369
 GameObject:
   m_ObjectHideFlags: 0
@@ -64763,6 +65413,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1606746755
 Transform:
   m_ObjectHideFlags: 0
@@ -64881,6 +65532,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1615592751
 GameObject:
   m_ObjectHideFlags: 0
@@ -64968,6 +65620,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1615592753
 Transform:
   m_ObjectHideFlags: 0
@@ -65204,6 +65857,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1621787479
 Transform:
   m_ObjectHideFlags: 0
@@ -65403,6 +66057,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 710680105}
   - {fileID: 2082520145}
   - {fileID: 285205034}
   - {fileID: 470661980}
@@ -65538,6 +66193,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1631567093
 Transform:
   m_ObjectHideFlags: 0
@@ -65730,6 +66386,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1638562807
 GameObject:
   m_ObjectHideFlags: 0
@@ -66089,6 +66746,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1644189843
 Transform:
   m_ObjectHideFlags: 0
@@ -66190,6 +66848,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1646247178
 Transform:
   m_ObjectHideFlags: 0
@@ -66291,6 +66950,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1649111088
 Transform:
   m_ObjectHideFlags: 0
@@ -66468,6 +67128,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1653023251
 Transform:
   m_ObjectHideFlags: 0
@@ -66586,6 +67247,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1659267932
 GameObject:
   m_ObjectHideFlags: 0
@@ -66693,6 +67355,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1664237797
 GameObject:
   m_ObjectHideFlags: 0
@@ -66779,6 +67442,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1664237799
 Transform:
   m_ObjectHideFlags: 0
@@ -66972,6 +67636,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1664967575
 GameObject:
   m_ObjectHideFlags: 0
@@ -67075,6 +67740,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1667040448
 GameObject:
   m_ObjectHideFlags: 0
@@ -67161,6 +67827,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1667040450
 Transform:
   m_ObjectHideFlags: 0
@@ -67622,6 +68289,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1673461390
 Transform:
   m_ObjectHideFlags: 0
@@ -67724,6 +68392,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1673561357
 Transform:
   m_ObjectHideFlags: 0
@@ -67867,6 +68536,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1678559234
 Transform:
   m_ObjectHideFlags: 0
@@ -67984,6 +68654,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1682315177
 GameObject:
   m_ObjectHideFlags: 0
@@ -68345,6 +69016,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1683831802
 Transform:
   m_ObjectHideFlags: 0
@@ -68446,6 +69118,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1688125388
 Transform:
   m_ObjectHideFlags: 0
@@ -68565,6 +69238,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1688624640
 GameObject:
   m_ObjectHideFlags: 0
@@ -68595,6 +69269,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1557802191}
   - {fileID: 125018503}
   - {fileID: 1267991530}
   - {fileID: 904370722}
@@ -68903,6 +69578,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1691653969
 Transform:
   m_ObjectHideFlags: 0
@@ -69005,6 +69681,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1691701328
 Transform:
   m_ObjectHideFlags: 0
@@ -69243,6 +69920,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1693419139
 Transform:
   m_ObjectHideFlags: 0
@@ -69344,6 +70022,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1695761254
 Transform:
   m_ObjectHideFlags: 0
@@ -69451,6 +70130,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1698908520
 Transform:
   m_ObjectHideFlags: 0
@@ -69720,6 +70400,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1705558061
 Transform:
   m_ObjectHideFlags: 0
@@ -69884,6 +70565,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1712423925
 Transform:
   m_ObjectHideFlags: 0
@@ -70000,6 +70682,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1724314604
 GameObject:
   m_ObjectHideFlags: 0
@@ -70178,6 +70861,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1727585897
 Transform:
   m_ObjectHideFlags: 0
@@ -70294,6 +70978,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1729300785
 GameObject:
   m_ObjectHideFlags: 0
@@ -70381,6 +71066,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1729300787
 Transform:
   m_ObjectHideFlags: 0
@@ -70610,6 +71296,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1732258249
 Transform:
   m_ObjectHideFlags: 0
@@ -70727,6 +71414,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1738200000
 GameObject:
   m_ObjectHideFlags: 0
@@ -70766,8 +71454,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399.862, y: -860}
-  m_SizeDelta: {x: 799.724, y: 120}
+  m_AnchoredPosition: {x: 361.00006, y: -840}
+  m_SizeDelta: {x: 733.6373, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1738200002
 MonoBehaviour:
@@ -70996,6 +71684,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1740794650
 GameObject:
   m_ObjectHideFlags: 0
@@ -71082,6 +71771,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1740794652
 Transform:
   m_ObjectHideFlags: 0
@@ -71183,6 +71873,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1742177105
 Transform:
   m_ObjectHideFlags: 0
@@ -71501,6 +72192,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1744171070
 Transform:
   m_ObjectHideFlags: 0
@@ -71602,6 +72294,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1747191533
 Transform:
   m_ObjectHideFlags: 0
@@ -71704,6 +72397,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1747782417
 Transform:
   m_ObjectHideFlags: 0
@@ -71886,6 +72580,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1752117377
 Transform:
   m_ObjectHideFlags: 0
@@ -72002,6 +72697,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1754190846
 GameObject:
   m_ObjectHideFlags: 0
@@ -72217,6 +72913,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1754644688
 Transform:
   m_ObjectHideFlags: 0
@@ -72453,6 +73150,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1757626928
 Transform:
   m_ObjectHideFlags: 0
@@ -72978,6 +73676,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1768431712
 Transform:
   m_ObjectHideFlags: 0
@@ -73305,6 +74004,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1774614399
 GameObject:
   m_ObjectHideFlags: 0
@@ -73427,6 +74127,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1775057827
 Transform:
   m_ObjectHideFlags: 0
@@ -73528,6 +74229,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1777070698
 Transform:
   m_ObjectHideFlags: 0
@@ -73899,6 +74601,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1780353579
 Transform:
   m_ObjectHideFlags: 0
@@ -74000,6 +74703,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1780958650
 Transform:
   m_ObjectHideFlags: 0
@@ -74102,6 +74806,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1783438380
 Transform:
   m_ObjectHideFlags: 0
@@ -74204,6 +74909,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1784767470
 Transform:
   m_ObjectHideFlags: 0
@@ -74577,6 +75283,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1792578257
 Transform:
   m_ObjectHideFlags: 0
@@ -74678,6 +75385,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1794737870
 Transform:
   m_ObjectHideFlags: 0
@@ -74957,6 +75665,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1799190766
 Transform:
   m_ObjectHideFlags: 0
@@ -75073,6 +75782,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1802533574
 GameObject:
   m_ObjectHideFlags: 0
@@ -75159,6 +75869,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1802533576
 Transform:
   m_ObjectHideFlags: 0
@@ -75275,6 +75986,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1812739875
 GameObject:
   m_ObjectHideFlags: 0
@@ -75408,6 +76120,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1816381410
 GameObject:
   m_ObjectHideFlags: 0
@@ -75495,6 +76208,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1816381412
 Transform:
   m_ObjectHideFlags: 0
@@ -75611,6 +76325,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1819910786
 GameObject:
   m_ObjectHideFlags: 0
@@ -75966,6 +76681,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1822429517
 Transform:
   m_ObjectHideFlags: 0
@@ -76192,6 +76908,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1832776865
 Transform:
   m_ObjectHideFlags: 0
@@ -76293,6 +77010,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1837254216
 Transform:
   m_ObjectHideFlags: 0
@@ -76394,6 +77112,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1837674870
 Transform:
   m_ObjectHideFlags: 0
@@ -76630,6 +77349,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1838810429
 Transform:
   m_ObjectHideFlags: 0
@@ -76747,6 +77467,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1843310271
 GameObject:
   m_ObjectHideFlags: 0
@@ -76869,6 +77590,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1845685083
 Transform:
   m_ObjectHideFlags: 0
@@ -76884,6 +77606,156 @@ Transform:
   m_Father: {fileID: 2046617284}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1847167418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847167419}
+  - component: {fileID: 1847167421}
+  - component: {fileID: 1847167420}
+  m_Layer: 0
+  m_Name: Credits Text (TMP) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1847167419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847167418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 851787124}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 434.42, y: -53.417603}
+  m_SizeDelta: {x: -1164.6, y: -299.5294}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1847167420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847167418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Story:
+
+    Jake Ratcliff
+
+    Tal Schwartz
+
+    Christopher P. Frais
+
+
+    Mentions:
+
+    opengameart.org
+
+    pixabay.com
+
+    Itch.io'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278553630
+  m_fontColor: {r: 0.11744302, g: 0.5471698, b: 0.018066937, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1847167421
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847167418}
+  m_CullTransparentMesh: 1
 --- !u!1 &1851795456
 GameObject:
   m_ObjectHideFlags: 0
@@ -76970,6 +77842,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1851795458
 Transform:
   m_ObjectHideFlags: 0
@@ -77184,6 +78057,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1862159001
 Transform:
   m_ObjectHideFlags: 0
@@ -77314,6 +78188,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1870923145
 GameObject:
   m_ObjectHideFlags: 0
@@ -77400,6 +78275,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1870923147
 Transform:
   m_ObjectHideFlags: 0
@@ -77501,6 +78377,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1871645947
 Transform:
   m_ObjectHideFlags: 0
@@ -77785,6 +78662,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1884571271
 GameObject:
   m_ObjectHideFlags: 0
@@ -77871,6 +78749,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1884571273
 Transform:
   m_ObjectHideFlags: 0
@@ -77972,6 +78851,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1886130547
 Transform:
   m_ObjectHideFlags: 0
@@ -78073,6 +78953,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1887646589
 Transform:
   m_ObjectHideFlags: 0
@@ -78226,6 +79107,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1890968040
 GameObject:
   m_ObjectHideFlags: 0
@@ -78448,6 +79330,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1893458998
 Transform:
   m_ObjectHideFlags: 0
@@ -78549,6 +79432,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1893739849
 Transform:
   m_ObjectHideFlags: 0
@@ -78664,6 +79548,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1894745611
 Transform:
   m_ObjectHideFlags: 0
@@ -78781,6 +79666,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1897440736
 GameObject:
   m_ObjectHideFlags: 0
@@ -78882,6 +79768,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1897588829
 GameObject:
   m_ObjectHideFlags: 0
@@ -79069,6 +79956,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1913820440
 Transform:
   m_ObjectHideFlags: 0
@@ -79171,6 +80059,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1915353321
 Transform:
   m_ObjectHideFlags: 0
@@ -79274,6 +80163,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1915715356
 Transform:
   m_ObjectHideFlags: 0
@@ -79375,6 +80265,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1921348339
 Transform:
   m_ObjectHideFlags: 0
@@ -79527,6 +80418,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1926915903
 Transform:
   m_ObjectHideFlags: 0
@@ -79576,11 +80468,11 @@ RectTransform:
   m_Children:
   - {fileID: 1492998662}
   m_Father: {fileID: 851787124}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822.0038, y: -456.00977}
+  m_AnchoredPosition: {x: 738, y: -347}
   m_SizeDelta: {x: 222.1875, y: 136.6071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928459838
@@ -79778,6 +80670,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1928766935
 Transform:
   m_ObjectHideFlags: 0
@@ -79880,6 +80773,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1930212546
 Transform:
   m_ObjectHideFlags: 0
@@ -80294,6 +81188,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1941080972
 GameObject:
   m_ObjectHideFlags: 0
@@ -80416,6 +81311,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1944986378
 Transform:
   m_ObjectHideFlags: 0
@@ -80727,6 +81623,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1951940017
 Transform:
   m_ObjectHideFlags: 0
@@ -80828,6 +81725,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1955246783
 Transform:
   m_ObjectHideFlags: 0
@@ -81063,6 +81961,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1961623700
 Transform:
   m_ObjectHideFlags: 0
@@ -81336,6 +82235,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1967462315
 Transform:
   m_ObjectHideFlags: 0
@@ -81437,6 +82337,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1970021585
 Transform:
   m_ObjectHideFlags: 0
@@ -81553,6 +82454,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1976559408
 GameObject:
   m_ObjectHideFlags: 0
@@ -81654,6 +82556,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1981235679
 GameObject:
   m_ObjectHideFlags: 0
@@ -81740,6 +82643,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1981235681
 Transform:
   m_ObjectHideFlags: 0
@@ -81856,6 +82760,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1983128365
 GameObject:
   m_ObjectHideFlags: 0
@@ -82173,6 +83078,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1989075772
 Transform:
   m_ObjectHideFlags: 0
@@ -82416,6 +83322,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1994311091
 GameObject:
   m_ObjectHideFlags: 0
@@ -82464,7 +83371,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0.11744302, g: 0.5471698, b: 0.018066937, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -82666,6 +83573,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1999457501
 GameObject:
   m_ObjectHideFlags: 0
@@ -82754,6 +83662,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &1999457503
 Transform:
   m_ObjectHideFlags: 0
@@ -83125,6 +84034,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2004235657
 Transform:
   m_ObjectHideFlags: 0
@@ -83226,6 +84136,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2004696480
 Transform:
   m_ObjectHideFlags: 0
@@ -83343,6 +84254,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2008683911
 GameObject:
   m_ObjectHideFlags: 0
@@ -83537,6 +84449,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2015359441
 Transform:
   m_ObjectHideFlags: 0
@@ -83638,6 +84551,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2018034101
 Transform:
   m_ObjectHideFlags: 0
@@ -83740,6 +84654,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2020476723
 Transform:
   m_ObjectHideFlags: 0
@@ -83860,6 +84775,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2026179198
 GameObject:
   m_ObjectHideFlags: 0
@@ -83961,6 +84877,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2028486573
 GameObject:
   m_ObjectHideFlags: 0
@@ -84047,6 +84964,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2028486575
 Transform:
   m_ObjectHideFlags: 0
@@ -84198,6 +85116,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2031711039
 Transform:
   m_ObjectHideFlags: 0
@@ -84592,6 +85511,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2034425819
 Transform:
   m_ObjectHideFlags: 0
@@ -84694,6 +85614,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2039160572
 Transform:
   m_ObjectHideFlags: 0
@@ -84795,6 +85716,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2044017068
 Transform:
   m_ObjectHideFlags: 0
@@ -84897,6 +85819,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2045537211
 Transform:
   m_ObjectHideFlags: 0
@@ -85000,6 +85923,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2046557941
 Transform:
   m_ObjectHideFlags: 0
@@ -85175,6 +86099,7 @@ MonoBehaviour:
   itemNewCordinates: 1200
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2047877321
 Transform:
   m_ObjectHideFlags: 0
@@ -85501,6 +86426,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2052170352
 Transform:
   m_ObjectHideFlags: 0
@@ -85602,6 +86528,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2054546187
 Transform:
   m_ObjectHideFlags: 0
@@ -85766,6 +86693,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2065621982
 GameObject:
   m_ObjectHideFlags: 0
@@ -85805,8 +86733,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399.862, y: -720}
-  m_SizeDelta: {x: 799.724, y: 120}
+  m_AnchoredPosition: {x: 361.00006, y: -700}
+  m_SizeDelta: {x: 733.6373, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065621984
 MonoBehaviour:
@@ -86185,6 +87113,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2070880266
 GameObject:
   m_ObjectHideFlags: 0
@@ -86287,6 +87216,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2071508825
 GameObject:
   m_ObjectHideFlags: 0
@@ -86388,6 +87318,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2074818009
 GameObject:
   m_ObjectHideFlags: 0
@@ -86566,6 +87497,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2075848733
 GameObject:
   m_ObjectHideFlags: 0
@@ -86653,6 +87585,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2075848735
 Transform:
   m_ObjectHideFlags: 0
@@ -86769,6 +87702,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2082520144
 GameObject:
   m_ObjectHideFlags: 0
@@ -86801,12 +87735,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1629184020}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.6013, y: -0.99363}
-  m_SizeDelta: {x: 1829.5374, y: 1028.2}
+  m_AnchoredPosition: {x: -0.3403, y: -2.6459}
+  m_SizeDelta: {x: 1753.5378, y: 905.9397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082520146
 MonoBehaviour:
@@ -86966,6 +87900,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2084487099
 GameObject:
   m_ObjectHideFlags: 0
@@ -87067,6 +88002,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2085679940
 GameObject:
   m_ObjectHideFlags: 0
@@ -87168,6 +88104,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2088041681
 GameObject:
   m_ObjectHideFlags: 0
@@ -87255,6 +88192,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2088041683
 Transform:
   m_ObjectHideFlags: 0
@@ -87356,6 +88294,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2089284841
 Transform:
   m_ObjectHideFlags: 0
@@ -87472,6 +88411,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2090821070
 GameObject:
   m_ObjectHideFlags: 0
@@ -87799,6 +88739,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2094985645
 Transform:
   m_ObjectHideFlags: 0
@@ -87915,6 +88856,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2096920556
 GameObject:
   m_ObjectHideFlags: 0
@@ -88001,6 +88943,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2096920558
 Transform:
   m_ObjectHideFlags: 0
@@ -88117,6 +89060,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2107446103
 GameObject:
   m_ObjectHideFlags: 0
@@ -88219,6 +89163,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &2108840275
 GameObject:
   m_ObjectHideFlags: 0
@@ -88594,6 +89539,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2116354373
 Transform:
   m_ObjectHideFlags: 0
@@ -88696,6 +89642,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2118379260
 Transform:
   m_ObjectHideFlags: 0
@@ -88797,6 +89744,7 @@ MonoBehaviour:
   itemNewCordinates: -300
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2129430628
 Transform:
   m_ObjectHideFlags: 0
@@ -89004,6 +89952,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2140994243
 Transform:
   m_ObjectHideFlags: 0
@@ -89105,6 +90054,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!4 &2143424017
 Transform:
   m_ObjectHideFlags: 0
@@ -89222,6 +90172,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &258123669673170545
 GameObject:
   m_ObjectHideFlags: 0
@@ -89309,6 +90260,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1357760196311051939
 GameObject:
   m_ObjectHideFlags: 0
@@ -89478,6 +90430,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!114 &2879499961383373384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89674,6 +90627,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &4972678343102267647
 GameObject:
   m_ObjectHideFlags: 0
@@ -89795,6 +90749,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &5155318979491493480
 GameObject:
   m_ObjectHideFlags: 0
@@ -90003,6 +90958,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &7133474991452289122
 GameObject:
   m_ObjectHideFlags: 0
@@ -90134,6 +91090,7 @@ MonoBehaviour:
   itemNewCordinates: 0
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &8272803478190142557
 GameObject:
   m_ObjectHideFlags: 0

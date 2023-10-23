@@ -652,6 +652,8 @@ public class DialogueManager : MonoBehaviour
             if (dialogue.lastMusicClip != null)
                 if(audioManager._musicPlayer.clip != dialogue.lastMusicClip)
                 audioManager._musicPlayer.clip = dialogue.lastMusicClip;
+            if(reputationManager._reputation != dialogue.lastKnownReputation)
+            {reputationManager._reputation = dialogue.lastKnownReputation;}
         }
 
         if(dialogue.redirectionOnStoryScene != null){
@@ -946,6 +948,7 @@ public class DialogueManager : MonoBehaviour
         _lastDialogChoice = _curentActiveDialog;
         _lastDialogChoice.lastBacgroundSprite = _bgImage.sprite;
         _lastDialogChoice.lastMusicClip = audioManager._musicPlayer.clip;
+        _lastDialogChoice.lastKnownReputation = reputationManager._reputation;
         PrepareToUpdateDialogueBox(dialogue);
     }
 

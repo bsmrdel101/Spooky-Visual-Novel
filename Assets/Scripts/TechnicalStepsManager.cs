@@ -38,14 +38,21 @@ public class TechnicalStepsManager : MonoBehaviour
     }
 
     public void ButtonPreviusDialogueMain(){
-        previusDialoguePanel.gameObject.SetActive(true);
+        //previusDialoguePanel.gameObject.SetActive(true);
         dialogueManager.audioManager.PlayMenuButtonClick(true);
+        ButtonPreviousDialogueConfirm();
     }
 
     public void ButtonPreviousDialogueConfirm(){
         Debug.Log("ButtonPreviousDialogueConfirm");
+        if(dialogueManager._curentActiveDialog.reputation != 0)
+            dialogueManager.reputationManager._reputation -= dialogueManager._curentActiveDialog.reputation;
+        
+        if(dialogueManager._lastActiveDialog.reputation != 0)
+            dialogueManager.reputationManager._reputation -= dialogueManager._lastActiveDialog.reputation;
+        
         dialogueManager.PrepareToUpdateDialogueBox(dialogueManager._lastActiveDialog);
-        ClosePreviousDialogue();
+        //ClosePreviousDialogue();
         CloseTechnicalStepsOnLeft();
     }
 
@@ -55,14 +62,18 @@ public class TechnicalStepsManager : MonoBehaviour
     }
 
     public void ButtonReplayDialogueMain(){
-        replayDialoguePanel.gameObject.SetActive(true);
+        //replayDialoguePanel.gameObject.SetActive(true);
         dialogueManager.audioManager.PlayMenuButtonClick(true);
+        ButtonReplayDialogueConfirm();
     }
 
     public void ButtonReplayDialogueConfirm(){
         Debug.Log("ButtonReplayDialogueConfirm");
+        if(dialogueManager._curentActiveDialog.reputation != 0){
+            dialogueManager.reputationManager._reputation -= dialogueManager._curentActiveDialog.reputation;
+        }
         dialogueManager.PrepareToUpdateDialogueBox(dialogueManager._curentActiveDialog);
-        CloseReplayDialogue();
+        //CloseReplayDialogue();
         CloseTechnicalStepsOnLeft();
     }
 
@@ -72,15 +83,16 @@ public class TechnicalStepsManager : MonoBehaviour
     }
 
     public void ButtonBackToLastChoiseMain(){
-        backToLastChoicePanel.gameObject.SetActive(true);
+        //backToLastChoicePanel.gameObject.SetActive(true);
         dialogueManager.audioManager.PlayMenuButtonClick(true);
+        ButtonBackToLastChoiseConfirm();
     }
 
     public void ButtonBackToLastChoiseConfirm(){
         Debug.Log("ButtonBackToLastChoiseConfirm");
         dialogueManager.stepBackBool = true;
         dialogueManager.PrepareToUpdateDialogueBox(dialogueManager._lastDialogChoice);
-        CloseBackToLastChoise();
+        //CloseBackToLastChoise();
         CloseTechnicalStepsOnLeft();
     }
 

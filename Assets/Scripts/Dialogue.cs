@@ -93,7 +93,7 @@ public class Dialogue : MonoBehaviour
     [Header("Theory about step back")]
     public Sprite lastBacgroundSprite;
     public AudioClip lastMusicClip;
-
+    public int lastKnownReputation;
 
     
 
