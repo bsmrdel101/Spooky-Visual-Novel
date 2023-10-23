@@ -85,6 +85,7 @@ public class DialogueManager : MonoBehaviour
     public AudioManager audioManager;
     public CreditsManager creditsManager;
     public AppearDissapear appearDissapear;
+    public TechnicalStepsManager technicalStepsManager;
 
 
 
@@ -273,6 +274,13 @@ public class DialogueManager : MonoBehaviour
             }
             if(enterIsDownBool) OperateDiodes(5, true, false);
         } 
+
+
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            if(technicalStepsPanelOpenBool){
+                technicalStepsManager.CloseTechnicalStepsOnLeft();
+            }
+        }
         
         
         //dialogue options

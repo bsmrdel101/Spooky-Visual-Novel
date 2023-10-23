@@ -40,7 +40,7 @@ public class MenuPanelManager : MonoBehaviour
     private void Start() {
         if(!dontOpenCoverPageBool) OrderToOpenCloseCoverPage(true);
         else OrderToOperateMainMenu();
-        
+
         if(versionDisplayTextsArray.Length > 0){
             for (int i = 0; i < versionDisplayTextsArray.Length; i++)
             {
@@ -55,8 +55,9 @@ public class MenuPanelManager : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)){
-            if(coverPageOnBool){ OrderToOpenCloseCoverPage(false);}
-            //if()
+            if(coverPageOnBool) OrderToOpenCloseCoverPage(false);
+            if(settingPanleOnBool) OrderToOpencloseSettingsPanel();
+            if(creditPanelOnBool) OrderToOpenCloseCreditsPanel(false);
         }
     }
 

@@ -21095,7 +21095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &521645655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32245,7 +32245,7 @@ MonoBehaviour:
   informativeBSPanelBool: 0
   computerDialogPanelOnBool: 0
   muteMusicBool: 0
-  versionString: 'Version: Demo 10'
+  versionString: 'Version: Demo 10 B'
   _menuPanel: {fileID: 1688624641}
   _menuButtonsPanel: {fileID: 1060971187}
   _coverPagePanel: {fileID: 752645064}
@@ -75527,6 +75527,7 @@ MonoBehaviour:
   audioManager: {fileID: 1370477677}
   creditsManager: {fileID: 1668238652}
   appearDissapear: {fileID: 1795281536}
+  technicalStepsManager: {fileID: 1795281537}
 --- !u!114 &1795281536
 MonoBehaviour:
   m_ObjectHideFlags: 0
