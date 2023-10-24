@@ -129,7 +129,7 @@ public class AudioManager : MonoBehaviour
         _sfxPlayer.clip = newAudio;
         if(!muteAllBool) 
         if(newAudio != null)
-            _sfxPlayer.Play();
+           _sfxPlayer.Play();
     }
 
     public void PlayDelayedSfx(AudioClip newAudio, string theString){
@@ -145,16 +145,18 @@ public class AudioManager : MonoBehaviour
     public void PlayNormalVoiceActor(int side){
         if(side == -1){
             _voiceActorLeftPlayer.clip = norvalVoiceAudioClip;
-            _voiceActorLeftPlayer.Play();
+            if(!muteAllBool) _voiceActorLeftPlayer.Play();
         }
         if(side == 0){
             _voiceActorMiddlePlayer.clip = norvalVoiceAudioClip;
-            _voiceActorMiddlePlayer.Play();
+            if(!muteAllBool) _voiceActorMiddlePlayer.Play();
         }
         if(side == 1){
             _voiceActorRightPlayer.clip = norvalVoiceAudioClip;
-            _voiceActorRightPlayer.Play();
+            if(!muteAllBool) _voiceActorRightPlayer.Play();
         }
+        if(menuManager.computerDialogPanelOnBool)
+            Debug.Log("Playing normal voice actor on computer screen scene.");
     }
 
     public void PlayTestVoiceActor(){
@@ -164,7 +166,7 @@ public class AudioManager : MonoBehaviour
 
     public void JustPlayVoiceActor(AudioClip theClip){
         _voiceActorMiddlePlayer.clip = theClip;
-        _voiceActorMiddlePlayer.Play();
+        if(!muteAllBool) _voiceActorMiddlePlayer.Play();
     }
 
 

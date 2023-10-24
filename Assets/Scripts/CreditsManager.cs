@@ -10,7 +10,7 @@ public class CreditsManager : MonoBehaviour
 {
     [Header("Main stuff")]
     [TextArea(10, 100)] public string openMesage; public Sprite openSprite; 
-    public AudioClip openVoiceActorClip, openSfxAudiClip;
+    public AudioClip openMusicAudioClip, openVoiceActorClip, openSfxAudioClip;
     public int endingNumber=0;
     public List<Ending> listOfEndings;
     [System.Serializable]
@@ -19,7 +19,7 @@ public class CreditsManager : MonoBehaviour
         [SerializeField, TextArea] public string endMesage;
         [SerializeField, TextArea] public string[] additionalCreditsPages;
         [SerializeField] public Sprite endSprite;
-        [SerializeField] public AudioClip endVoiceActorClip, endAudioClip;
+        [SerializeField] public AudioClip endMusicAudioClip, endVoiceActorClip, endSfxAudioClip;
     }
     
     [TextArea] public string[] creditsMesages;
@@ -99,7 +99,7 @@ public class CreditsManager : MonoBehaviour
                 SetTypping(listOfCreditsPages[0]);
             }else{
                 actualCreditsPage++;
-                if(actualCreditsPage >= numberOfCredits){
+                if(actualCreditsPage >= numberOfCredits || numberOfCredits == 0){
                     thisPanel.gameObject.SetActive(false);
                     endingBool = false;
                     creditsBool = false;
@@ -109,7 +109,7 @@ public class CreditsManager : MonoBehaviour
                     menuPanelManager.OrderToOperateMainMenu();
                     audioManager.MainMenuMusicDominator(false, false, true);
                 }else{
-                    SetTypping(listOfCreditsPages[actualCreditsPage]);
+                        SetTypping(listOfCreditsPages[actualCreditsPage]);
                 }
             }
         }
@@ -139,11 +139,14 @@ public class CreditsManager : MonoBehaviour
         
         if(openingB){
             openingBool = true;
-            displayedImage.sprite = openSprite;
+            if(openSprite != null) displayedImage.sprite = openSprite;
+            else displayedImage.sprite = dialogueManager.emptyTransparentSprite;
+            if(openMusicAudioClip != null)
+                audioManager.ChangeBacgroundMusic(openMusicAudioClip);
             if(openVoiceActorClip != null)
                 //audioManager.PlayVoiceActorAudio(openVoiceActorClip, true, true);
                 audioManager.JustPlayVoiceActor(openVoiceActorClip);
-            audioManager.PlaySfxAudio(openSfxAudiClip);            
+            audioManager.PlaySfxAudio(openSfxAudioClip);            
             SetTypping(openMesage);
         }
         
@@ -151,12 +154,16 @@ public class CreditsManager : MonoBehaviour
             endingBool = true;
             listOfCreditsPages.Clear();
             if(listOfEndings[endingNumber] != null){
-                displayedImage.sprite = listOfEndings[endingNumber].endSprite;
+                if(listOfEndings[endingNumber].endSprite != null)
+                    displayedImage.sprite = listOfEndings[endingNumber].endSprite;
+                else displayedImage.sprite = dialogueManager.emptyTransparentSprite;
+                if(listOfEndings[endingNumber].endMusicAudioClip != null)
+                audioManager.ChangeBacgroundMusic(listOfEndings[endingNumber].endMusicAudioClip);
                 if(listOfEndings[endingNumber].endVoiceActorClip != null)
                     //audioManager.PlayVoiceActorAudio(listOfEndings[endingNumber].endVoiceActorClip, true, true);
                     audioManager.JustPlayVoiceActor(listOfEndings[endingNumber].endVoiceActorClip);
-                if(listOfEndings[endingNumber].endAudioClip != null)
-                    audioManager.PlaySfxAudio(listOfEndings[endingNumber].endAudioClip);
+                if(listOfEndings[endingNumber].endSfxAudioClip != null)
+                    audioManager.PlaySfxAudio(listOfEndings[endingNumber].endSfxAudioClip);
                 SetTypping(listOfEndings[endingNumber].endMesage);
                 int operationValue = listOfEndings[endingNumber].additionalCreditsPages.Count();
                 if(operationValue > 0){

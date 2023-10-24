@@ -4186,9 +4186,10 @@ RectTransform:
   - {fileID: 1082174595}
   - {fileID: 1747841763}
   - {fileID: 1259447404}
+  - {fileID: 308379771}
   - {fileID: 185815960}
   m_Father: {fileID: 499049544}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4208,7 +4209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2924528, g: 0.19815119, b: 0.05931826, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4681,7 +4682,7 @@ RectTransform:
   - {fileID: 1409422105}
   - {fileID: 1527802233}
   m_Father: {fileID: 499049544}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5922,6 +5923,109 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135626653}
   m_CullTransparentMesh: 1
+--- !u!1 &136320727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136320729}
+  - component: {fileID: 136320728}
+  m_Layer: 0
+  m_Name: Dialougue (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &136320728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136320727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CLooks like I found what I was looking for. Lot of hassle for an
+    image. Heh, at least it\u2019s something. I guess this job is worth it, sometimes.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 838585131}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &136320729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136320727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &143149218
 GameObject:
   m_ObjectHideFlags: 0
@@ -6093,8 +6197,8 @@ MonoBehaviour:
   BodyText: (Need To be written)
   overwriteNameText: 
   reputation: 0
-  DialogueNext: {fileID: 8175765631817919219}
-  redirectionOnStoryScene: {fileID: 0}
+  DialogueNext: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 349564537}
   DialogueOptions: []
   DialogueBlockers:
   - {fileID: 143890129}
@@ -6117,8 +6221,8 @@ MonoBehaviour:
   delayedSoundEffectString: 
   newSpriteForScene: {fileID: 0}
   musicAudioClip: {fileID: 0}
-  endingTheStoryBool: 1
-  endigNumber: 2
+  endingTheStoryBool: 0
+  endigNumber: 0
   ItemNewSprite: {fileID: 0}
   itemPlaceLeft: 0
   itemPlaceRight: 0
@@ -6755,7 +6859,7 @@ RectTransform:
   - {fileID: 1285357200}
   - {fileID: 1449487473}
   m_Father: {fileID: 499049544}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7507,11 +7611,11 @@ RectTransform:
   m_Children:
   - {fileID: 913349638}
   m_Father: {fileID: 108292614}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 844, y: -351.97888}
+  m_AnchoredPosition: {x: 850, y: -440}
   m_SizeDelta: {x: 160, y: 174.703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &185815961
@@ -9827,9 +9931,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 140
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 1024
@@ -12081,6 +12185,110 @@ Transform:
   m_Father: {fileID: 1145327378}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &289922606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289922607}
+  - component: {fileID: 289922608}
+  m_Layer: 0
+  m_Name: Dialougue (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289922607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289922606}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &289922608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289922606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: 'Facing an eminent threat of explosion equal to legit stick of TNT: Percy
+    managed to not just prevent that computer to go boom, but managed to complete
+    the repair of that old machine.'
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 951009627}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 8300000, guid: d3489587f13218740907816d958d9d18, type: 3}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &290731068
 GameObject:
   m_ObjectHideFlags: 0
@@ -13079,6 +13287,82 @@ MonoBehaviour:
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
   lastKnownReputation: 0
+--- !u!1 &308379770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308379771}
+  - component: {fileID: 308379773}
+  - component: {fileID: 308379772}
+  m_Layer: 0
+  m_Name: WindowPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &308379771
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308379770}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 108292614}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &308379772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308379770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5d31d21bd5e60a46b3df070b1c3df50, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &308379773
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308379770}
+  m_CullTransparentMesh: 1
 --- !u!1 &308934591
 GameObject:
   m_ObjectHideFlags: 0
@@ -15029,6 +15313,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1910482780}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &349564536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349564538}
+  - component: {fileID: 349564537}
+  m_Layer: 0
+  m_Name: Ending Scene Normal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &349564537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349564536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackgroundImage: {fileID: 21300000, guid: ac8d0140983fe1245b8904520c240a5b, type: 3}
+  sceneMusicAudioClip: {fileID: 8300000, guid: 14c091a3f80205b4894c9ac01ab3b848, type: 3}
+  StartingDialogue: {fileID: 474727817}
+  startingPointOfStoryBool: 0
+--- !u!4 &349564538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349564536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 474727818}
+  - {fileID: 1938219595}
+  - {fileID: 2070903988}
+  - {fileID: 136320729}
+  - {fileID: 838585132}
+  - {fileID: 509788264}
+  - {fileID: 1543890744}
+  - {fileID: 1709904655}
+  - {fileID: 1718842272}
+  m_Father: {fileID: 2139390765}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351712186
 GameObject:
@@ -19914,6 +20255,109 @@ Transform:
   m_Father: {fileID: 1433488521}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &474727816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474727818}
+  - component: {fileID: 474727817}
+  m_Layer: 0
+  m_Name: Dialougue Normal end
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &474727817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474727816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 1
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 1
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CHuh\u2026 Looks like that cleared out the worst of the corruption.
+    Perhaps if I explore enough, I'll find the answers.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1938219594}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 1
+  itemPlaceRight: 0
+  itemMoveBool: 1
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &474727818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474727816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481330233
 GameObject:
   m_ObjectHideFlags: 0
@@ -20379,6 +20823,7 @@ RectTransform:
   - {fileID: 331961234}
   - {fileID: 1629184020}
   - {fileID: 1688624641}
+  - {fileID: 851787124}
   - {fileID: 1093178142}
   - {fileID: 108292614}
   - {fileID: 120977202}
@@ -20754,6 +21199,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 285266824}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &509788262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509788264}
+  - component: {fileID: 509788263}
+  m_Layer: 0
+  m_Name: Dialougue (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &509788263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509788262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: . . . .
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1543890743}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &509788264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509788262}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &510615936
 GameObject:
@@ -24828,6 +25375,110 @@ MonoBehaviour:
   reputation: 0
   DialogueNext: {fileID: 0}
   redirectionOnStoryScene: {fileID: 983760362}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!1 &595907353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595907354}
+  - component: {fileID: 595907355}
+  m_Layer: 0
+  m_Name: Grampa (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595907354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595907353}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &595907355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595907353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 2
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 1
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CNah. I know what you mean with that. Its quite strange how time
+    sometime fly as if it go around us. Do you thinks it too? Or we just are on the
+    same wave. But, after the first century he stopped to bother.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1557654075}
+  redirectionOnStoryScene: {fileID: 0}
   DialogueOptions: []
   DialogueBlockers: []
   DialogueWhenNoneAviable:
@@ -29591,6 +30242,109 @@ Transform:
   m_Father: {fileID: 1702092432}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &702721502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702721503}
+  - component: {fileID: 702721504}
+  m_Layer: 0
+  m_Name: Grampa (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &702721503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702721502}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &702721504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702721502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 2
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 1
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CHere are the money. This boy box, is a true partner for this old
+    fossil of me. So thanks for putting my friend back to.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1425066847}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &707335102
 GameObject:
   m_ObjectHideFlags: 0
@@ -30376,7 +31130,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -30384,7 +31138,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.11744302, g: 0.5471698, b: 0.018066937, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -30401,12 +31155,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 50
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -30440,7 +31194,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &720391862
@@ -30963,6 +31717,108 @@ Transform:
   m_Father: {fileID: 1941080973}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &732970702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732970703}
+  - component: {fileID: 732970704}
+  m_Layer: 0
+  m_Name: Dialougue (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &732970703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732970702}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &732970704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732970702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 1
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: The owner of the machine already returned.
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 774450187}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 8300000, guid: bdada47582bf6b349bc40dedd531c9c3, type: 3}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &738937245
 GameObject:
   m_ObjectHideFlags: 0
@@ -31141,7 +31997,7 @@ RectTransform:
   - {fileID: 1743320576}
   - {fileID: 828841347}
   m_Father: {fileID: 499049544}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32034,6 +32890,108 @@ Transform:
   m_Father: {fileID: 615869720}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &774450185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774450186}
+  - component: {fileID: 774450187}
+  m_Layer: 0
+  m_Name: Grampa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &774450186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774450185}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774450187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774450185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 2
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 1
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CHow its go?\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1305252269}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &777855918
 GameObject:
   m_ObjectHideFlags: 0
@@ -32245,7 +33203,7 @@ MonoBehaviour:
   informativeBSPanelBool: 0
   computerDialogPanelOnBool: 0
   muteMusicBool: 0
-  versionString: 'Version: Demo 10 B'
+  versionString: 'Version: Demo 11'
   _menuPanel: {fileID: 1688624641}
   _menuButtonsPanel: {fileID: 1060971187}
   _coverPagePanel: {fileID: 752645064}
@@ -35117,6 +36075,108 @@ Transform:
   m_Father: {fileID: 2057351563}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &838585130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838585132}
+  - component: {fileID: 838585131}
+  m_Layer: 0
+  m_Name: Dialougue (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &838585131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838585130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 1
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: '[Logging out.]'
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 509788263}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 1
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 8300000, guid: eb9c6fe79484841449bbd43be3cae3b5, type: 3}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 21300000, guid: 7c73c363c0cb99c41a4790fc9ad1553e, type: 3}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 5b2d2d2ccb582ff4098692ce4143f6dd, type: 3}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 1
+  itemNewCordinates: -1200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &838585132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838585130}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841645690
 GameObject:
   m_ObjectHideFlags: 0
@@ -35193,6 +36253,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841645690}
   m_CullTransparentMesh: 1
+--- !u!1 &844738228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844738229}
+  - component: {fileID: 844738230}
+  m_Layer: 0
+  m_Name: Dialougue (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844738229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844738228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844738230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844738228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "And with that, Percy returned to his \u201Cnormal\u201D duties."
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1201035979}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &847319114
 GameObject:
   m_ObjectHideFlags: 0
@@ -35422,7 +36584,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851787123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35432,8 +36594,8 @@ RectTransform:
   - {fileID: 1331131002}
   - {fileID: 1847167419}
   - {fileID: 1928459837}
-  m_Father: {fileID: 1688624641}
-  m_RootOrder: 7
+  m_Father: {fileID: 499049544}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -40292,6 +41454,110 @@ Transform:
   m_Father: {fileID: 1433488521}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &951009625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951009626}
+  - component: {fileID: 951009627}
+  m_Layer: 0
+  m_Name: Dialougue (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &951009626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951009625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951009627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951009625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: On his surprise, he learn that even if he spend only some time on that
+    machine a next day already arrived, as if he had lost a significant amount of
+    time from his life.
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 732970704}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &954487351
 GameObject:
   m_ObjectHideFlags: 0
@@ -44074,6 +45340,110 @@ Transform:
   m_Father: {fileID: 1702092432}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1040704657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040704658}
+  - component: {fileID: 1040704659}
+  m_Layer: 0
+  m_Name: Dialougue (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1040704658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040704657}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1040704659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040704657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: Percy was doing some final tests when the dam machine starts to throwing
+    its last tantrum. It power up to the point it look like a meltdown of a nuclear
+    reactor.
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1995043181}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 8300000, guid: 8525c7b5a9482654780d61759e41cf13, type: 3}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1042800357
 GameObject:
   m_ObjectHideFlags: 0
@@ -45163,7 +46533,7 @@ GameObject:
   - component: {fileID: 1082174597}
   - component: {fileID: 1082174596}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Image on bacground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45186,8 +46556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -8, y: -408.25}
-  m_SizeDelta: {x: 1785, y: 735.5}
+  m_AnchoredPosition: {x: -581.2443, y: -810.27}
+  m_SizeDelta: {x: 572.6882, y: 382.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082174596
 MonoBehaviour:
@@ -45499,7 +46869,7 @@ RectTransform:
   - {fileID: 1255994}
   - {fileID: 532510835}
   m_Father: {fileID: 499049544}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -49752,6 +51122,108 @@ MonoBehaviour:
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
   lastKnownReputation: 0
+--- !u!1 &1201035977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201035978}
+  - component: {fileID: 1201035979}
+  m_Layer: 0
+  m_Name: End Game Redirection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201035978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201035977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1201035979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201035977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: 
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 1
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1204549103
 GameObject:
   m_ObjectHideFlags: 0
@@ -50155,6 +51627,20 @@ MonoBehaviour:
     mustBeLessBool: 0
   - OptionName: 'Testing: Redirect to computer selection.'
     Dialogue: {fileID: 944677184}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  - OptionName: 'Testing: Redirect to Ending 1'
+    Dialogue: {fileID: 474727817}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  - OptionName: 'Testing: Redirect to Ending 2'
+    Dialogue: {fileID: 771869053370944705}
     reputationLimiterBool: 0
     requiredValue: 0
     mustBeMoreBool: 0
@@ -52338,8 +53824,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -53.604004, y: 1.7009277}
-  m_SizeDelta: {x: -322.465, y: -62.597}
+  m_AnchoredPosition: {x: 0.41912842, y: 6.133423}
+  m_SizeDelta: {x: -159.7, y: -191.8411}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259447405
 MonoBehaviour:
@@ -52348,7 +53834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259447403}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -53822,6 +55308,109 @@ MonoBehaviour:
   informativeSuportSprite: {fileID: 0}
   computerDialogBool: 0
   voiceActorAudioClip: {fileID: 8300000, guid: 2626b8b2d83c3934fa865b7a4ca8ab37, type: 3}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!1 &1305252267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1305252268}
+  - component: {fileID: 1305252269}
+  m_Layer: 0
+  m_Name: Percy (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1305252268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305252267}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305252269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305252267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CIts done. Only this little fellow need a quick modification and
+    you can take it.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1912360473}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   soundEffectAtEndClip: {fileID: 0}
   delayedSoundEffectClip: {fileID: 0}
@@ -55484,7 +57073,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Black Flower
 
-    Team'
+    Studio (Team)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -55514,9 +57103,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 140
+  m_fontSizeMax: 50
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 1024
@@ -58105,6 +59694,108 @@ Transform:
   m_Father: {fileID: 768652999}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1425066845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425066846}
+  - component: {fileID: 1425066847}
+  m_Layer: 0
+  m_Name: Dialougue (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1425066846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425066845}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1425066847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425066845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 1
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: Whit those words the grandpa left the shop.
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 844738230}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 8300000, guid: bdada47582bf6b349bc40dedd531c9c3, type: 3}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 1
+  itemNewCordinates: 1200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1425540733
 GameObject:
   m_ObjectHideFlags: 0
@@ -62874,6 +64565,108 @@ MonoBehaviour:
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
   lastKnownReputation: 0
+--- !u!1 &1543890742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543890744}
+  - component: {fileID: 1543890743}
+  m_Layer: 0
+  m_Name: Dialougue (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1543890743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543890742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CI\u2026 I beat this thing. Then\u2026 Why am I not out?\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1709904654}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &1543890744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543890742}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544047156
 GameObject:
   m_ObjectHideFlags: 0
@@ -63332,6 +65125,109 @@ Transform:
   m_Father: {fileID: 1433488521}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1557654073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557654074}
+  - component: {fileID: 1557654075}
+  m_Layer: 0
+  m_Name: Percy (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1557654074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557654073}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557654075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557654073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CSu~ure... I-- I am finish! Fill these papers, and you can take
+    it home!\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 702721504}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 1
+  itemNewCordinates: 200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1557802190
 GameObject:
   m_ObjectHideFlags: 0
@@ -67888,36 +69784,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openMesage: "Team Black flower present a demo of our game \u201CHard Drive Bargain\u201D.
-    Please take into an account that due of setback and rush this we not are done
-    in time. For that some sprites, sound and texts were not ready in time and in
-    this build we use temporal substitutes for some sprites.\nWe still planing to
-    deliver the game.\r\nUse \u2018space\u2019 and \u2018left click\u2019 in tipping,
-    to fill the text. To continue use Keys 1 2 3 4 or mouse in dialogue selection.
-    Use Enter on pages with only one button."
+    \nUse \u2018space\u2019 and \u2018left click\u2019 in tipping, to fill the text.
+    To continue use Keys 1 2 3 4 or mouse in dialogue selection. Use Enter on pages
+    with only one button."
   openSprite: {fileID: 21300000, guid: 713dbdf4fd1e7534cb6cecd5bcf1106a, type: 3}
+  openMusicAudioClip: {fileID: 0}
   openVoiceActorClip: {fileID: 0}
-  openSfxAudiClip: {fileID: 8300000, guid: bdada47582bf6b349bc40dedd531c9c3, type: 3}
+  openSfxAudioClip: {fileID: 0}
   endingNumber: 0
   listOfEndings:
-  - name: Temporal Ending
-    endMesage: "Facing an eminent threat of explosion equal to legit stick of TNT:
-      Percy managed to not just prevent that computer to go boom, but managed to
-      complete the repair of that old machine. \r\nOn his surprise, he learn that
-      even if he spend only some time on that machine a next day already arrived,
-      as if he had lost a significant amount of time from his life.\r\nHe asked that
-      old man if he ever fell like him, on which the old man only answered, that
-      after the first century he stopped to counting."
+  - name: Ending
+    endMesage: "We thank you for playing our collab game \u2018Hardrive Bargain\u2019
+      baked by the \u2018Black Flower studio\u2019 (team). Originally was meant for
+      the Spook-October Game-Jam but setback and turnover of people make the project
+      to be delayed to the point that the team leaved the Game-Jam.\r\nWe hope that
+      you enjoyed what we cooked and served you on the plate."
     additionalCreditsPages: []
-    endSprite: {fileID: 21300000, guid: bfc62c5ccf93c824bac50250790b5296, type: 3}
+    endSprite: {fileID: 21300000, guid: 5b2d2d2ccb582ff4098692ce4143f6dd, type: 3}
+    endMusicAudioClip: {fileID: 8300000, guid: 14c091a3f80205b4894c9ac01ab3b848, type: 3}
     endVoiceActorClip: {fileID: 0}
-    endAudioClip: {fileID: 8300000, guid: 14c091a3f80205b4894c9ac01ab3b848, type: 3}
+    endSfxAudioClip: {fileID: 0}
   creditsMesages:
-  - "As we state before, this is for now a demo version of our unfinished game. We
-    are team of (11?) and we join the jam in second half-way to cook something. We
-    have writers, programmer(s?), sound and art artist, (voice actors?).\r\nWe still
-    agreed to finish this game even if it not in the time limit of game jam.\r\n:)\r\nSome
-    other credits:\r\nSprite: Hologram girl - original LisadiKaprio\r\nImage of bridge 
-    - wallpaperaccess.com\r\ncoridors \u2013 freepik and such"
+  - "There is shout out for a people that worked on this project.\r\nLead: Jake Ratcliff,
+    Gosha.    \nProgrammer: Dretnoth.\r\nArt: EpicRon, Anastasia Kuzmenkova, AngryCuack.\r\nSound:
+    Headphone Headache, Crystal Fuentes.\r\nStory: Jake Ratcliff, Tal Schwartz, Christopher
+    P. Frais.\r\nMentions: opengameart.org, pixabay.com, Itch.io, wallpaperaccess.com."
   listOfCreditsPages: []
   thisPanel: {fileID: 108292614}
   smallTextPanel: {fileID: 1747841763}
@@ -69276,7 +71167,6 @@ RectTransform:
   - {fileID: 1060971187}
   - {fileID: 255994744}
   - {fileID: 1333292290}
-  - {fileID: 851787124}
   m_Father: {fileID: 499049544}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -70472,6 +72362,108 @@ MonoBehaviour:
   sceneMusicAudioClip: {fileID: 8300000, guid: 353370386ff1198478c644f08782946e, type: 3}
   StartingDialogue: {fileID: 2020476722}
   startingPointOfStoryBool: 0
+--- !u!1 &1709904653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709904655}
+  - component: {fileID: 1709904654}
+  m_Layer: 0
+  m_Name: Dialougue (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1709904654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709904653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: . . . .
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1718842271}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &1709904655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709904653}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1712423923
 GameObject:
   m_ObjectHideFlags: 0
@@ -70683,6 +72675,108 @@ MonoBehaviour:
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
   lastKnownReputation: 0
+--- !u!1 &1718842270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718842272}
+  - component: {fileID: 1718842271}
+  m_Layer: 0
+  m_Name: End Game Redirection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1718842271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718842270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: 
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 0}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 1
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &1718842272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718842270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724314604
 GameObject:
   m_ObjectHideFlags: 0
@@ -72449,8 +74543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -85.25, y: 181.5}
-  m_SizeDelta: {x: 1630.5, y: 297}
+  m_AnchoredPosition: {x: 16.6592, y: 532.7761}
+  m_SizeDelta: {x: 1727.8184, y: 861.4479}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1747841764
 MonoBehaviour:
@@ -72459,7 +74553,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747841762}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -77680,7 +79774,9 @@ MonoBehaviour:
 
     pixabay.com
 
-    Itch.io'
+    Itch.io
+
+    wallpaperaccess.com'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -79871,6 +81967,110 @@ MonoBehaviour:
   sceneMusicAudioClip: {fileID: 8300000, guid: 20c906a90d17d174b84962f0a32651af, type: 3}
   StartingDialogue: {fileID: 1747191532}
   startingPointOfStoryBool: 0
+--- !u!1 &1912360471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1912360472}
+  - component: {fileID: 1912360473}
+  m_Layer: 0
+  m_Name: Percy (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912360472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912360471}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912360473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912360471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CBut\u2026 I have a feeling, or a suspicion, that I lost a more
+    time that I should working on this. Playing... And I don\u2019t meant spent,
+    I mean like it disappeared. Vanished. Like the time skipped.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 595907355}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1913820438
 GameObject:
   m_ObjectHideFlags: 0
@@ -81074,6 +83274,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937217911}
   m_CullTransparentMesh: 1
+--- !u!1 &1938219593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938219595}
+  - component: {fileID: 1938219594}
+  m_Layer: 0
+  m_Name: Dialougue (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1938219594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938219593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CLooks like\u2026 There's a file here.\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 2070903987}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &1938219595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938219593}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1939904624
 GameObject:
   m_ObjectHideFlags: 0
@@ -83575,6 +85877,108 @@ MonoBehaviour:
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
   lastKnownReputation: 0
+--- !u!1 &1995043179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995043180}
+  - component: {fileID: 1995043181}
+  m_Layer: 0
+  m_Name: Percy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995043180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995043179}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995043181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995043179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 1
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 1
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "\u201CNot today! I finally saw which one of you chips doing this!\u201D"
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 289922608}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 0}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: 0
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!1 &1999457501
 GameObject:
   m_ObjectHideFlags: 0
@@ -85318,10 +87722,10 @@ RectTransform:
   m_Father: {fileID: 1747841763}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.5449, y: -0.00051689}
-  m_SizeDelta: {x: 1603.1029, y: 297}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -18.488586, y: 0.6213074}
+  m_SizeDelta: {x: 4.3806, y: 28.601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033420730
 MonoBehaviour:
@@ -85343,23 +87747,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Team Black flower present a demo of our game \u201CHard Drive Bargain\u201D.
-    Please take into an account that due of setback and rush this we not are done
-    in time. For that some sprites, sound and texts were not ready in time and in
-    this build we use temporal substitutes.\nWe still planing to deliver the game.\nUse
-    \u2018space\u2019 and \u2018left click\u2019 in tipping, to fill the text. To
-    continue use Keys 1 2 3 4 or mouse in dialogue selection. Use Enter on pages
-    with only one button."
+  m_text: "We thank you for playing our collab game \u2018Hardrive Bargain\u2019
+    baked by the \u2018Black Flower studio\u2019 (team). Originally was meant for
+    the Spook-October Game-Jam but setback and turnover of people make the project
+    to be delayed to the point that the team leaved the Game-Jam.\r\nWe hope that
+    you enjoyed what we cooked and served you on the plate.\r\nThere is shout out
+    for a people that worked on this project.\r\nLead: Jake Ratcliff, Gosha.  Programmer:
+    Dretnoth.   \nArt: EpicRon, Anastasia Kuzmenkova, AngryCuack.   \nSound: Headphone
+    Headache, Crystal Fuentes.    \nStory: Jake Ratcliff, Tal Schwartz, Christopher
+    P. Frais.    \nMentions: opengameart.org, pixabay.com, Itch.io, wallpaperaccess.com."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278553630
+  m_fontColor: {r: 0.11744302, g: 0.5471698, b: 0.018066937, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -85376,7 +87782,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 50
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -87218,6 +89624,109 @@ MonoBehaviour:
   lastBacgroundSprite: {fileID: 0}
   lastMusicClip: {fileID: 0}
   lastKnownReputation: 0
+--- !u!1 &2070903986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070903988}
+  - component: {fileID: 2070903987}
+  m_Layer: 0
+  m_Name: Dialougue (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2070903987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070903986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 0
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: "Percy opens the file and an image pops up on the screen \u2013 a family
+    of 4 \u2013 a man, his wife and his two children: sons."
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 136320728}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 0
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 0
+  itemPlaceRight: 0
+  itemMoveBool: 0
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
+--- !u!4 &2070903988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070903986}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 349564538}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2071508825
 GameObject:
   m_ObjectHideFlags: 0
@@ -89408,7 +91917,7 @@ RectTransform:
   - {fileID: 628144351}
   - {fileID: 1129969891}
   m_Father: {fileID: 499049544}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -89863,6 +92372,8 @@ Transform:
   m_Children:
   - {fileID: 4381716631194354149}
   - {fileID: 6813724261590496009}
+  - {fileID: 3887632219200448835}
+  - {fileID: 349564538}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90101,7 +92612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundImage: {fileID: 21300000, guid: 87869ca85e51f6c46a532df5c8fcd43f, type: 3}
-  sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
+  sceneMusicAudioClip: {fileID: 8300000, guid: 3a6717182abbb804f9fffe442f0939ad, type: 3}
   StartingDialogue: {fileID: 7046629469075494539}
   startingPointOfStoryBool: 0
 --- !u!114 &255405800515069031
@@ -90191,6 +92702,93 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &685571131694178856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3887632219200448835}
+  - component: {fileID: 7637812457285508616}
+  m_Layer: 0
+  m_Name: Ending Scene Dretnoth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &771869053370944705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490024207285278346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d93551497de05043902b4fba8c30209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterInUse: 0
+  leftCharacterSheet: {fileID: 11400000, guid: 5d288f1662bd35a4b9d42b588b3ccfa5, type: 2}
+  characterOnLeftWhiteBool: 0
+  characterOnLeftSpriteNumber: 0
+  actorOnLeftAppearBool: 0
+  actorOnLeftDisapearBool: 0
+  actorOnLeftAlpha0Bool: 0
+  editLeftActorOnEndBool: 0
+  rightCharacterSheet: {fileID: 11400000, guid: ff8d7cfee4f240b48b1cbf3c1575bd72, type: 2}
+  characterOnRightWhiteBool: 0
+  characterOnRightSpriteNumber: 0
+  actorOnRightAppearBool: 0
+  actorOnRightDisapearBool: 0
+  actorOnRightAlpha0Bool: 1
+  editRightActorOnEndBool: 0
+  middleCharacterSheet: {fileID: 0}
+  characterOnMiddleWhiteBool: 0
+  characterOnMiddleSpriteNumber: 0
+  actorOnMiddleAppearBool: 0
+  actorOnMiddleDisapearBool: 0
+  actorOnMiddleAlpha0Bool: 0
+  editMiddleActorOnEndBool: 0
+  BodyText: 'Next Morning: Debug Shop'
+  overwriteNameText: 
+  reputation: 0
+  DialogueNext: {fileID: 1040704659}
+  redirectionOnStoryScene: {fileID: 0}
+  DialogueOptions: []
+  DialogueBlockers: []
+  DialogueWhenNoneAviable:
+    OptionName: 
+    Dialogue: {fileID: 0}
+    reputationLimiterBool: 0
+    requiredValue: 0
+    mustBeMoreBool: 0
+    mustBeEqualBool: 0
+    mustBeLessBool: 0
+  informativeBSBool: 1
+  placeMistUnderInformativeBool: 0
+  informativeSuportSprite: {fileID: 0}
+  computerDialogBool: 0
+  voiceActorAudioClip: {fileID: 0}
+  soundEffectAudioClip: {fileID: 0}
+  soundEffectAtEndClip: {fileID: 0}
+  delayedSoundEffectClip: {fileID: 0}
+  delayedSoundEffectString: 
+  newSpriteForScene: {fileID: 0}
+  musicAudioClip: {fileID: 0}
+  endingTheStoryBool: 0
+  endigNumber: 0
+  ItemNewSprite: {fileID: 21300000, guid: 9e9859a84b711754b9365d84989b01b4, type: 3}
+  itemPlaceLeft: 1
+  itemPlaceRight: 0
+  itemMoveBool: 1
+  itemNewCordinates: -200
+  lastBacgroundSprite: {fileID: 0}
+  lastMusicClip: {fileID: 0}
+  lastKnownReputation: 0
 --- !u!114 &1271768818746137351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90463,6 +93061,51 @@ Transform:
   m_Father: {fileID: 618909545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &3843266778770542898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490024207285278346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3887632219200448835}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &3887632219200448835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685571131694178856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3843266778770542898}
+  - {fileID: 1040704658}
+  - {fileID: 1995043180}
+  - {fileID: 289922607}
+  - {fileID: 951009626}
+  - {fileID: 732970703}
+  - {fileID: 774450186}
+  - {fileID: 1305252268}
+  - {fileID: 1912360472}
+  - {fileID: 595907354}
+  - {fileID: 1557654074}
+  - {fileID: 702721503}
+  - {fileID: 1425066846}
+  - {fileID: 844738229}
+  - {fileID: 1201035978}
+  m_Father: {fileID: 2139390765}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3995429346212347436
 GameObject:
   m_ObjectHideFlags: 0
@@ -90538,6 +93181,23 @@ Transform:
   m_Father: {fileID: 2139390765}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4490024207285278346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3843266778770542898}
+  - component: {fileID: 771869053370944705}
+  m_Layer: 0
+  m_Name: Dialougue End D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4604101261218274586
 Transform:
   m_ObjectHideFlags: 0
@@ -90850,7 +93510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundImage: {fileID: 21300000, guid: ac8d0140983fe1245b8904520c240a5b, type: 3}
-  sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
+  sceneMusicAudioClip: {fileID: 8300000, guid: 353370386ff1198478c644f08782946e, type: 3}
   StartingDialogue: {fileID: 1217847983}
   startingPointOfStoryBool: 0
 --- !u!114 &7046629469075494539
@@ -90932,7 +93592,7 @@ MonoBehaviour:
     mustBeLessBool: 0
   DialogueBlockers: []
   DialogueWhenNoneAviable:
-    OptionName: Turn Off Computer
+    OptionName: Clear off the rest of the computer data.
     Dialogue: {fileID: 143890129}
     reputationLimiterBool: 0
     requiredValue: 0
@@ -90943,11 +93603,11 @@ MonoBehaviour:
   placeMistUnderInformativeBool: 0
   informativeSuportSprite: {fileID: 0}
   computerDialogBool: 1
-  voiceActorAudioClip: {fileID: 8300000, guid: fbf802700eaafd141921fc62e5122652, type: 3}
+  voiceActorAudioClip: {fileID: 0}
   soundEffectAudioClip: {fileID: 0}
   soundEffectAtEndClip: {fileID: 0}
-  delayedSoundEffectClip: {fileID: 0}
-  delayedSoundEffectString: 
+  delayedSoundEffectClip: {fileID: 8300000, guid: fbf802700eaafd141921fc62e5122652, type: 3}
+  delayedSoundEffectString: 0
   newSpriteForScene: {fileID: 0}
   musicAudioClip: {fileID: 0}
   endingTheStoryBool: 0
@@ -90993,6 +93653,22 @@ MonoBehaviour:
   sceneMusicAudioClip: {fileID: 8300000, guid: 31e0d48d5c8d6e64c8c4a847b566a665, type: 3}
   StartingDialogue: {fileID: 1535687491}
   startingPointOfStoryBool: 1
+--- !u!114 &7637812457285508616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685571131694178856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ad2c40d790a6b49a896079edf9754d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackgroundImage: {fileID: 21300000, guid: ac8d0140983fe1245b8904520c240a5b, type: 3}
+  sceneMusicAudioClip: {fileID: 8300000, guid: 353370386ff1198478c644f08782946e, type: 3}
+  StartingDialogue: {fileID: 771869053370944705}
+  startingPointOfStoryBool: 0
 --- !u!1 &8090498176138298058
 GameObject:
   m_ObjectHideFlags: 0

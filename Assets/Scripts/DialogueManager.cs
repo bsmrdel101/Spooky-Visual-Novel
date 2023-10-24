@@ -601,7 +601,6 @@ public class DialogueManager : MonoBehaviour
 
         //sound and typping
         if(haveOptionsBool){
-            //_lastDialogChoice = dialogue;
             if(dialogue.computerDialogBool) ReadTextStartTypping();
             RevealDialougeOptions(dialogue);
             normalDialogBool = false;
@@ -842,6 +841,7 @@ public class DialogueManager : MonoBehaviour
                         _actorLeftSprite.color = v4Visibility;
                 }     
             }    
+                    _actorTagLeftSprite.color = v4Visibility;
         }
         
         if(itsRightBool){
@@ -861,6 +861,7 @@ public class DialogueManager : MonoBehaviour
                         _actorRightSprite.color = v4Visibility;
                 }     
             }
+                _actorTagRightSprite.color = v4Visibility;
             
         }
 
@@ -881,6 +882,7 @@ public class DialogueManager : MonoBehaviour
                         _actorMiddleSprite.color = v4Visibility;
                 }     
             }
+            _actorTagMiddleSprite.color = v4Visibility;
             
         }
     }
@@ -1052,11 +1054,4 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-
-    
-
-
-
-    
-
-}
+}//main
